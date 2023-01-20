@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.radial-red {
+    background: radial-gradient(50% 50% at 50% 50%, #FF304D 0%, rgba(255, 48, 77, 0) 100%);
+}
+
+@layer base {
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@layer components {
+   
+    .nav_item {
+        @apply flex items-start;
+    }
+
+    .nav_link {
+        @apply text-base-white font-medium text-base leading-[1.3] uppercase active:text-base-red;
+    }
+
+    .dropdown_item {
+        @apply block w-1/2;
+    }
+
+    .dropdown_link {
+        @apply uppercase text-base-black flex justify-start items-center
+    }
+
+    .burger_span {
+        @apply block w-8 h-[3px] bg-white absolute left-1/2 ml-[-16px];
+    }
+
+}
+
+@layer utilities {
+    .toggle-btn {
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+    } 
+}
