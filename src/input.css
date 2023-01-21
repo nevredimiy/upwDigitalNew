@@ -35,10 +35,17 @@
         @apply block w-8 h-[3px] bg-white absolute left-1/2 ml-[-16px];
     }
 
+    .btn-red {
+        @apply flex w-full items-center justify-center rounded-full bg-base-red py-5 text-base-white md:mx-auto md:mt-9 md:w-[357px] xl:m-0 xl:mt-14
+    }
+
 }
 
 @layer utilities {
     .toggle-btn {
         @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
     } 
+    .toggle-plus {
+        @apply [&>div::before]:rotate-0
+    }
 }
