@@ -481,21 +481,81 @@
     <!-- ./container  -->
   </header>
   <section id="mobile-menu"
-    class="z-60 sticky top-[76px] hidden w-full origin-top animate-open-menu flex-col justify-center bg-base-black">
+    class="z-60 hidden sticky top-[76px] w-full origin-top animate-open-menu flex-col justify-center bg-base-black">
     <div class="container mx-auto">
-      <nav class="flex min-h-screen flex-col items-start py-8 text-xl uppercase" aria-label="mobile">
-        <a href="#case" class="w-full py-6 text-white hover:text-base-gray">Case studies</a>
-        <a href="#services" class="w-full py-6 text-white hover:text-base-gray">Services</a>
-        <a href="#aboutus" class="w-full py-6 text-white hover:text-base-gray">About us</a>
-        <a href="#blog" class="w-full py-6 text-white hover:text-base-gray">Blog</a>
-        <a href="#contact" class="w-full py-6 text-white hover:text-base-gray">Contact</a>
-      </nav>
+      <div class="pt-2 min-h-screen">
+        <!-- menu -->
+        <div class="">
+          <div class="text-white">
+            <nav class="flex gap-10 border-b border-base-gray py-7">
+              <a href="#" class="flex items-center gap-2 px-2 py-1 rounded-sm active:bg-[#262626] hover:bg-[#262626]">
+                <img src="./images/sv.png" alt="SV">
+                <div class="">SV</div>
+              </a>
+              <a href="#" class="flex items-center gap-2 px-2 py-1 rounded-sm active:bg-[#262626] hover:bg-[#262626]">
+                <img src="./images/en.png" alt="EN">
+                <div class="">EN</div>
+              </a>
+            </nav>
+          </div>
+          <nav class="flex flex-col items-start text-xl uppercase" aria-label="mobile">
+            <a href="#case" class="w-full pt-7 text-white hover:text-base-gray">Case studies</a>
+            <a href="#services" class="w-full pt-7 text-white hover:text-base-gray flex gap-5 items-center">Services
+              <svg class="w-[9px] h-[18px] hover:text-base-gray stroke-current" viewBox="0 0 9 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 16.5L8 9L0.999999 1.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#aboutus" class="w-full pt-7 text-white hover:text-base-gray">About us</a>
+            <a href="#blog" class="w-full pt-7 text-white hover:text-base-gray">Blog</a>
+            <a href="#contact" class="w-full pt-7 text-white hover:text-base-gray">Contact</a>
+          </nav>
+        </div>
+        <!-- social media -->
+        <div class="relative bottom-0 flex items-center justify-between px-3 ">
+          <svg class="h-[32px] w-[32px] md:h-[30px] md:w-[30px] xl:h-10 xl:w-10" viewBox="0 0 38 39" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.9997 11.9951C14.9609 11.9951 11.6875 15.3547 11.6875 19.4998C11.6875 23.645 14.9609 27.0045 18.9997 27.0045C23.0387 27.0045 26.3121 23.645 26.3121 19.4998C26.3121 15.3547 23.0387 11.9951 18.9997 11.9951ZM18.9997 24.3805C16.3777 24.3805 14.2443 22.1908 14.2443 19.4998C14.2443 16.8088 16.3777 14.6192 18.9997 14.6192C21.6217 14.6192 23.7553 16.8088 23.7553 19.4998C23.7553 22.1908 21.6217 24.3805 18.9997 24.3805Z"
+              fill="#FFFFFF" />
+            <path
+              d="M28.3155 11.6947C28.3155 12.664 27.55 13.4497 26.6055 13.4497C25.6612 13.4497 24.8955 12.664 24.8955 11.6947C24.8955 10.7254 25.6612 9.9397 26.6055 9.9397C27.55 9.9397 28.3155 10.7254 28.3155 11.6947Z"
+              fill="#FFFFFF" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M19 4.875C15.124 4.875 14.6517 4.89172 13.1209 4.95857C11.6063 5.04215 10.564 5.27615 9.66829 5.64385C8.72371 6.01157 7.942 6.513 7.144 7.332C6.346 8.151 5.85743 8.95328 5.49914 9.92272C5.14086 10.842 4.91286 11.9117 4.83143 13.4661C4.76629 15.0373 4.75 15.522 4.75 19.5C4.75 23.478 4.76629 23.9627 4.83143 25.5338C4.89657 27.0883 5.14086 28.158 5.49914 29.0773C5.85743 30.0467 6.346 30.849 7.144 31.668C7.942 32.487 8.72371 32.9885 9.66829 33.3562C10.5803 33.7238 11.6063 33.9578 13.1209 34.0415C14.6354 34.1083 15.124 34.125 19 34.125C22.876 34.125 23.3483 34.1083 24.8791 34.0415C26.3937 33.9745 27.436 33.7238 28.3317 33.3562C29.2763 32.9885 30.058 32.487 30.856 31.668C31.654 30.849 32.1426 30.0467 32.5009 29.0773C32.8591 28.1413 33.0871 27.0883 33.1686 25.5338C33.2337 23.9795 33.25 23.478 33.25 19.5C33.25 15.522 33.2337 15.0373 33.1686 13.4661C33.1034 11.9117 32.8591 10.842 32.5009 9.92272C32.1426 8.95328 31.654 8.151 30.856 7.332C30.058 6.513 29.2763 6.01157 28.3317 5.64385C27.4197 5.27615 26.3937 5.04215 24.8791 4.95857C23.3483 4.89172 22.876 4.875 19 4.875ZM19 7.51585C22.8109 7.51585 23.2506 7.53257 24.7651 7.59943C26.1494 7.66628 26.9149 7.90028 27.4034 8.10085C28.0711 8.36828 28.5434 8.68585 29.0483 9.18728C29.5531 9.70543 29.8626 10.1901 30.1069 10.8754C30.3023 11.3936 30.5303 12.1624 30.5954 13.5831C30.6606 15.1209 30.6769 15.5889 30.6769 19.5C30.6769 23.4112 30.6606 23.8625 30.5954 25.4168C30.5303 26.8375 30.3023 27.6232 30.1069 28.1245C29.8463 28.8098 29.5369 29.2945 29.0483 29.8127C28.5434 30.3308 28.0711 30.6485 27.4034 30.8992C26.8986 31.0997 26.1494 31.3337 24.7651 31.4005C23.2669 31.4675 22.8109 31.4842 19 31.4842C15.1891 31.4842 14.7494 31.4675 13.2349 31.4005C11.8506 31.3337 11.0851 31.0997 10.5966 30.8992C9.92886 30.6317 9.45657 30.3142 8.95171 29.8127C8.44686 29.2945 8.13743 28.8098 7.89314 28.1245C7.69771 27.6065 7.46971 26.8375 7.40457 25.4168C7.33943 23.8792 7.32314 23.4112 7.32314 19.5C7.32314 15.5889 7.33943 15.1376 7.40457 13.5831C7.46971 12.1624 7.69771 11.3769 7.89314 10.8754C8.15371 10.1901 8.46314 9.70543 8.95171 9.18728C9.45657 8.66915 9.92886 8.35157 10.5966 8.10085C11.1014 7.90028 11.8506 7.66628 13.2349 7.59943C14.7494 7.53257 15.1891 7.51585 19 7.51585Z"
+              fill="#FFFFFF" />
+          </svg>
+          <svg class="h-[24px] w-[24px] md:h-[22px] md:w-[23px] xl:h-[30px] xl:w-[30px]" viewBox="0 0 15 29" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.9442 29V15.3924H0.25V10.493H3.9442V6.30823C3.9442 3.01983 6.12637 0 11.1546 0C13.1904 0 14.6958 0.190095 14.6958 0.190095L14.5772 4.76531C14.5772 4.76531 13.0419 4.75075 11.3666 4.75075C9.55331 4.75075 9.26281 5.56463 9.26281 6.91548V10.493H14.7213L14.4838 15.3924H9.26281V29H3.9442Z"
+              fill="#FFFFFF" />
+          </svg>
+          <svg class="h-[32px] w-[32px]  md:h-[30px] md:w-[30px] xl:h-10 xl:w-10" viewBox="0 0 38 39" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.51616 11.1386C9.33834 11.1386 10.8155 9.62253 10.8155 7.7524C10.8155 5.88226 9.33834 4.36621 7.51616 4.36621C5.69397 4.36621 4.2168 5.88226 4.2168 7.7524C4.2168 9.62253 5.69397 11.1386 7.51616 11.1386Z"
+              fill="#FFFFFF" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M13.9297 32.4901V13.7035H19.3854V16.2726H19.4623C20.2209 14.7977 22.0756 13.2393 24.8426 13.2393C30.6059 13.2393 31.6675 17.1284 31.6675 22.1891V32.4916H25.9811V23.3545C25.9811 21.177 25.9449 18.3743 23.024 18.3743C20.0625 18.3743 19.613 20.7483 19.613 23.1998V32.4901H13.9297ZM10.3604 13.7035H4.66797V32.4901H10.3604V13.7035Z"
+              fill="#FFFFFF" />
+          </svg>
+          <svg class="h-[32px] w-[32px]  md:h-[30px] md:w-[30px] xl:h-10 xl:w-10" viewBox="0 0 38 29" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M29.3829 3.16126C25.3098 3.18137 22.214 5.9461 21.055 10.3519C19.1104 7.28063 17.5934 3.76759 16.7236 0.801758L12.4367 0.822477L12.4961 12.4847C12.4986 13.0337 12.3957 13.5779 12.1934 14.0862C11.991 14.5944 11.693 15.0568 11.3165 15.4469C10.9401 15.8369 10.4924 16.1471 9.99912 16.3596C9.50584 16.5721 8.97661 16.6828 8.44164 16.6854C7.36122 16.6907 6.32302 16.2552 5.55543 15.4749C5.17536 15.0885 4.87317 14.629 4.6661 14.1228C4.45904 13.6165 4.35116 13.0734 4.34862 12.5243L4.28925 0.862086L0 0.883414L0.059375 12.5462C0.076 17.3859 3.84394 21.2207 8.455 21.1963C13.0661 21.1719 16.8002 17.3049 16.7794 12.464L16.7705 10.4835C17.635 12.2385 18.7156 14.1032 19.9031 15.7485L17.2817 28.6331L21.6754 28.6124L23.5636 19.2512C25.2831 20.3438 27.2151 20.994 29.4654 20.983C34.1822 20.9617 38.0238 16.9837 38 11.9216C37.9786 7.07954 34.1003 3.13871 29.3835 3.16065L29.3829 3.16126ZM29.4441 16.4737C27.7293 16.4816 26.011 15.7205 24.6121 14.5157L25.0325 12.7486V12.6376C25.346 10.7644 26.2948 7.57009 29.5106 7.55546C30.6469 7.55333 31.7379 8.0128 32.5452 8.8335C33.3525 9.6542 33.8106 10.7695 33.8194 11.9356C33.7226 14.4664 31.6956 16.4572 29.4435 16.4676L29.4441 16.4737Z"
+              fill="#FFFFFF" />
+          </svg>
+        </div>
+      </div>
     </div>
   </section>
   <main>
-    <section class="relative w-full bg-base-black">
-      <div class="z-1 relative">
-        <div class="z-2 radial-red absolute h-[212px] w-[212px] blur-2xl -right-28 top-10"></div>
+    <section class="w-full bg-base-black overflow-hidden">
+      <div class="relative">
+        <div
+          class="z-70 xl:w-[591px] xl:h-[591px] xl:blur-[90px] xl:top-5 md:top-7 md:w-[322px] md:h-[322px] md:blur-3xl radial-red absolute h-[212px] w-[212px] blur-2xl xl:-right-72 -right-28 md:-right-40 top-10">
+        </div>
       </div>
       <div class="container mx-auto overflow-hidden md:px-1 xl:px-0">
         <div class="z-10 relative mx-auto py-12 md:pt-12 md:pb-[88px] xl:px-0 xl:pt-28">
@@ -1288,10 +1348,15 @@
           <div class="relative flex gap-4 pt-8 text-base-white md:pt-11 xl:grid xl:pt-[50px] xl:pl-[150px]">
             <!-- image -->
             <div class="w-1/2 md:w-1/3 xl:col-start-1 xl:row-start-1 xl:w-[390px]">
+
               <img class="w-full rounded-3xl object-cover md:hidden" src="./images/Daniella_360.jpg" alt="Daniella" />
               <img src="./images/Daniella_820.jpg" alt="Daniella" class="hidden md:block xl:hidden" />
-              <img src="./images/lts-discus-1920.jpg" alt="Daniella"
-                class="hidden xl:block xl:bg-gradient-to-r xl:from-base-red" />
+              <img src="./images/lts-discus-1920.jpg" alt="Daniella" class="hidden xl:block xl:linegradient-red" />
+              <div class="relative left-[60px] bottom-[330px]">
+                <div
+                  class="absolute xl:linegradient-red xl:w-[270px] xl:h-[390px] bg-gradient-to-r from-base-red -rotate-90 opacity-50">
+                </div>
+              </div>
             </div>
             <!-- quote, Daniella, Text under-->
             <div
@@ -1764,9 +1829,15 @@
     </section>
     <!--FAQ END -->
     <!--CONTACT -->
-    <section id="#contact" class="bg-base-black pt-8 text-white md:pt-10 xl:pb-8 xl:pt-16">
+    <section id="#contact" class="bg-base-black pt-8 text-white md:pt-10 xl:pb-8 xl:pt-16 overflow-hidden">
       <div class="container mx-auto md:px-1 xl:px-0">
-        <div class="xl:grid-cols-[2fr 5fr 3fr] xl:grid-rows-[1fr 2fr] pb-6 xl:grid">
+        <div class="z-1 relative">
+          <div
+            class="xl:w-[435px] xl:h-[435px] xl:blur-[80px] xl:-right-[20rem] xl:top-10 md:w-[295px] md:h-[295px] md:blur-[80px] radial-red absolute h-[212px] w-[212px] blur-2xl md:-right-40 md:-top-16 -right-24 top-0">
+          </div>
+        </div>
+        <div class="relative xl:grid-cols-[2fr 5fr 3fr] xl:grid-rows-[1fr 2fr] pb-6 xl:grid">
+
           <!-- Contact 1 -->
           <div
             class="text-xs font-bold leading-[1.4] text-base-gray md:pt-2 xl:col-start-1 xl:row-start-2 xl:max-w-[320px] xl:pt-[60px] xl:text-base">
