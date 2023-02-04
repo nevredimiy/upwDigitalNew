@@ -3,16 +3,38 @@ module.exports = {
   content: ["./build/*.html", "./build/js/script.js/"],
   theme: {
     container: {
+      center: true,
       padding: {
+        md: '0.25rem',
+        xl: '0',
         DEFAULT: '1.25rem',
       }
     },
 
-        extend: {
+    extend: {
+
+      gridRow: {
+        'span-8': 'span 8 / span 8',
+        'span-11': 'span 11 / span 11',
+      },
+
+      lineHeight: {
+        '1.0': '1.0',
+        '1.1': '1.1',
+        '1.2': '1.2',
+        '1.3': '1.3',
+        '1.4': '1.4',
+        '1.5': '1.5',
+        '1.6': '1.6',
+        '24': '24px',
+
+      },
       
       gridTemplateColumns: {
-        '2col': '1fr 3fr',
+        '2col33': '1fr 2fr',
+        '2col25': '1fr 3fr',
         '3col': '2fr 3fr 3fr',
+        '3col123': '1fr 2fr 3fr'
       },
       
       gridTemplateRows: {
@@ -50,7 +72,8 @@ module.exports = {
 
       animation: {
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
-      }
+      },
+      
     },
   },
   plugins: [],
