@@ -770,6 +770,14 @@ body {
   margin-top: 2rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -876,6 +884,10 @@ body {
 
 .h-\[39px\] {
   height: 39px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-h-0 {
@@ -1178,6 +1190,10 @@ body {
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
 .from-base-red {
@@ -1882,6 +1898,14 @@ body {
     grid-column: span 8 / span 8;
   }
 
+  .md\:col-span-12 {
+    grid-column: span 12 / span 12;
+  }
+
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .md\:col-start-2 {
     grid-column-start: 2;
   }
@@ -1892,6 +1916,10 @@ body {
 
   .md\:col-start-5 {
     grid-column-start: 5;
+  }
+
+  .md\:col-start-7 {
+    grid-column-start: 7;
   }
 
   .md\:row-span-2 {
@@ -1949,6 +1977,10 @@ body {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .md\:block {
@@ -2129,6 +2161,10 @@ body {
 
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .md\:grid-rows-1 {
@@ -2477,6 +2513,18 @@ body {
     padding-right: 2.5rem;
   }
 
+  .md\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .md\:pb-40 {
+    padding-bottom: 10rem;
+  }
+
+  .md\:pb-2 {
+    padding-bottom: 0.5rem;
+  }
+
   .md\:indent-\[86px\] {
     text-indent: 86px;
   }
@@ -2669,12 +2717,24 @@ body {
     bottom: 0px;
   }
 
-  .xl\:right-0 {
-    right: 0px;
+  .xl\:-left-2 {
+    left: -0.5rem;
   }
 
   .xl\:-bottom-9 {
     bottom: -2.25rem;
+  }
+
+  .xl\:right-0 {
+    right: 0px;
+  }
+
+  .xl\:-left-3 {
+    left: -0.75rem;
+  }
+
+  .xl\:bottom-3 {
+    bottom: 0.75rem;
   }
 
   .xl\:z-50 {
@@ -2705,6 +2765,10 @@ body {
     grid-column: span 5 / span 5;
   }
 
+  .xl\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
   .xl\:col-span-8 {
     grid-column: span 8 / span 8;
   }
@@ -2733,6 +2797,10 @@ body {
     grid-column-start: 3;
   }
 
+  .xl\:col-start-6 {
+    grid-column-start: 6;
+  }
+
   .xl\:row-span-11 {
     grid-row: span 11 / span 11;
   }
@@ -2747,6 +2815,10 @@ body {
 
   .xl\:row-span-full {
     grid-row: 1 / -1;
+  }
+
+  .xl\:row-span-3 {
+    grid-row: span 3 / span 3;
   }
 
   .xl\:row-start-2 {
@@ -2842,6 +2914,10 @@ body {
     height: 177px;
   }
 
+  .xl\:h-px {
+    height: 1px;
+  }
+
   .xl\:h-\[68\%\] {
     height: 68%;
   }
@@ -2866,8 +2942,16 @@ body {
     height: 30px;
   }
 
-  .xl\:h-px {
-    height: 1px;
+  .xl\:h-\[69\%\] {
+    height: 69%;
+  }
+
+  .xl\:h-auto {
+    height: auto;
+  }
+
+  .xl\:h-1\/2 {
+    height: 50%;
   }
 
   .xl\:min-h-\[90px\] {
@@ -3123,6 +3207,11 @@ body {
   .xl\:bg-middle-gray {
     --tw-bg-opacity: 1;
     background-color: rgb(144 144 144 / var(--tw-bg-opacity));
+  }
+
+  .xl\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .xl\:p-0 {
