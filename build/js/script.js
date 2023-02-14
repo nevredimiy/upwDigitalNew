@@ -1,21 +1,37 @@
+//burger menu
 const burger = document.getElementById('burger');
 const menu = document.getElementById('header_menu');
 
 const initApp = () => {
   const hamburgerBtn = document.getElementById('hamburger-button')
   const mobileMenu = document.getElementById('mobile-menu')
-  const anсhors = document.querySelectorAll('#main-menu>li>a')
   const mainMenu = document.getElementById('main-menu')
   const backToMenu = document.getElementById('back-to-menu')
-  const switchLang = document.getElementById('switch-lang')
-  const listLang = document.getElementById('list-lang')
-  
-  
+  const body = document.querySelector('body')
+  const header = document.querySelector('header')
+  const letsRed = document.getElementById('lets-talk-red')
+  const lets = document.getElementById('lets-talk')
+  const moon = document.getElementById('moon')
 
   const toggleMenu = () => {
     mobileMenu.classList.toggle('hidden')
     mobileMenu.classList.toggle('fixed')
     hamburgerBtn.classList.toggle('toggle-btn')
+    
+    if (window.matchMedia("(min-width: 819px)").matches) { 
+      body.classList.toggle('body-bg')
+      header.classList.toggle('md:w-[465px]') 
+      header.classList.toggle('md:left-full')
+      header.children[0].classList.toggle('md:px-7')      
+      letsRed.classList.toggle('hidden')
+      letsRed.nextElementSibling.classList.toggle('lets-talk')
+      letsRed.nextElementSibling.classList.toggle('without-lets-talk')
+      hamburgerBtn.parentElement.classList.toggle('md:pl-9')
+      lets.classList.toggle('md:block')
+      moon.classList.toggle('hidden')
+      mobileMenu.classList.toggle('md:px-7')
+      mobileMenu.classList.toggle('md:pt-[3.25rem]') 
+    }
   }
 
   const dropMenu = (e) => {
@@ -23,33 +39,44 @@ const initApp = () => {
       mobileMenu.classList.toggle('hidden')
       mobileMenu.classList.toggle('fixed')
     } else {
-      e.target.nextElementSibling.classList.toggle('right-full')
+      e.target.nextElementSibling.classList.toggle('right-[200%]')
     }
-  }
-
-  const toggleLang = () => {
-    listLang.classList.toggle('hidden')
-    listLang.classList.toggle('fixed')
   }
 
   hamburgerBtn.addEventListener('click', toggleMenu)
   mainMenu.addEventListener('click', dropMenu)
   backToMenu.addEventListener('click', (e) => {
-    e.target.parentElement.classList.toggle('right-full')
+    e.target.parentElement.classList.toggle('right-[200%]')
   })
-  switchLang.addEventListener('click', toggleLang)
-  listLang.addEventListener('click', toggleLang)
 }
 
 document.addEventListener('DOMContentLoaded', initApp)
 
 
 
-//const acc = document.getElementsByClassName("accordion");
-//var plus = document.getElementsByClassName("plus-minus");
+//get contact data
+const btnContact = document.getElementById('contact-details')
+const contactForm = document.getElementById('contact-form') 
+const btnContactForm = document.getElementById('button-close') //button-close
 
+const getContactForm = () => {
+  contactForm.classList.toggle('right-[200%]')
+}
 
-//const acc = document.getElementsByClassName("accordion");
+btnContact.addEventListener('click', getContactForm)
+btnContactForm.addEventListener('click', getContactForm)
+
+//dropmenu for screnn min 1280px
+const dropmenu = document.getElementById('dropmenu');
+const dropbtn = dropmenu.previousElementSibling;
+
+const clickDropMenu = () => {
+  dropmenu.classList.toggle('xl:hidden')
+}
+
+dropbtn.addEventListener('click', clickDropMenu)
+
+//ACCORDION
 const acc = document.querySelectorAll(".accordion")
 const bodyAccAll = document.querySelectorAll(".body-accordion")
 
@@ -72,23 +99,6 @@ acc.forEach(accordion => {
     
   })
 })
-
-
-// for (let i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function () {
-//     /* Toggle between adding and removing the "active" class,
-//     to highlight the button that controls the panel */
-//     this.children[0].nextElementSibling.classList.toggle("toggle-plus");
-//     this.classList.toggle('text-base-red');
-
-//     /* Toggle between hiding and showing the active panel */
-//     const panel = this.nextElementSibling;
-//     if (panel.classList.contains('max-h-0')) {
-      
-//     }
-//     panel.classList.toggle('hidden')
-//   });
-// }
 
 
 if(window.matchMedia("(max-width: 819px)").matches) {

@@ -18,10 +18,22 @@
 }
 
 @layer components {
+
+    .body-bg {
+        @apply before:content-[''] before:fixed before:bg-base-red before:left-0 before:right-0 before:top-0 before:bottom-0 before:z-10 overflow-hidden;
+    }
+
+    .lets-talk {
+        @apply md:py-3 md:pr-7 md:pl-6
+    }
+    .without-lets-talk {
+        @apply md:py-4 md:px-4
+    }
    
     .nav_item {
         @apply flex items-start;
     }
+
 
     .nav_link {
         @apply text-base-white font-medium text-base leading-[1.3] uppercase active:text-base-red;
