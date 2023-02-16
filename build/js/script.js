@@ -3,6 +3,7 @@ const burger = document.getElementById('burger');
 const menu = document.getElementById('header_menu');
 
 const initApp = () => {
+  //about burger
   const hamburgerBtn = document.getElementById('hamburger-button')
   const mobileMenu = document.getElementById('mobile-menu')
   const mainMenu = document.getElementById('main-menu')
@@ -11,6 +12,12 @@ const initApp = () => {
   const header = document.querySelector('header')
   const letsTalkRed = document.getElementById('lets-talk')
   const moon = document.getElementById('moon')
+  //about lets talk
+  const btnContact = document.getElementById('contact-details')
+  const contactForm = document.getElementById('contact-form') 
+  const btnContactForm = document.getElementById('button-close') //button-close
+
+
 
 
   const toggleMenu = () => {
@@ -18,8 +25,6 @@ const initApp = () => {
     mobileMenu.classList.toggle('fixed')
     hamburgerBtn.classList.toggle('toggle-btn')
     mainMenu.classList.toggle('min-h-[500px]')
-    
-    
     body.classList.toggle('body-bg')
     header.classList.toggle('md:w-[465px]') 
     header.classList.toggle('md:left-full')
@@ -35,6 +40,7 @@ const initApp = () => {
   }
 
   const dropMenu = (e) => {
+    console.log(e)
     if (e.target.nextElementSibling == null) {
       mobileMenu.classList.toggle('hidden')
       mobileMenu.classList.toggle('fixed')
@@ -54,34 +60,36 @@ const initApp = () => {
     }
   }
 
+  const getContactForm = () => {
+
+    if (mobileMenu.classList.contains('fixed')) {
+    console.log('work')
+//      dropMenu
+      mobileMenu.classList.toggle('hidden')
+   }
+  contactForm.classList.toggle('right-[200%]')
+
+  }
+
+  btnContact.addEventListener('click', getContactForm)
+  btnContactForm.addEventListener('click', getContactForm)
+
+
+
   hamburgerBtn.addEventListener('click', toggleMenu)
   mainMenu.addEventListener('click', dropMenu)
   backToMenu.addEventListener('click', (e) => {
     e.target.parentElement.classList.toggle('right-[200%]')
   })
+  btnContact.addEventListener('click', getContactForm)
+  btnContactForm.addEventListener('click', getContactForm)
+
 }
 
 document.addEventListener('DOMContentLoaded', initApp)
 
 
 
-//get contact data
-const btnContact = document.getElementById('contact-details')
-const contactForm = document.getElementById('contact-form') 
-const btnContactForm = document.getElementById('button-close') //button-close
-const mobileMenu = document.getElementById('mobile-menu')
-
-const getContactForm = () => {
-  contactForm.classList.toggle('right-[200%]')
-
-  if (mobileMenu.classList.contains('fixed')) {
-      console.log('work')
-   }
-
-}
-
-btnContact.addEventListener('click', getContactForm)
-btnContactForm.addEventListener('click', getContactForm)
 
 //dropmenu for screnn min 1280px
 const dropmenu = document.getElementById('dropmenu');
