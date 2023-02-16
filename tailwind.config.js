@@ -14,6 +14,11 @@ module.exports = {
 
     extend: {
 
+      backgroundImage: {
+          'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
+      },
+      
+
       gridRow: {
         'span-8': 'span 8 / span 8',
         'span-11': 'span 11 / span 11',

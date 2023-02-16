@@ -9,35 +9,46 @@ const initApp = () => {
   const backToMenu = document.getElementById('back-to-menu')
   const body = document.querySelector('body')
   const header = document.querySelector('header')
-  const letsRed = document.getElementById('lets-talk-red')
-  const lets = document.getElementById('lets-talk')
+  const letsTalkRed = document.getElementById('lets-talk')
   const moon = document.getElementById('moon')
+
 
   const toggleMenu = () => {
     mobileMenu.classList.toggle('hidden')
     mobileMenu.classList.toggle('fixed')
     hamburgerBtn.classList.toggle('toggle-btn')
+    mainMenu.classList.toggle('min-h-[500px]')
     
-    if (window.matchMedia("(min-width: 819px)").matches) { 
-      body.classList.toggle('body-bg')
-      header.classList.toggle('md:w-[465px]') 
-      header.classList.toggle('md:left-full')
-      header.children[0].classList.toggle('md:px-7')      
-      letsRed.classList.toggle('hidden')
-      letsRed.nextElementSibling.classList.toggle('lets-talk')
-      letsRed.nextElementSibling.classList.toggle('without-lets-talk')
-      hamburgerBtn.parentElement.classList.toggle('md:pl-9')
-      lets.classList.toggle('md:block')
-      moon.classList.toggle('hidden')
-      mobileMenu.classList.toggle('md:px-7')
-      mobileMenu.classList.toggle('md:pt-[3.25rem]') 
-    }
+    
+    body.classList.toggle('body-bg')
+    header.classList.toggle('md:w-[465px]') 
+    header.classList.toggle('md:left-full')
+    header.children[0].classList.toggle('md:px-7')  
+    letsTalkRed.classList.toggle('text-base-red')
+    letsTalkRed.classList.toggle('md:pr-4')
+    letsTalkRed.parentElement.classList.toggle('bg-base-red')
+    letsTalkRed.parentElement.classList.toggle('md:pr-0')
+    hamburgerBtn.parentElement.classList.toggle('md:pl-9')
+    moon.classList.toggle('md:hidden')
+    mobileMenu.classList.toggle('md:px-7')
+    mobileMenu.classList.toggle('md:pt-[3.25rem]') 
   }
 
   const dropMenu = (e) => {
     if (e.target.nextElementSibling == null) {
       mobileMenu.classList.toggle('hidden')
       mobileMenu.classList.toggle('fixed')
+      body.classList.toggle('body-bg')
+      header.classList.toggle('md:w-[465px]') 
+      moon.classList.toggle('md:hidden')
+      letsTalkRed.classList.toggle('text-base-red')
+      letsTalkRed.classList.toggle('md:pr-4')
+      letsTalkRed.parentElement.classList.toggle('bg-base-red')
+      letsTalkRed.parentElement.classList.toggle('md:pr-0')
+      hamburgerBtn.classList.toggle('toggle-btn')
+      header.classList.toggle('md:left-full')
+      mobileMenu.classList.toggle('md:px-7') 
+      header.children[0].classList.toggle('md:px-7') 
     } else {
       e.target.nextElementSibling.classList.toggle('right-[200%]')
     }
@@ -58,9 +69,15 @@ document.addEventListener('DOMContentLoaded', initApp)
 const btnContact = document.getElementById('contact-details')
 const contactForm = document.getElementById('contact-form') 
 const btnContactForm = document.getElementById('button-close') //button-close
+const mobileMenu = document.getElementById('mobile-menu')
 
 const getContactForm = () => {
   contactForm.classList.toggle('right-[200%]')
+
+  if (mobileMenu.classList.contains('fixed')) {
+      console.log('work')
+   }
+
 }
 
 btnContact.addEventListener('click', getContactForm)
@@ -91,17 +108,16 @@ acc.forEach(accordion => {
           bodyAcc.previousElementSibling.children[1].classList.remove("toggle-plus");
         }
       })
-    }
+    } 
     const bodyAссCurrent = accordion.nextElementSibling
     accordion.children[1].classList.toggle("toggle-plus"); //при клике +/-
     accordion.classList.toggle("text-base-red"); //при клике цвет заголовка красный/черный
-    bodyAссCurrent.classList.toggle("max-h-0")  
-    
+    bodyAссCurrent.classList.toggle("max-h-0")      
   })
 })
 
 
-if(window.matchMedia("(max-width: 819px)").matches) {
+
   const titleArticles = document.querySelectorAll('.title-article')
   const bodyArticleAll = document.querySelectorAll('.body-article')
 
@@ -109,29 +125,30 @@ if(window.matchMedia("(max-width: 819px)").matches) {
   titleArticles.forEach(titleArticle => {
     titleArticle.addEventListener('click', () => {
       const bodyArticle = titleArticle.nextElementSibling
-
-      if (bodyArticle.classList.contains('max-h-0')) {
-        bodyArticleAll.forEach(bodyArt => {
-          if (bodyArt.classList.contains('max-h-0')) {
-            console.log('is')
-          } else {
-            bodyArt.classList.add('max-h-0')
-          }
-        })
-        bodyArticle.classList.remove('max-h-0')
-      } else {
-        bodyArticleAll.forEach(bodyArt => {
-          if (bodyArt.classList.contains('max-h-0')) {
-            console.log('is')
-          } else {
-            bodyArt.classList.add('max-h-0')
-          }
-        })
-        bodyArticle.classList.add('max-h-0')
-      }    
+        bodyArticle.classList.toggle('max-h-0')
+      // Ниже код это в случае если нужно закрывать остальные менюшки
+      // if (bodyArticle.classList.contains('max-h-0')) {
+      //   bodyArticleAll.forEach(bodyArt => {
+      //     if (bodyArt.classList.contains('max-h-0')) {
+      //       console.log('is')
+      //     } else {
+      //       bodyArt.classList.add('max-h-0')
+      //     }
+      //   })
+      //   bodyArticle.classList.remove('max-h-0')
+      // } else {
+      //   bodyArticleAll.forEach(bodyArt => {
+      //     if (bodyArt.classList.contains('max-h-0')) {
+      //       console.log('is')
+      //     } else {
+      //       bodyArt.classList.add('max-h-0')
+      //     }
+      //   })
+      //   bodyArticle.classList.add('max-h-0')
+      // }    
     })
   })
-}
+
 
 let lastKnownScrollPosition = 0;
 let ticking = false;
@@ -140,13 +157,13 @@ const header = document.querySelector('header')
 
 function doSomething(scrollPos) {
   if (scrollPos > newScrollPosition) {
-    if (header.classList.contains('sticky')) {
-      header.classList.remove('sticky')
+    if (header.classList.contains('top-0')) {
+      header.classList.remove('top-0')
       header.classList.add('opacity-0')
     } 
   } else {
-    if (!header.classList.contains('sticky')) {
-      header.classList.add('sticky')
+    if (!header.classList.contains('top-0')) {
+      header.classList.add('top-0')
       header.classList.remove('opacity-0')
     }
   }
@@ -155,6 +172,10 @@ function doSomething(scrollPos) {
 
 document.addEventListener("scroll", (event) => {
   lastKnownScrollPosition = window.scrollY;
+  const mobileMenu1 = document.getElementById('mobile-menu')
+  if (mobileMenu1.classList.contains('hidden')) {
+    console.log('is a')
+  }
 
   if (!ticking) {
     window.requestAnimationFrame(() => {

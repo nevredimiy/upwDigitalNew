@@ -31,10 +31,9 @@
   <!-- favicon end -->
 </head>
 
-<body class="text-base font-medium text-base-white">
-
-  <header class="sticky top-0 z-20 bg-base-black md:h-[82px] xl:h-[90px]">
-    <div class="container flex flex-wrap h-[76px] items-center justify-between md:h-[82px] xl:relative xl:h-[90px]">
+<body class="text-base font-medium text-base-white w-full">
+  <header class="sticky z-40 bg-base-black transition-opacity duration-300 ease-in md:h-[82px] xl:h-[90px] w-full ">
+    <div class="container flex h-[76px] flex-wrap items-center justify-between md:h-[82px] xl:relative xl:h-[90px]">
       <!-- Logo & Moon -->
       <div class="flex items-center gap-11 md:gap-14">
         <!-- logo -->
@@ -51,32 +50,32 @@
 
         <!-- moon -->
         <div id="moon" class="">
-          <a href="">
+          <button>
             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M8.64195 1.00439L8.64196 1.00439C9.17383 0.827256 9.43477 0.938357 9.49125 0.988379C9.50652 1.0019 9.51618 1.01448 9.51563 1.05327C9.51491 1.10516 9.49146 1.21876 9.37103 1.38979L9.37102 1.38979C7.93626 3.42747 7.37097 5.08324 7.37281 7.32785C7.37936 15.3015 16.4493 19.7034 22.798 14.8407L22.494 14.4438L22.798 14.8407C23.0445 14.6519 23.2304 14.5695 23.3487 14.5436C23.4061 14.531 23.4361 14.5333 23.4488 14.5361C23.4582 14.549 23.485 14.595 23.4958 14.7103C23.5104 14.8666 23.489 15.1027 23.3958 15.4218C20.5793 25.0622 7.85599 26.9858 2.38111 18.6141C-0.326425 14.474 -0.0798655 8.62186 2.91788 4.99832C4.56619 3.00592 6.34274 1.77009 8.64195 1.00439ZM23.4564 14.5389C23.4563 14.5391 23.4546 14.5386 23.4519 14.5369C23.4552 14.5378 23.4566 14.5387 23.4564 14.5389Z"
                 stroke="white" />
             </svg>
-          </a>
+          </button>
         </div>
       </div>
 
       <div id="mobile-menu"
-        class="absolute top-[76px] left-0 z-10 hidden min-h-screen w-full origin-top animate-open-menu bg-base-black pt-8 md:right-0 md:max-w-[465px] xl:static xl:block xl:min-h-[90px] xl:max-w-full xl:flex-1 xl:flex-nowrap xl:p-0">
+        class=" absolute top-[76px] right-0 z-40 hidden min-h-screen w-full origin-top animate-open-menu bg-base-black pt-8 md:right-0 md:max-w-[465px] xl:static xl:block xl:min-h-[90px] xl:max-w-full xl:flex-1 xl:flex-nowrap xl:p-0">
         <div class="container">
           <div id="list-lang"
             class="items-center gap-10 xl:absolute xl:-right-72 xl:top-20 xl:hidden xl:rounded-sm xl:bg-base-white xl:py-3 xl:px-5 xl:text-black xl:opacity-70">
             <div class="flex gap-10 xl:block">
-              <div
-                class="flex items-center gap-[10px] rounded-sm py-[5px] px-[10px] hover:bg-[#262626] xl:hover:text-base-white">
+              <a class="flex items-center gap-[10px] rounded-sm py-[5px] px-[10px] hover:bg-[#262626] xl:hover:text-base-white"
+                href="#">
                 <img class="" src="./images/sv.png" alt="SV" />
                 <div class="">SV</div>
-              </div>
-              <div
-                class="flex items-center gap-[10px] rounded-sm py-[5px] px-[10px] hover:bg-[#262626] xl:hover:text-base-white">
+              </a>
+              <a class="flex items-center gap-[10px] rounded-sm py-[5px] px-[10px] hover:bg-[#262626] xl:hover:text-base-white"
+                href="#">
                 <img class="" src="./images/en.png" alt="EN" />
                 <div class="">EN</div>
-              </div>
+              </a>
             </div>
           </div>
           <hr class="my-[30px] bg-base-gray xl:hidden" />
@@ -85,11 +84,12 @@
               <ul id="main-menu"
                 class="relative flex flex-col justify-start gap-7 xl:static xl:h-[90px] xl:flex-row xl:items-center xl:justify-center xl:gap-12 xl:text-base-white">
                 <li>
-                  <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray xl:text-base" href="#">Case
+                  <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
+                    href="#">Case
                     Studies</a>
                 </li>
                 <li class="xl:relative">
-                  <a class="flex items-center gap-5 text-xl font-medium uppercase leading-1.2 hover:text-base-gray xl:text-base"
+                  <a class="flex items-center gap-5 text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
                     href="#">
                     Services
                     <svg class="h-[18px] w-[9px]" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,7 +98,7 @@
                     </svg>
                   </a>
                   <div id="dropmenu"
-                    class="absolute top-0 right-[200%] min-h-screen w-full bg-base-black md:w-[465px] xl:-right-[370px] xl:h-[225px] xl:w-[500px] xl:bg-base-white xl:text-base-black xl:min-h-min xl:rounded-xl xl:top-24 xl:hidden">
+                    class="absolute top-0 right-[200%] min-h-screen w-full bg-base-black md:w-[465px] xl:-right-[370px] xl:top-24 xl:hidden xl:h-[225px] xl:min-h-min xl:w-[500px] xl:rounded-xl xl:bg-base-white xl:text-base-black">
                     <a id="back-to-menu"
                       class="flex items-center gap-2 pb-4 text-xs uppercase leading-1.3 text-base-red xl:hidden"
                       href="#">
@@ -109,10 +109,10 @@
                       Back
                     </a>
                     <ul
-                      class="flex flex-col justify-start gap-7 xl:flex xl:flex-col xl:flex-wrap xl:h-full xl:px-6 xl:py-5 xl:uppercase xl:gap-4">
+                      class="flex flex-col justify-start gap-7 xl:flex xl:h-full xl:flex-col xl:flex-wrap xl:gap-4 xl:px-6 xl:py-5 xl:uppercase">
                       <li>
-                        <a href="#" class="xl:flex xl:items-center xl:gap-2">
-                          <div class=""> All services</div>
+                        <a href="#" class="hover:text-base-gray active:text-base-red xl:flex xl:items-center xl:gap-2">
+                          <div class="">All services</div>
                           <div class="hidden xl:block">
                             <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -120,13 +120,12 @@
                                 d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
                                 fill="#171717" />
                             </svg>
-
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="xl:flex xl:items-center xl:gap-2">
-                          <div class=""> Branding</div>
+                        <a href="#" class="hover:text-base-gray active:text-base-red xl:flex xl:items-center xl:gap-2">
+                          <div class="">Branding</div>
                           <div class="hidden xl:block">
                             <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -134,13 +133,12 @@
                                 d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
                                 fill="#171717" />
                             </svg>
-
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="xl:flex xl:items-center xl:gap-2">
-                          <div class=""> Web design</div>
+                        <a href="#" class="hover:text-base-gray active:text-base-red xl:flex xl:items-center xl:gap-2">
+                          <div class="">Web design</div>
                           <div class="hidden xl:block">
                             <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -148,13 +146,12 @@
                                 d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
                                 fill="#171717" />
                             </svg>
-
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="xl:flex xl:items-center xl:gap-2">
-                          <div class=""> SEO</div>
+                        <a href="#" class="hover:text-base-gray active:text-base-red xl:flex xl:items-center xl:gap-2">
+                          <div class="">SEO</div>
                           <div class="hidden xl:block">
                             <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -162,13 +159,12 @@
                                 d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
                                 fill="#171717" />
                             </svg>
-
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="xl:flex xl:items-center xl:gap-2">
-                          <div class=""> Digital marketing</div>
+                        <a href="#" class="hover:text-base-gray active:text-base-red xl:flex xl:items-center xl:gap-2">
+                          <div class="">Digital marketing</div>
                           <div class="hidden xl:block">
                             <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -176,13 +172,12 @@
                                 d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
                                 fill="#171717" />
                             </svg>
-
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="xl:flex xl:items-center xl:gap-2">
-                          <div class=""> Mobile promotion</div>
+                        <a href="#" class="hover:text-base-gray active:text-base-red xl:flex xl:items-center xl:gap-2">
+                          <div class="">Mobile promotion</div>
                           <div class="hidden xl:block">
                             <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -190,13 +185,12 @@
                                 d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
                                 fill="#171717" />
                             </svg>
-
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="xl:flex xl:items-center xl:gap-2">
-                          <div class=""> SMM</div>
+                        <a href="#" class="hover:text-base-gray active:text-base-red xl:flex xl:items-center xl:gap-2">
+                          <div class="">SMM</div>
                           <div class="hidden xl:block">
                             <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -204,13 +198,12 @@
                                 d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
                                 fill="#171717" />
                             </svg>
-
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="xl:flex xl:items-center xl:gap-2">
-                          <div class=""> PPC</div>
+                        <a href="#" class="hover:text-base-gray active:text-base-red xl:flex xl:items-center xl:gap-2">
+                          <div class="">PPC</div>
                           <div class="hidden xl:block">
                             <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -218,13 +211,12 @@
                                 d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
                                 fill="#171717" />
                             </svg>
-
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="xl:flex xl:items-center xl:gap-2">
-                          <div class=""> TikTok</div>
+                        <a href="#" class="hover:text-base-gray active:text-base-red xl:flex xl:items-center xl:gap-2">
+                          <div class="">TikTok</div>
                           <div class="hidden xl:block">
                             <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -232,13 +224,12 @@
                                 d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
                                 fill="#171717" />
                             </svg>
-
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="xl:flex xl:items-center xl:gap-2">
-                          <div class=""> Video motion</div>
+                        <a href="#" class="hover:text-base-gray active:text-base-red xl:flex xl:items-center xl:gap-2">
+                          <div class="">Video motion</div>
                           <div class="hidden xl:block">
                             <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -246,7 +237,6 @@
                                 d="M7.79202 1.8792H0.664396V0H11V10.3356H9.1208V3.208L1.3288 11L0 9.67122L7.79202 1.8792Z"
                                 fill="#171717" />
                             </svg>
-
                           </div>
                         </a>
                       </li>
@@ -254,88 +244,92 @@
                   </div>
                 </li>
                 <li>
-                  <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray xl:text-base" href="#">About
+                  <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
+                    href="#">About
                     us</a>
                 </li>
                 <li>
-                  <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray xl:text-base"
+                  <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
                     href="#">Blog</a>
                 </li>
                 <li>
-                  <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray xl:text-base"
+                  <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
                     href="#">Contact</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="fixed bottom-0 left-0 z-10 flex w-full items-center justify-between px-12 pb-24 xl:hidden">
-            <svg class="h-[32px] w-[32px]" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M15.9995 9.84229C12.5984 9.84229 9.8418 12.5988 9.8418 16C9.8418 19.4012 12.5984 22.1577 15.9995 22.1577C19.4007 22.1577 22.1572 19.4012 22.1572 16C22.1572 12.5988 19.4007 9.84229 15.9995 9.84229ZM15.9995 20.0046C13.7915 20.0046 11.9949 18.208 11.9949 16C11.9949 13.792 13.7915 11.9954 15.9995 11.9954C18.2075 11.9954 20.0041 13.792 20.0041 16C20.0041 18.208 18.2075 20.0046 15.9995 20.0046Z"
-                fill="white" />
-              <path
-                d="M23.8448 9.59576C23.8448 10.3911 23.2002 11.0358 22.4048 11.0358C21.6096 11.0358 20.9648 10.3911 20.9648 9.59576C20.9648 8.80047 21.6096 8.15576 22.4048 8.15576C23.2002 8.15576 23.8448 8.80047 23.8448 9.59576Z"
-                fill="white" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M16 4C12.736 4 12.3383 4.01372 11.0491 4.06857C9.77372 4.13715 8.896 4.32915 8.14172 4.63085C7.34628 4.93257 6.688 5.344 6.016 6.016C5.344 6.688 4.93257 7.34628 4.63085 8.14172C4.32915 8.896 4.13715 9.77372 4.06857 11.0491C4.01372 12.3383 4 12.736 4 16C4 19.264 4.01372 19.6617 4.06857 20.9508C4.12343 22.2263 4.32915 23.104 4.63085 23.8583C4.93257 24.6537 5.344 25.312 6.016 25.984C6.688 26.656 7.34628 27.0675 8.14172 27.3692C8.90972 27.6708 9.77372 27.8628 11.0491 27.9315C12.3246 27.9863 12.736 28 16 28C19.264 28 19.6617 27.9863 20.9508 27.9315C22.2263 27.8765 23.104 27.6708 23.8583 27.3692C24.6537 27.0675 25.312 26.656 25.984 25.984C26.656 25.312 27.0675 24.6537 27.3692 23.8583C27.6708 23.0903 27.8628 22.2263 27.9315 20.9508C27.9863 19.6755 28 19.264 28 16C28 12.736 27.9863 12.3383 27.9315 11.0491C27.8765 9.77372 27.6708 8.896 27.3692 8.14172C27.0675 7.34628 26.656 6.688 25.984 6.016C25.312 5.344 24.6537 4.93257 23.8583 4.63085C23.0903 4.32915 22.2263 4.13715 20.9508 4.06857C19.6617 4.01372 19.264 4 16 4ZM16 6.16685C19.2092 6.16685 19.5795 6.18057 20.8548 6.23543C22.0205 6.29028 22.6652 6.48228 23.0765 6.64685C23.6388 6.86628 24.0365 7.12685 24.4617 7.53828C24.8868 7.96343 25.1475 8.36115 25.3532 8.92343C25.5177 9.34857 25.7097 9.97943 25.7645 11.1451C25.8195 12.4069 25.8332 12.7909 25.8332 16C25.8332 19.2092 25.8195 19.5795 25.7645 20.8548C25.7097 22.0205 25.5177 22.6652 25.3532 23.0765C25.1337 23.6388 24.8732 24.0365 24.4617 24.4617C24.0365 24.8868 23.6388 25.1475 23.0765 25.3532C22.6515 25.5177 22.0205 25.7097 20.8548 25.7645C19.5932 25.8195 19.2092 25.8332 16 25.8332C12.7909 25.8332 12.4206 25.8195 11.1451 25.7645C9.97943 25.7097 9.33485 25.5177 8.92343 25.3532C8.36115 25.1337 7.96343 24.8732 7.53828 24.4617C7.11315 24.0365 6.85257 23.6388 6.64685 23.0765C6.48228 22.6515 6.29028 22.0205 6.23543 20.8548C6.18057 19.5932 6.16685 19.2092 6.16685 16C6.16685 12.7909 6.18057 12.4206 6.23543 11.1451C6.29028 9.97943 6.48228 9.33485 6.64685 8.92343C6.86628 8.36115 7.12685 7.96343 7.53828 7.53828C7.96343 7.11315 8.36115 6.85257 8.92343 6.64685C9.34857 6.48228 9.97943 6.29028 11.1451 6.23543C12.4206 6.18057 12.7909 6.16685 16 6.16685Z"
-                fill="white" />
-            </svg>
-            <svg class="h-[24px] w-[24px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_3668_33195)">
+            <a href="">
+              <svg class="fill-white hover:fill-base-gray active:fill-base-red h-[32px] w-[32px]" viewBox="0 0 32 32"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.9995 9.84229C12.5984 9.84229 9.8418 12.5988 9.8418 16C9.8418 19.4012 12.5984 22.1577 15.9995 22.1577C19.4007 22.1577 22.1572 19.4012 22.1572 16C22.1572 12.5988 19.4007 9.84229 15.9995 9.84229ZM15.9995 20.0046C13.7915 20.0046 11.9949 18.208 11.9949 16C11.9949 13.792 13.7915 11.9954 15.9995 11.9954C18.2075 11.9954 20.0041 13.792 20.0041 16C20.0041 18.208 18.2075 20.0046 15.9995 20.0046Z" />
                 <path
-                  d="M9.05727 24V12.7385H6V8.68383H9.05727V5.2206C9.05727 2.49917 10.8632 0 15.0245 0C16.7093 0 17.9551 0.15732 17.9551 0.15732L17.857 3.94371C17.857 3.94371 16.5864 3.93165 15.1999 3.93165C13.6993 3.93165 13.4589 4.60521 13.4589 5.72316V8.68383H17.9763L17.7797 12.7385H13.4589V24H9.05727Z"
-                  fill="white" />
-              </g>
-              <defs>
-                <clipPath id="clip0_3668_33195">
-                  <rect width="24" height="24" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-            <svg class="h-[32px] w-[32px]" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.32919 9.13885C7.86366 9.13885 9.1076 7.89491 9.1076 6.36044C9.1076 4.82597 7.86366 3.58203 6.32919 3.58203C4.79472 3.58203 3.55078 4.82597 3.55078 6.36044C3.55078 7.89491 4.79472 9.13885 6.32919 9.13885Z"
-                fill="white" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M11.731 26.6589V11.2442H16.3253V13.3522H16.39C17.0288 12.142 18.5907 10.8633 20.9208 10.8633C25.7741 10.8633 26.6681 14.0544 26.6681 18.2067V26.6601H21.8796V19.1629C21.8796 17.3763 21.8491 15.0766 19.3893 15.0766C16.8955 15.0766 16.517 17.0246 16.517 19.036V26.6589H11.731ZM8.72529 11.2442H3.93164V26.6589H8.72529V11.2442Z"
-                fill="white" />
-            </svg>
-            <svg class="h-[32px] w-[32px]" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_3668_33200)">
+                  d="M23.8448 9.59576C23.8448 10.3911 23.2002 11.0358 22.4048 11.0358C21.6096 11.0358 20.9648 10.3911 20.9648 9.59576C20.9648 8.80047 21.6096 8.15576 22.4048 8.15576C23.2002 8.15576 23.8448 8.80047 23.8448 9.59576Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16 4C12.736 4 12.3383 4.01372 11.0491 4.06857C9.77372 4.13715 8.896 4.32915 8.14172 4.63085C7.34628 4.93257 6.688 5.344 6.016 6.016C5.344 6.688 4.93257 7.34628 4.63085 8.14172C4.32915 8.896 4.13715 9.77372 4.06857 11.0491C4.01372 12.3383 4 12.736 4 16C4 19.264 4.01372 19.6617 4.06857 20.9508C4.12343 22.2263 4.32915 23.104 4.63085 23.8583C4.93257 24.6537 5.344 25.312 6.016 25.984C6.688 26.656 7.34628 27.0675 8.14172 27.3692C8.90972 27.6708 9.77372 27.8628 11.0491 27.9315C12.3246 27.9863 12.736 28 16 28C19.264 28 19.6617 27.9863 20.9508 27.9315C22.2263 27.8765 23.104 27.6708 23.8583 27.3692C24.6537 27.0675 25.312 26.656 25.984 25.984C26.656 25.312 27.0675 24.6537 27.3692 23.8583C27.6708 23.0903 27.8628 22.2263 27.9315 20.9508C27.9863 19.6755 28 19.264 28 16C28 12.736 27.9863 12.3383 27.9315 11.0491C27.8765 9.77372 27.6708 8.896 27.3692 8.14172C27.0675 7.34628 26.656 6.688 25.984 6.016C25.312 5.344 24.6537 4.93257 23.8583 4.63085C23.0903 4.32915 22.2263 4.13715 20.9508 4.06857C19.6617 4.01372 19.264 4 16 4ZM16 6.16685C19.2092 6.16685 19.5795 6.18057 20.8548 6.23543C22.0205 6.29028 22.6652 6.48228 23.0765 6.64685C23.6388 6.86628 24.0365 7.12685 24.4617 7.53828C24.8868 7.96343 25.1475 8.36115 25.3532 8.92343C25.5177 9.34857 25.7097 9.97943 25.7645 11.1451C25.8195 12.4069 25.8332 12.7909 25.8332 16C25.8332 19.2092 25.8195 19.5795 25.7645 20.8548C25.7097 22.0205 25.5177 22.6652 25.3532 23.0765C25.1337 23.6388 24.8732 24.0365 24.4617 24.4617C24.0365 24.8868 23.6388 25.1475 23.0765 25.3532C22.6515 25.5177 22.0205 25.7097 20.8548 25.7645C19.5932 25.8195 19.2092 25.8332 16 25.8332C12.7909 25.8332 12.4206 25.8195 11.1451 25.7645C9.97943 25.7097 9.33485 25.5177 8.92343 25.3532C8.36115 25.1337 7.96343 24.8732 7.53828 24.4617C7.11315 24.0365 6.85257 23.6388 6.64685 23.0765C6.48228 22.6515 6.29028 22.0205 6.23543 20.8548C6.18057 19.5932 6.16685 19.2092 6.16685 16C6.16685 12.7909 6.18057 12.4206 6.23543 11.1451C6.29028 9.97943 6.48228 9.33485 6.64685 8.92343C6.86628 8.36115 7.12685 7.96343 7.53828 7.53828C7.96343 7.11315 8.36115 6.85257 8.92343 6.64685C9.34857 6.48228 9.97943 6.29028 11.1451 6.23543C12.4206 6.18057 12.7909 6.16685 16 6.16685Z" />
+              </svg>
+            </a>
+            <a href="">
+              <svg class="fill-white hover:fill-base-gray active:fill-base-red h-[24px] w-[24px]" viewBox="0 0 24 24"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3668_33195)">
+                  <path
+                    d="M9.05727 24V12.7385H6V8.68383H9.05727V5.2206C9.05727 2.49917 10.8632 0 15.0245 0C16.7093 0 17.9551 0.15732 17.9551 0.15732L17.857 3.94371C17.857 3.94371 16.5864 3.93165 15.1999 3.93165C13.6993 3.93165 13.4589 4.60521 13.4589 5.72316V8.68383H17.9763L17.7797 12.7385H13.4589V24H9.05727Z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3668_33195">
+                    <rect width="24" height="24" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="fill-white hover:fill-base-gray active:fill-base-red h-[32px] w-[32px]" viewBox="0 0 32 32"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M24.7435 7.51706C21.3135 7.53356 18.7065 9.80205 17.7305 13.4171C16.093 10.8971 14.8155 8.01455 14.083 5.58105L10.473 5.59805L10.523 15.1671C10.5251 15.6176 10.4385 16.0641 10.2681 16.4811C10.0977 16.8981 9.84676 17.2775 9.52972 17.5975C9.21268 17.9176 8.8357 18.1721 8.42031 18.3465C8.00492 18.5208 7.55925 18.6117 7.10875 18.6138C6.19892 18.6181 5.32465 18.2608 4.67826 17.6205C4.3582 17.3035 4.10372 16.9265 3.92935 16.5111C3.75498 16.0957 3.66413 15.6501 3.662 15.1996L3.612 5.63055L0 5.64805L0.05 15.2176C0.064 19.1886 3.237 22.3351 7.12 22.3151C11.003 22.2951 14.1475 19.1221 14.13 15.1501L14.1225 13.5251C14.8505 14.9651 15.7605 16.4951 16.7605 17.8451L14.553 28.4171L18.253 28.4001L19.843 20.7191C21.291 21.6156 22.918 22.1491 24.813 22.1401C28.785 22.1226 32.02 18.8586 32 14.7051C31.982 10.7321 28.716 7.49855 24.744 7.51655L24.7435 7.51706ZM24.795 18.4401C23.351 18.4466 21.904 17.8221 20.726 16.8336L21.08 15.3836V15.2926C21.344 13.7556 22.143 11.1346 24.851 11.1226C25.8079 11.1208 26.7266 11.4978 27.4065 12.1712C28.0863 12.8446 28.4721 13.7597 28.4795 14.7166C28.398 16.7931 26.691 18.4266 24.7945 18.4351L24.795 18.4401Z"
-                  fill="white" />
-              </g>
-              <defs>
-                <clipPath id="clip0_3668_33200">
-                  <rect width="32" height="32" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+                  d="M6.32919 9.13885C7.86366 9.13885 9.1076 7.89491 9.1076 6.36044C9.1076 4.82597 7.86366 3.58203 6.32919 3.58203C4.79472 3.58203 3.55078 4.82597 3.55078 6.36044C3.55078 7.89491 4.79472 9.13885 6.32919 9.13885Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.731 26.6589V11.2442H16.3253V13.3522H16.39C17.0288 12.142 18.5907 10.8633 20.9208 10.8633C25.7741 10.8633 26.6681 14.0544 26.6681 18.2067V26.6601H21.8796V19.1629C21.8796 17.3763 21.8491 15.0766 19.3893 15.0766C16.8955 15.0766 16.517 17.0246 16.517 19.036V26.6589H11.731ZM8.72529 11.2442H3.93164V26.6589H8.72529V11.2442Z" />
+              </svg>
+            </a>
+            <a href="">
+              <svg class="fill-white hover:fill-base-gray active:fill-base-red h-[32px] w-[32px]" viewBox="0 0 32 32"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3668_33200)">
+                  <path
+                    d="M24.7435 7.51706C21.3135 7.53356 18.7065 9.80205 17.7305 13.4171C16.093 10.8971 14.8155 8.01455 14.083 5.58105L10.473 5.59805L10.523 15.1671C10.5251 15.6176 10.4385 16.0641 10.2681 16.4811C10.0977 16.8981 9.84676 17.2775 9.52972 17.5975C9.21268 17.9176 8.8357 18.1721 8.42031 18.3465C8.00492 18.5208 7.55925 18.6117 7.10875 18.6138C6.19892 18.6181 5.32465 18.2608 4.67826 17.6205C4.3582 17.3035 4.10372 16.9265 3.92935 16.5111C3.75498 16.0957 3.66413 15.6501 3.662 15.1996L3.612 5.63055L0 5.64805L0.05 15.2176C0.064 19.1886 3.237 22.3351 7.12 22.3151C11.003 22.2951 14.1475 19.1221 14.13 15.1501L14.1225 13.5251C14.8505 14.9651 15.7605 16.4951 16.7605 17.8451L14.553 28.4171L18.253 28.4001L19.843 20.7191C21.291 21.6156 22.918 22.1491 24.813 22.1401C28.785 22.1226 32.02 18.8586 32 14.7051C31.982 10.7321 28.716 7.49855 24.744 7.51655L24.7435 7.51706ZM24.795 18.4401C23.351 18.4466 21.904 17.8221 20.726 16.8336L21.08 15.3836V15.2926C21.344 13.7556 22.143 11.1346 24.851 11.1226C25.8079 11.1208 26.7266 11.4978 27.4065 12.1712C28.0863 12.8446 28.4721 13.7597 28.4795 14.7166C28.398 16.7931 26.691 18.4266 24.7945 18.4351L24.795 18.4401Z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3668_33200">
+                    <rect width="32" height="32" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="flex py-2 items-center xl:justify-end">
+      <div class="flex items-center py-2 xl:justify-end">
         <!-- pencil -->
         <div id="contact-details" class="md:flex md:items-center">
-          <div id="lets-talk-red" class="hidden pr-5 text-base font-medium uppercase leading-1.3 text-base-red">
-            Let's talk
-          </div>
-          <div
-            class="lets-talk flex h-10 w-10 items-center justify-center rounded-full bg-base-red md:h-auto md:w-auto md:gap-0 xl:py-3 xl:px-7">
-            <div id="lets-talk" class="hidden text-base font-medium uppercase leading-1.3 md:block md:pr-4">
+          <button class="flex items-center justify-center rounded-full bg-base-red md:px-3">
+            <div id="lets-talk" class="md:pl-4 hidden text-base font-medium uppercase leading-1.3 md:block">
               Let's talk
             </div>
-            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M1.43416 9.93883L0.522806 13.5585C0.491368 13.6908 0.492445 13.8279 0.525961 13.9598C0.559476 14.0917 0.624582 14.215 0.716523 14.3208C0.808464 14.4265 0.924918 14.5121 1.05738 14.5711C1.18983 14.6302 1.33495 14.6612 1.48213 14.662C1.5507 14.6684 1.6198 14.6684 1.68838 14.662L5.64557 13.8233L13.2434 6.8577L9.00319 2.96436L1.43416 9.93883Z"
-                fill="white" />
-              <path
-                d="M15.632 3.37039L12.802 0.765995C12.616 0.595635 12.3642 0.5 12.1017 0.5C11.8393 0.5 11.5875 0.595635 11.4014 0.765995L9.82812 2.21386L14.0635 6.11162L15.6368 4.66375C15.7289 4.57859 15.8018 4.47756 15.8514 4.36644C15.901 4.25532 15.9263 4.13628 15.9258 4.01615C15.9254 3.89602 15.8992 3.77715 15.8488 3.66634C15.7984 3.55554 15.7247 3.45496 15.632 3.37039Z"
-                fill="white" />
-            </svg>
-          </div>
+            <div class="rounded-full bg-base-red p-3 md:p-4">
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.43416 9.93883L0.522806 13.5585C0.491368 13.6908 0.492445 13.8279 0.525961 13.9598C0.559476 14.0917 0.624582 14.215 0.716523 14.3208C0.808464 14.4265 0.924918 14.5121 1.05738 14.5711C1.18983 14.6302 1.33495 14.6612 1.48213 14.662C1.5507 14.6684 1.6198 14.6684 1.68838 14.662L5.64557 13.8233L13.2434 6.8577L9.00319 2.96436L1.43416 9.93883Z"
+                  fill="white" />
+                <path
+                  d="M15.632 3.37039L12.802 0.765995C12.616 0.595635 12.3642 0.5 12.1017 0.5C11.8393 0.5 11.5875 0.595635 11.4014 0.765995L9.82812 2.21386L14.0635 6.11162L15.6368 4.66375C15.7289 4.57859 15.8018 4.47756 15.8514 4.36644C15.901 4.25532 15.9263 4.13628 15.9258 4.01615C15.9254 3.89602 15.8992 3.77715 15.8488 3.66634C15.7984 3.55554 15.7247 3.45496 15.632 3.37039Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </button>
         </div>
         <div class="hidden xl:block xl:pl-9">
           <a href="#" id="switch-lang"
@@ -348,25 +342,24 @@
         <!-- burger -->
         <div class="pl-8 md:pl-9 xl:pl-0">
           <!-- Burger Start -->
-          <div id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl text-white xl:hidden">
+          <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl text-white xl:hidden">
             <!-- &#9776; -->
             <div
-              class="absolute top-4 -mt-0.5 h-1 w-8 bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-y-3 before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:translate-y-3 after:bg-white after:transition-all after:duration-500 after:content-['']">
+              class="absolute top-4 -mt-0.5 h-1 w-8 bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:bg-white after:transition-all after:duration-500 after:content-['']">
             </div>
-          </div>
+          </button>
         </div>
         <!-- Burger End -->
       </div>
     </div>
     <section id="contact-form"
-      class="fixed top-0 right-[200%] z-30 min-h-screen min-w-full overflow-y-scroll bg-base-black text-white xl:flex xl:z-50">
-      <div class="hidden xl:block xl:min-h-screen xl:bg-base-red xl:w-full xl:flex-1">
-      </div>
-      <div class="container mx-auto md:px-1 xl:max-w-[1081px] pt-8 md:pt-6">
+      class="fixed top-0 right-[200%] z-30 min-h-screen min-w-full overflow-y-scroll bg-base-black text-white xl:z-50 xl:flex">
+      <div class="hidden xl:block xl:min-h-screen xl:w-full xl:flex-1 xl:bg-base-red"></div>
+      <div class="container mx-auto pt-8 md:px-1 md:pt-6 xl:max-w-[1081px]">
         <div class="z-1 relative">
           <!-- Button close -->
           <div id="button-close"
-            class="top-0 cursor-pointer border border-base-white rounded-full py-2 px-4 absolute right-0 z-30 xl:right-14 xl:top-5 xl:py-2 xl:px-6">
+            class="absolute top-0 right-0 z-30 cursor-pointer rounded-full border border-base-white py-2 px-4 xl:right-14 xl:top-5 xl:py-2 xl:px-6">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.84766 0.814453L23.1853 21.1521L21.1516 23.1859L0.813887 2.84822L2.84766 0.814453Z"
                 fill="white" />
@@ -385,50 +378,56 @@
               Låt oss diskutera projektet
             </div>
             <div
-              class="pt-7 text-sm font-medium leading-1.1 tracking-[1px] text-base-gray md:text-base md:pt-5 xl:pt-8 xl:text-xl">
+              class="pt-7 text-sm font-medium leading-1.1 tracking-[1px] text-base-gray md:pt-5 md:text-base xl:pt-8 xl:text-xl">
               Get a detailed and clear commercial proposal
             </div>
           </div>
           <!-- Chekbox -->
           <div id="checkbox" class="checkbox pt-9">
-            <h3 class="font-medium text-xs leading-1.1 tracking-[1px] md:pt-3 xl:text-sm">I am interested in</h3>
+            <h3 class="text-xs font-medium leading-1.1 tracking-[1px] md:pt-3 xl:text-sm">
+              I am interested in
+            </h3>
 
             <div
-              class="pt-5 flex flex-wrap text-xs gap-3 font-medium leading-1.3 uppercase md:text-sm md:pt-6 md:gap-2 xl:pt-4 xl:gap-2">
-
+              class="flex flex-wrap gap-3 pt-5 text-xs font-medium uppercase leading-1.3 md:gap-2 md:pt-6 md:text-sm xl:gap-2 xl:pt-4">
               <label class="cursor-pointer text-base-white">
-                <input class="peer absolute w-0 h-0 opacity-0" type="checkbox">
+                <input class="peer absolute h-0 w-0 opacity-0" type="checkbox" />
                 <div
-                  class="select-none peer-checked:bg-base-white peer-checked:text-base-black rounded-full border px-[15px] py-[6px] border-base-white md:px-4 md:py-2 xl:px-5">
-                  BRANDING</div>
+                  class="select-none rounded-full border border-base-white px-[15px] py-[6px] peer-checked:bg-base-white peer-checked:text-base-black md:px-4 md:py-2 xl:px-5">
+                  BRANDING
+                </div>
               </label>
 
               <label class="cursor-pointer text-base-white">
-                <input class="peer absolute w-0 h-0 opacity-0" type="checkbox">
+                <input class="peer absolute h-0 w-0 opacity-0" type="checkbox" />
                 <div
-                  class="select-none peer-checked:bg-base-white peer-checked:text-base-black rounded-full border px-2 py-[6px] border-base-white md:px-4 md:py-2 xl:px-4">
-                  DIGITAL MARKETING</div>
+                  class="select-none rounded-full border border-base-white px-2 py-[6px] peer-checked:bg-base-white peer-checked:text-base-black md:px-4 md:py-2 xl:px-4">
+                  DIGITAL MARKETING
+                </div>
               </label>
 
               <label class="cursor-pointer text-base-white">
-                <input class="peer absolute w-0 h-0 opacity-0" type="checkbox">
+                <input class="peer absolute h-0 w-0 opacity-0" type="checkbox" />
                 <div
-                  class="select-none peer-checked:bg-base-white peer-checked:text-base-black rounded-full border px-2 py-[5px] border-base-white md:px-4 md:py-2 xl:px-4">
-                  WEB design</div>
+                  class="select-none rounded-full border border-base-white px-2 py-[5px] peer-checked:bg-base-white peer-checked:text-base-black md:px-4 md:py-2 xl:px-4">
+                  WEB design
+                </div>
               </label>
 
               <label class="cursor-pointer text-base-white">
-                <input class="peer absolute w-0 h-0 opacity-0" type="checkbox">
+                <input class="peer absolute h-0 w-0 opacity-0" type="checkbox" />
                 <div
-                  class="select-none peer-checked:bg-base-white peer-checked:text-base-black rounded-full border px-3 py-[5px] border-base-white md:px-4 md:py-2 xl:px-4">
-                  SMM</div>
+                  class="select-none rounded-full border border-base-white px-3 py-[5px] peer-checked:bg-base-white peer-checked:text-base-black md:px-4 md:py-2 xl:px-4">
+                  SMM
+                </div>
               </label>
 
               <label class="cursor-pointer text-base-white">
-                <input class="peer absolute w-0 h-0 opacity-0" type="checkbox">
+                <input class="peer absolute h-0 w-0 opacity-0" type="checkbox" />
                 <div
-                  class="select-none peer-checked:bg-base-white peer-checked:text-base-black rounded-full border px-[14px] py-[5px] border-base-white md:px-4 md:py-2 xl:px-4">
-                  SEO</div>
+                  class="select-none rounded-full border border-base-white px-[14px] py-[5px] peer-checked:bg-base-white peer-checked:text-base-black md:px-4 md:py-2 xl:px-4">
+                  SEO
+                </div>
               </label>
             </div>
           </div>
@@ -476,22 +475,25 @@
             <div class="justify-between md:flex md:items-center md:pb-7 md:pt-10 xl:pt-10">
               <div
                 class="pb-6 pt-6 text-xs font-medium leading-[1.4] text-base-gray md:w-1/2 md:pt-0 md:pb-0 md:text-sm md:font-normal">
-                Genom att klicka på knappen "Skicka" samtycker du till behandling av personuppgifter.
+                Genom att klicka på knappen "Skicka" samtycker du till
+                behandling av personuppgifter.
                 <a href="#" class="leading-[1.3] text-[#6355FF] underline">Fler detaljer</a>
               </div>
-              <button
-                class="flex w-full items-center justify-center rounded-full bg-base-red py-5 text-base-white md:w-[290px] md:py-4 xl:m-0">
-                <div class="pr-2 text-base font-bold uppercase leading-[21px] tracking-[0.16px] md:font-normal">
-                  Skicka
-                </div>
-                <div class="">
-                  <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M11.6083 4.87452L11.6083 14.594L14 14.594L14 0.499999L0.84559 0.5L0.84559 3.06255L9.91709 3.06255L1.82814e-06 13.688L1.69118 15.5L11.6083 4.87452Z"
-                      fill="white" />
-                  </svg>
-                </div>
-              </button>
+              <a href="#">
+                <button
+                  class="flex w-full items-center justify-center rounded-full bg-base-red py-5 text-base-white md:w-[290px] md:py-4 xl:m-0">
+                  <div class="pr-2 text-base font-bold uppercase leading-[21px] tracking-[0.16px] md:font-normal">
+                    Skicka
+                  </div>
+                  <div class="">
+                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.6083 4.87452L11.6083 14.594L14 14.594L14 0.499999L0.84559 0.5L0.84559 3.06255L9.91709 3.06255L1.82814e-06 13.688L1.69118 15.5L11.6083 4.87452Z"
+                        fill="white" />
+                    </svg>
+                  </div>
+                </button>
+              </a>
             </div>
           </div>
         </form>
@@ -500,7 +502,7 @@
   </header>
 
   <main>
-    <section class="bg-base-black pt-7 pb-16 xl:py-28 relative overflow-hidden">
+    <section class="relative overflow-hidden bg-base-black pt-7 pb-16 xl:py-28">
       <div class="container">
         <div
           class="relative z-10 pt-5 text-center text-4xl font-bold uppercase leading-1.2 md:text-6xl md:leading-1.1 xl:pt-1 xl:text-[120px] xl:leading-1.0">
@@ -518,7 +520,7 @@
       </div>
       <!-- Red Spot -->
       <div
-        class="hidden radial-red absolute top-0 right-0 translate-x-1/3 z-5 h-[212px] w-[212px] blur-[45px] md:top-[110px] md:-right-40 md:h-[322px] md:w-[322px] md:blur-[60px] xl:h-[591px] xl:w-[591px]">
+        class="z-5 absolute top-0 right-0 h-[212px] w-[212px] translate-x-1/3 bg-gradient-to-l from-base-red to-base-black blur-[45px] md:top-[110px] md:-right-40 md:h-[322px] md:w-[322px] md:blur-[60px] xl:h-[591px] xl:w-[591px]">
       </div>
     </section>
 
@@ -565,15 +567,15 @@
 
     <section class="py-16">
       <div class="container">
-        <div class="grid grid-cols-12 gap-5 md:pt-3 md:gap-6 xl:gap-0">
+        <div class="grid grid-cols-12 gap-5 md:gap-6 md:pt-3 xl:gap-0">
           <!-- Services Titile -->
           <div
-            class="pt-2 pb-7 col-span-12 border-b border-middle-gray text-4xl font-bold uppercase leading-1.1 text-black md:text-[45px] xl:pb-11 xl:text-[90px]">
+            class="col-span-12 border-b border-middle-gray pt-2 pb-7 text-4xl font-bold uppercase leading-1.1 text-black md:text-[45px] xl:pb-11 xl:text-[90px]">
             Our Cases
           </div>
           <!-- Services Description -->
           <div
-            class="pt-2 col-span-12 text-base font-medium leading-1.4 text-base-black md:pb-3 xl:col-span-3 xl:row-span-11 xl:col-start-1 xl:row-start-2 xl:border-r xl:border-middle-gray xl:pr-10 xl:pt-[52px]">
+            class="col-span-12 pt-2 text-base font-medium leading-1.4 text-base-black md:pb-3 xl:col-span-3 xl:col-start-1 xl:row-start-2 xl:border-r xl:border-middle-gray xl:pr-10 xl:pt-[3.25rem]">
             Whether you need to create a website, develop a UX UI design,
             conduct SEO optimization, develop a marketing strategy for your
             business, set up Google ads, and Facebook ads, or get more
@@ -583,7 +585,7 @@
 
           <!-- //Services Article 1 -->
           <div
-            class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-start-4 xl:col-span-9 xl:ml-11 xl:border-none xl:pt-0">
+            class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:row-span-2 xl:col-span-9 xl:col-start-4 xl:ml-11 xl:border-none xl:pt-0">
             <!-- image -->
             <div class="z-1 relative md:col-start-2 xl:py-[3.25rem] xl:pl-[3rem]">
               <div
@@ -610,29 +612,30 @@
                   </div>
                 </div>
               </div>
-              <picture class="col-span-12 md:z-1">
+              <picture class="md:z-1 col-span-12">
                 <source media="(max-width: 767px)" srcset="./images/services/services_1_360.png" />
                 <source media="(max-width: 1279px)" srcset="./images/services/services_1_820.png" />
                 <source media="(min-width: 1279px)" srcset="./images/services/services_1_1920.png" />
-                <img class="object-cover w-full" src="./images/services/services_1_1920.png"
+                <img class="w-full object-cover" src="./images/services/services_1_1920.png"
                   alt="Gambling vs. Marketing" />
               </picture>
             </div>
             <!-- article -->
             <div
-              class="pt-7 pb-3 md:row-start-1 md:pr-9 md:flex md:flex-col md:pb-0 md:justify-between md:col-start-1 md:pt-0 xl:border-r xl:border-b-0 xl:border-middle-gray xl:py-[3.25rem] xl:pr-[3rem]">
-              <div
-                class="flex items-start justify-between text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
-                <div class="">
-                  Gambling vs. Marketing: when advertising boosts betting
-                  revenue
-                </div>
-                <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
-                    fill="#171717" />
-                </svg>
+              class="pt-7 pb-3 md:col-start-1 md:row-start-1 md:flex md:flex-col md:justify-between md:pr-9 md:pb-0 md:pt-0 xl:border-r xl:border-b-0 xl:border-middle-gray xl:py-[3.25rem] xl:pr-[3rem]">
+              <div class="text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
+                <a href="#" class="flex items-start justify-between hover:underline hover:text-base-red ">
+                  <div class="">
+                    Gambling vs. Marketing: when advertising boosts betting
+                    revenue
+                  </div>
+                  <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
+                      fill="#171717" />
+                  </svg>
+                </a>
               </div>
               <div
                 class="pt-7 text-sm font-medium leading-1.4 text-base-black md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
@@ -646,11 +649,12 @@
               </div>
             </div>
           </div>
+          <hr class="hidden xl:col-span-9 xl:col-start-4 xl:block xl:h-px xl:w-full xl:bg-middle-gray" />
           <!-- //Services Article 2 -->
           <div
-            class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-start-4 xl:col-span-9 xl:ml-11 xl:border-none xl:pt-0">
+            class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-span-9 xl:col-start-4 xl:ml-11 xl:border-none xl:pt-0">
             <!-- image -->
-            <div class="z-1 relative md:col-start-1 xl:py-[3.25rem] xl:pr-[3rem] xl:border-r xl:border-middle-gray ">
+            <div class="z-1 relative md:col-start-1 xl:border-r xl:border-middle-gray xl:py-[3.25rem] xl:pr-[3rem]">
               <div
                 class="z-1 absolute top-5 left-5 w-2/3 text-white md:top-6 md:left-8 md:w-52 xl:top-[76px] xl:left-[74px] xl:z-0 xl:w-[290px]">
                 <div class="flex items-center gap-4">
@@ -675,29 +679,31 @@
                   </div>
                 </div>
               </div>
-              <picture class="col-span-12 md:z-1">
+              <picture class="md:z-1 col-span-12">
                 <source media="(max-width: 767px)" srcset="./images/services/services_1_360.png" />
                 <source media="(max-width: 1279px)" srcset="./images/services/services_1_820.png" />
                 <source media="(min-width: 1279px)" srcset="./images/services/services_2_1920.png" />
-                <img class="object-cover w-full" src="./images/services/services_1_1920.png"
+                <img class="w-full object-cover" src="./images/services/services_1_1920.png"
                   alt="Gambling vs. Marketing" />
               </picture>
             </div>
             <!-- article -->
             <div
-              class="pt-7 pb-3 md:pl-9 md:flex md:flex-col md:pb-0 md:justify-between md:pt-0 xl:border-r xl:border-none xl:border-middle-gray xl:py-[3.25rem] xl:pl-[3rem]">
-              <div
-                class="flex items-start justify-between text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
-                <div class="">
-                  Gambling vs. Marketing: when advertising boosts betting
-                  revenue
-                </div>
-                <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
-                    fill="#171717" />
-                </svg>
+              class="pt-7 pb-3 md:flex md:flex-col md:justify-between md:pl-9 md:pb-0 md:pt-0 xl:border-r xl:border-none xl:border-middle-gray xl:py-[3.25rem] xl:pl-[3rem]">
+              <div class="text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10
+                xl:text-[32px]">
+                <a href="#" class="flex items-start justify-between">
+                  <div class="">
+                    Gambling vs. Marketing: when advertising boosts betting
+                    revenue
+                  </div>
+                  <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
+                      fill="#171717" />
+                  </svg>
+                </a>
               </div>
               <div
                 class="pt-7 text-sm font-medium leading-1.4 text-base-black md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
@@ -711,9 +717,10 @@
               </div>
             </div>
           </div>
+          <hr class="hidden xl:col-span-9 xl:col-start-4 xl:block xl:h-px xl:w-full xl:bg-middle-gray" />
           <!-- //Services Article 3 -->
           <div
-            class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-start-4 xl:col-span-9 xl:ml-11 xl:border-t-0 xl:pt-0">
+            class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-span-9 xl:col-start-4 xl:ml-11 xl:border-t-0 xl:pt-0">
             <!-- image -->
             <div class="z-1 relative md:col-start-2 xl:py-[3.25rem] xl:pl-[3rem]">
               <div
@@ -740,29 +747,30 @@
                   </div>
                 </div>
               </div>
-              <picture class="col-span-12 md:z-1">
+              <picture class="md:z-1 col-span-12">
                 <source media="(max-width: 767px)" srcset="./images/services/services_3_360.png" />
                 <source media="(max-width: 1279px)" srcset="./images/services/services_1_820.png" />
                 <source media="(min-width: 1279px)" srcset="./images/services/services_3_1920.png" />
-                <img class="object-cover w-full" src="./images/services/services_1_1920.png"
+                <img class="w-full object-cover" src="./images/services/services_1_1920.png"
                   alt="Gambling vs. Marketing" />
               </picture>
             </div>
             <!-- article -->
             <div
-              class="pt-7 pb-3 md:row-start-1 md:pr-9 md:flex md:flex-col md:pb-0 md:justify-between md:col-start-1 md:pt-0 xl:border-r xl:border-b-0 xl:border-middle-gray xl:py-[3.25rem] xl:pr-[3rem]">
-              <div
-                class="flex items-start justify-between text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
-                <div class="">
-                  Gambling vs. Marketing: when advertising boosts betting
-                  revenue
-                </div>
-                <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
-                    fill="#171717" />
-                </svg>
+              class="pt-7 pb-3 md:col-start-1 md:row-start-1 md:flex md:flex-col md:justify-between md:pr-9 md:pb-0 md:pt-0 xl:border-r xl:border-b-0 xl:border-middle-gray xl:py-[3.25rem] xl:pr-[3rem]">
+              <div class="text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
+                <a href="#" class="flex items-start justify-between">
+                  <div class="">
+                    Gambling vs. Marketing: when advertising boosts betting
+                    revenue
+                  </div>
+                  <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
+                      fill="#171717" />
+                  </svg>
+                </a>
               </div>
               <div
                 class="pt-7 text-sm font-medium leading-1.4 text-base-black md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
@@ -776,11 +784,12 @@
               </div>
             </div>
           </div>
+          <hr class="hidden xl:col-span-9 xl:col-start-4 xl:block xl:h-px xl:w-full xl:bg-middle-gray" />
           <!-- //Services Article 4 -->
           <div
-            class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-start-4 xl:col-span-9 xl:ml-11 xl:border-none xl:pt-0">
+            class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-span-9 xl:col-start-4 xl:ml-11 xl:border-none xl:pt-0">
             <!-- image -->
-            <div class="z-1 relative md:col-start-1 xl:py-[3.25rem] xl:pr-[3rem] xl:border-r xl:border-middle-gray">
+            <div class="z-1 relative md:col-start-1 xl:border-r xl:border-middle-gray xl:py-[3.25rem] xl:pr-[3rem]">
               <div
                 class="z-1 absolute top-5 left-5 w-2/3 text-white md:top-6 md:left-8 md:w-52 xl:top-[76px] xl:left-[74px] xl:z-0 xl:w-[290px]">
                 <div class="flex items-center gap-4">
@@ -805,29 +814,31 @@
                   </div>
                 </div>
               </div>
-              <picture class="col-span-12 md:z-1">
+              <picture class="md:z-1 col-span-12">
                 <source media="(max-width: 767px)" srcset="./images/services/services_1_360.png" />
                 <source media="(max-width: 1279px)" srcset="./images/services/services_1_820.png" />
                 <source media="(min-width: 1279px)" srcset="./images/services/services_4_1920.png" />
-                <img class="object-cover w-full" src="./images/services/services_1_1920.png"
+                <img class="w-full object-cover" src="./images/services/services_1_1920.png"
                   alt="Gambling vs. Marketing" />
               </picture>
             </div>
             <!-- article -->
             <div
-              class="pt-7 pb-3 md:pl-9 md:flex md:flex-col md:pb-0 md:justify-between md:pt-0 xl:border-r xl:border-none xl:py-[3.25rem] xl:pl-[3rem]">
-              <div
-                class="flex items-start justify-between text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
-                <div class="">
-                  Gambling vs. Marketing: when advertising boosts betting
-                  revenue
-                </div>
-                <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
-                    fill="#171717" />
-                </svg>
+              class="pt-7 pb-3 md:flex md:flex-col md:justify-between md:pl-9 md:pb-0 md:pt-0 xl:border-r xl:border-none xl:py-[3.25rem] xl:pl-[3rem]">
+              <div class="text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10
+                xl:text-[32px]">
+                <a href="#" class="flex items-start justify-between">
+                  <div class="">
+                    Gambling vs. Marketing: when advertising boosts betting
+                    revenue
+                  </div>
+                  <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
+                      fill="#171717" />
+                  </svg>
+                </a>
               </div>
               <div
                 class="pt-7 text-sm font-medium leading-1.4 text-base-black md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
@@ -841,8 +852,9 @@
               </div>
             </div>
           </div>
+          <hr class="hidden xl:col-span-9 xl:col-start-4 xl:block xl:h-px xl:w-full xl:bg-middle-gray" />
           <!-- //Services Article 5 -->
-          <div class="hidden xl:grid xl:grid-cols-2 xl:col-start-4 xl:col-span-9 xl:ml-11">
+          <div class="hidden xl:col-span-9 xl:col-start-4 xl:ml-11 xl:grid xl:grid-cols-2">
             <!-- image -->
             <div class="z-1 relative md:col-start-2 xl:py-[3.25rem] xl:pl-[3rem]">
               <div
@@ -869,29 +881,30 @@
                   </div>
                 </div>
               </div>
-              <picture class="col-span-12 md:z-1">
+              <picture class="md:z-1 col-span-12">
                 <source media="(max-width: 767px)" srcset="./images/services/services_3_360.png" />
                 <source media="(max-width: 1279px)" srcset="./images/services/services_1_820.png" />
                 <source media="(min-width: 1279px)" srcset="./images/services/services_5_1920.png" />
-                <img class="object-cover w-full" src="./images/services/services_1_1920.png"
-                  alt="Gambling vs. Marketing" />
+                <img class="w-full object-cover" src="./images/services/services_1_1920.png" alt="Gambling
+                   vs. Marketing" />
               </picture>
             </div>
             <!-- article -->
             <div
-              class="pt-7 pb-3 md:row-start-1 md:pr-9 md:flex md:flex-col md:pb-0 md:justify-between md:col-start-1 md:pt-0 xl:border-r xl:border-b-0 xl:border-middle-gray xl:py-[3.25rem] xl:pr-[3rem]">
-              <div
-                class="flex items-start justify-between text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
-                <div class="">
-                  Gambling vs. Marketing: when advertising boosts betting
-                  revenue
-                </div>
-                <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
-                    fill="#171717" />
-                </svg>
+              class="pt-7 pb-3 md:col-start-1 md:row-start-1 md:flex md:flex-col md:justify-between md:pr-9 md:pb-0 md:pt-0 xl:border-r xl:border-b-0 xl:border-middle-gray xl:py-[3.25rem] xl:pr-[3rem]">
+              <div class="text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
+                <a href="#" class="flex items-start justify-between">
+                  <div class="">
+                    Gambling vs. Marketing: when advertising boosts betting
+                    revenue
+                  </div>
+                  <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
+                      fill="#171717" />
+                  </svg>
+                </a>
               </div>
               <div
                 class="pt-7 text-sm font-medium leading-1.4 text-base-black md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
@@ -905,10 +918,11 @@
               </div>
             </div>
           </div>
+          <hr class="hidden xl:col-span-9 xl:col-start-4 xl:block xl:h-px xl:w-full xl:bg-middle-gray" />
           <!-- //Services Article 6 -->
-          <div class="hidden xl:grid xl:grid-cols-2 xl:col-start-4 xl:col-span-9 xl:ml-11">
+          <div class="hidden xl:col-span-9 xl:col-start-4 xl:ml-11 xl:grid xl:grid-cols-2">
             <!-- image -->
-            <div class="z-1 relative md:col-start-1 xl:py-[3.25rem] xl:pr-[3rem] xl:border-r xl:border-middle-gray">
+            <div class="z-1 relative md:col-start-1 xl:border-r xl:border-middle-gray xl:py-[3.25rem] xl:pr-[3rem]">
               <div
                 class="z-1 absolute top-5 left-5 w-2/3 text-white md:top-6 md:left-8 md:w-52 xl:top-[76px] xl:left-[74px] xl:z-0 xl:w-[290px]">
                 <div class="flex items-center gap-4">
@@ -933,29 +947,30 @@
                   </div>
                 </div>
               </div>
-              <picture class="col-span-12 md:z-1">
+              <picture class="md:z-1 col-span-12">
                 <source media="(max-width: 767px)" srcset="./images/services/services_1_360.png" />
                 <source media="(max-width: 1279px)" srcset="./images/services/services_1_820.png" />
                 <source media="(min-width: 1279px)" srcset="./images/services/services_1_1920.png" />
-                <img class="object-cover w-full" src="./images/services/services_1_1920.png"
+                <img class="w-full object-cover" src="./images/services/services_1_1920.png"
                   alt="Gambling vs. Marketing" />
               </picture>
             </div>
             <!-- article -->
             <div
-              class="pt-7 pb-3 md:pl-9 md:flex md:flex-col md:pb-0 md:justify-between md:pt-0 xl:py-[3.25rem] xl:pl-[3rem]">
-              <div
-                class="flex items-start justify-between text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
-                <div class="">
-                  Gambling vs. Marketing: when advertising boosts betting
-                  revenue
-                </div>
-                <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
-                    fill="#171717" />
-                </svg>
+              class="pt-7 pb-3 md:flex md:flex-col md:justify-between md:pl-9 md:pb-0 md:pt-0 xl:py-[3.25rem] xl:pl-[3rem]">
+              <div class="text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
+                <a href="#" class="flex items-start justify-between">
+                  <div class="">
+                    Gambling vs. Marketing: when advertising boosts betting
+                    revenue
+                  </div>
+                  <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
+                      fill="#171717" />
+                  </svg>
+                </a>
               </div>
               <div
                 class="pt-7 text-sm font-medium leading-1.4 text-base-black md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
@@ -970,18 +985,21 @@
             </div>
           </div>
 
-          <div class="col-span-12 xl:col-start-1 xl:row-start-2 xl:col-span-3">
+          <div
+            class="col-span-12 xl:col-span-3 xl:col-start-1 xl:row-start-3 xl:row-span-11 xl:row-span-12 xl:border-r xl:border-middle-gray">
             <div
-              class="mx-auto pt-4 md:w-[357px] md:pt-7 xl:w-full xl:pr-10 xl:relative xl:-bottom-[13.75rem] xl:left-0 xl:m-0 xl:pt-0">
-              <button
-                class="flex w-full items-center justify-center gap-4 rounded-full bg-base-red py-4 text-base font-bold uppercase leading-24 md:py-5 md:leading-1.2">
-                All Cases
-                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M11.6083 4.37452L11.6083 14.094L14 14.094L14 -9.53674e-07L0.84559 -3.78677e-07L0.84559 2.56255L9.91709 2.56255L1.82814e-06 13.188L1.69118 15L11.6083 4.37452Z"
-                    fill="white" />
-                </svg>
-              </button>
+              class="mx-auto pt-4 md:w-[357px] md:pt-7 xl:relative xl:bottom-0 xl:left-0 xl:m-0 xl:w-full xl:pr-10 xl:pt-0">
+              <a href="#">
+                <button
+                  class="flex w-full items-center justify-center gap-4 rounded-full bg-base-red hover:bg-red-600 py-4 text-base font-bold uppercase leading-24 md:py-5 md:leading-1.2">
+                  All Cases
+                  <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.6083 4.37452L11.6083 14.094L14 14.094L14 -9.53674e-07L0.84559 -3.78677e-07L0.84559 2.56255L9.91709 2.56255L1.82814e-06 13.188L1.69118 15L11.6083 4.37452Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -1035,7 +1053,7 @@
                     </svg>
                   </div>
                   <div
-                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] text-base-black md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pr-7 xl:block xl:pt-14 xl:pr-12 xl:leading-1.5">
+                    class="body-article overflow-hidden text-base font-medium leading-[1.4] text-base-black md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pr-7 xl:block xl:pt-14 xl:pr-12 xl:leading-1.5">
                     <div class="py-5 md:py-0">
                       UWP Digital knows how to combine creativity and
                       effectiveness in one solution. We reveal the unique
@@ -1044,10 +1062,12 @@
                       identity, and creating a brand book for companies. The
                       brand stories start with UWP Digital.
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
-                      <button
-                        class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
-                        Read more
-                      </button>
+                      <a href="#">
+                        <button
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          Read more
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1088,10 +1108,12 @@
                       payment systems for e-commerce projects, and make a web
                       design.
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
-                      <button
-                        class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
-                        Read more
-                      </button>
+                      <a href="#">
+                        <button
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          Read more
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1135,10 +1157,12 @@
                       visible not only to the Google system but also to online
                       customers.
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
-                      <button
-                        class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
-                        Read more
-                      </button>
+                      <a href="#">
+                        <button
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          Read more
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1179,10 +1203,12 @@
                       to your product, finding them even while watching
                       YouTube.
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
-                      <button
-                        class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
-                        Read more
-                      </button>
+                      <a href="#">
+                        <button
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          Read more
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1224,10 +1250,12 @@
                       optimize the budget, increase conversion and attract
                       only high-quality leads.
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
-                      <button
-                        class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
-                        Read more
-                      </button>
+                      <a href="#">
+                        <button
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          Read more
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1272,10 +1300,12 @@
                       different types of advertising: on social networks,
                       contextual or banner ads.
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
-                      <button
-                        class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
-                        Read more
-                      </button>
+                      <a href="#">
+                        <button
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          Read more
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1315,10 +1345,12 @@
                       even youtube produced videos. It's easier to become
                       memorable with powerful effects.
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
-                      <button
-                        class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
-                        Read more
-                      </button>
+                      <a href="#">
+                        <button
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          Read more
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1360,10 +1392,12 @@
                       advertising, advertising on LinkedIn, and attracting
                       traffic from social networks to your website.
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
-                      <button
-                        class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
-                        Read more
-                      </button>
+                      <a href="#">
+                        <button
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          Read more
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1404,10 +1438,12 @@
                       with us, you are not hiring an adsmanager, but an entire
                       advertising agency that works for your success.
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
-                      <button
-                        class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
-                        Read more
-                      </button>
+                      <a href="#">
+                        <button
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          Read more
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1415,16 +1451,17 @@
             </div>
             <!-- ./wrapper_body -->
           </div>
-
-          <button
-            class="mx-auto mt-5 hidden w-full items-center rounded-full bg-base-red py-4 font-bold uppercase leading-6 text-base-white md:mt-12 md:flex md:w-[350px] md:justify-center md:py-5 md:leading-[21px] xl:absolute xl:top-[11.5rem] xl:col-start-1 xl:row-start-2 xl:w-[357px] xl:text-base">
-            <span class="hidden md:block md:pr-3">Order a consultation</span>
-            <svg class="w-4" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M15.6274 4.29995H1.97298V0.699951H21.773V20.5H18.173V6.84554L3.24578 21.7727L0.700195 19.2272L15.6274 4.29995Z"
-                fill="#F8F9F9" />
-            </svg>
-          </button>
+          <a href="#">
+            <button
+              class="mx-auto mt-5 hidden w-full items-center rounded-full bg-base-red py-4 font-bold uppercase leading-6 text-base-white md:mt-12 md:flex md:w-[350px] md:justify-center md:py-5 md:leading-[21px] xl:absolute xl:top-[11.5rem] xl:col-start-1 xl:row-start-2 xl:w-[357px] xl:text-base">
+              <span class="hidden md:block md:pr-3">Order a consultation</span>
+              <svg class="w-4" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.6274 4.29995H1.97298V0.699951H21.773V20.5H18.173V6.84554L3.24578 21.7727L0.700195 19.2272L15.6274 4.29995Z"
+                  fill="#F8F9F9" />
+              </svg>
+            </button>
+          </a>
         </div>
         <!-- ./wrapper -->
       </div>
@@ -1435,28 +1472,29 @@
       <div class="container">
         <div class="grid grid-cols-12 pt-14 xl:pt-32">
           <div
-            class="col-span-12 pt-1 border-b border-base-white pb-8 text-4xl font-bold uppercase leading-[1.2] text-base-white md:pb-10 md:text-[45px] md:pt-2 xl:pb-12 xl:text-[90px]">
+            class="col-span-12 border-b border-base-white pt-1 pb-8 text-4xl font-bold uppercase leading-[1.2] text-base-white md:pb-10 md:pt-2 md:text-[45px] xl:pb-12 xl:text-[90px]">
             Let's discuss the project
           </div>
 
           <!-- image -->
           <div
-            class="col-span-6 col-start-1 relative pt-9 md:row-span-2 md:col-span-4 md:pt-10 xl:pt-1 xl:col-start-5 xl:col-span-3">
+            class="relative col-span-6 col-start-1 pt-9 md:col-span-4 md:row-span-2 md:pt-10 xl:col-span-3 xl:col-start-5 xl:pt-1">
             <div class="relative w-full xl:pt-12">
-              <picture class="w-full">
+              <picture class="">
                 <source media="(max-width: 819px)" srcset="./images/letsDiscus/lts-discus-360.png" />
                 <source media="(max-width: 1219px)" srcset="./images/letsDiscus/lts-discus-820.png" />
                 <source media="(min-width: 1219px)" srcset="./images/letsDiscus/lts-discus-1920.png" />
-                <img src="./images/letsDiscus/lts-discus-1920.png" alt="Daniella" />
+                <img class="w-full xl:h-full xl:object-cover" src="./images/letsDiscus/lts-discus-1920.png"
+                  alt="Daniella" />
               </picture>
               <div
-                class="xl:bottom-0 xl:linegradient-red absolute -rotate-90 bg-gradient-to-r from-base-red opacity-50 xl:right-0 xl:left-0 xl:h-[68%] xl:w-full">
+                class="xl:bg-gradient-to-t xl:absolute  xl:from-base-red xl:opacity-50 xl:bottom-0 xl:left-0 xl:h-1/2 xl:w-full">
               </div>
             </div>
             <!-- arrow (position: absolute), nav-->
             <div
               class="absolute -bottom-4 flex h-[37px] w-[37px] items-center justify-center rounded-full bg-base-white text-base-black md:bottom-[0.75rem] md:h-[60px] md:w-[60px] xl:-bottom-9 xl:ml-1 xl:h-[72px] xl:w-[72px]">
-              <svg class="h-6 w-6 fill-base-black md:h-6 md:w-6" viewBox="0 0 26 26" fill="none"
+              <svg class="h-4 w-4 fill-base-black md:h-6 md:w-6" viewBox="0 0 26 26" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M19.1357 11.3964L10.534 2.79466L12.8018 0.526811L25.275 13L12.8018 25.4732L10.5339 23.2053L19.1357 14.6036L0.328623 14.6036L0.328606 11.3964L19.1357 11.3964Z"
@@ -1467,7 +1505,7 @@
 
           <!-- quote, Daniella, Text under-->
           <div
-            class="col-span-6 col-start-7 pt-11 pl-2 md:col-span-8 md:col-start-5 md:pt-10 md:pl-12 xl:col-start-8 xl:col-span-4 xl:h-28 xl:pt-1">
+            class="col-span-6 col-start-7 pt-11 pl-2 md:col-span-8 md:col-start-5 md:pt-10 md:pl-12 xl:col-span-4 xl:col-start-8 xl:h-28 xl:pt-1">
             <div class="md:flex md:gap-7 md:pl-1 xl:w-full xl:pt-12 xl:pl-2">
               <div class="flex h-9 w-9 items-center justify-center rounded-full bg-base-white md:h-16 md:w-16">
                 <svg class="w-4 text-base-black md:w-6" viewBox="0 0 22 22" fill="none"
@@ -1490,11 +1528,11 @@
           </div>
           <!-- text -->
           <div
-            class="col-span-12 md:col-span-8 md:col-start-5 md:pl-12 md:pt-6 xl:col-start-8 xl:col-span-5 xl:flex xl:flex-col xl:justify-between xl:pl-12">
+            class="col-span-12 md:col-span-8 md:col-start-5 md:pl-12 md:pt-6 xl:col-span-5 xl:col-start-8 xl:flex xl:flex-col xl:justify-between xl:pl-12">
             <div class="pt-9 pb-3 md:flex md:w-full md:pl-1 md:pt-0 xl:pl-0">
               <div class="w-full text-base font-medium leading-[22.4px] text-base-white xl:text-2xl xl:leading-[1.4]">
-                The main advantage of social networks is the lack of boundaries. Even if your target audience lives in
-                Spain or Sri
+                The main advantage of social networks is the lack of
+                boundaries. Even if your target audience lives in Spain or Sri
                 Lanka, you can reach them on Facebook.
               </div>
             </div>
@@ -1503,7 +1541,7 @@
               Працює з John Deere, STVOL, Anabel Arto, Є-Гроші, Kimito
             </div>
             <div
-              class="flex justify-between pt-20 md:justify-start md:pl-1 md:pt-5 xl:justify-between xl:gap-4 xl:pl-0">
+              class="flex justify-between pt-20 md:justify-start md:pl-1 md:pt-5 xl:justify-between xl:gap-4 xl:pl-0 xl:pt-0">
               <div class="flex items-center justify-start gap-3 md:w-1/3">
                 <div class="text-4xl font-bold leading-[1.2] text-base-red xl:text-[64px] xl:leading-[2.56px]">
                   6+
@@ -1527,32 +1565,44 @@
           </div>
 
           <!-- pagination -->
-          <div class="col-span-12 md:col-span-8 md:col-start-5 xl:col-start-8 xl:col-span-4">
+          <div class="col-span-12 md:col-span-8 md:col-start-5 xl:col-span-4 xl:col-start-8">
             <nav class="pt-5 pb-6 md:pt-5 md:pb-9 md:pl-12 xl:col-start-2 xl:row-start-2 xl:pt-14 xl:pb-4 xl:pl-16">
               <ul class="mx-auto flex justify-center gap-3 md:justify-start md:gap-[13px] md:pl-1 xl:gap-5">
                 <li>
-                  <button
-                    class="h-[7px] w-[7px] rounded-full bg-base-gray md:h-[10px] md:w-[10px] xl:h-[14px] xl:w-[14px]"></button>
+                  <a href="">
+                    <button
+                      class="h-[7px] w-[7px] rounded-full bg-base-gray md:h-[10px] md:w-[10px] xl:h-[14px] xl:w-[14px]"></button>
+                  </a>
                 </li>
                 <li>
-                  <button
-                    class="h-[7px] w-[7px] rounded-full bg-base-gray md:h-[10px] md:w-[10px] xl:h-[14px] xl:w-[14px]"></button>
+                  <a href="">
+                    <button
+                      class="h-[7px] w-[7px] rounded-full bg-base-gray md:h-[10px] md:w-[10px] xl:h-[14px] xl:w-[14px]"></button>
+                  </a>
                 </li>
                 <li>
-                  <button
-                    class="h-[7px] w-[7px] rounded-full bg-base-gray md:h-[10px] md:w-[10px] xl:h-[14px] xl:w-[14px]"></button>
+                  <a href="">
+                    <button
+                      class="h-[7px] w-[7px] rounded-full bg-base-gray md:h-[10px] md:w-[10px] xl:h-[14px] xl:w-[14px]"></button>
+                  </a>
                 </li>
                 <li>
-                  <button
-                    class="h-[7px] w-[7px] rounded-full bg-base-red md:h-[10px] md:w-[10px] xl:h-[14px] xl:w-[14px]"></button>
+                  <a href="">
+                    <button
+                      class="h-[7px] w-[7px] rounded-full bg-base-red md:h-[10px] md:w-[10px] xl:h-[14px] xl:w-[14px]"></button>
+                  </a>
                 </li>
                 <li>
-                  <button
-                    class="h-[7px] w-[7px] rounded-full bg-base-gray md:h-[10px] md:w-[10px] xl:h-[14px] xl:w-[14px]"></button>
+                  <a href="">
+                    <button
+                      class="h-[7px] w-[7px] rounded-full bg-base-gray md:h-[10px] md:w-[10px] xl:h-[14px] xl:w-[14px]"></button>
+                  </a>
                 </li>
                 <li>
-                  <button
-                    class="h-[7px] w-[7px] rounded-full bg-base-gray md:h-[10px] md:w-[10px] xl:h-[14px] xl:w-[14px]"></button>
+                  <a href="">
+                    <button
+                      class="h-[7px] w-[7px] rounded-full bg-base-gray md:h-[10px] md:w-[10px] xl:h-[14px] xl:w-[14px]"></button>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -1570,18 +1620,20 @@
                 web programmer, or an entire digital media agency - welcome to
                 UWP.Digital.
               </p>
-              <button
-                class="mx-auto mt-7 flex w-full items-center justify-center gap-3 rounded-full bg-base-red py-[18px] font-bold uppercase leading-6 text-base-white md:mt-10 md:w-[357px] xl:mx-0 xl:mt-12">
-                Order a consultation
-                <svg class="w-4 fill-base-white" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M15.6274 4.29995H1.97298V0.699951H21.773V20.5H18.173V6.84554L3.24578 21.7727L0.700195 19.2272L15.6274 4.29995Z" />
-                </svg>
-              </button>
+              <a href="#">
+                <button
+                  class="mx-auto mt-7 flex w-full items-center justify-center gap-3 rounded-full bg-base-red py-[18px] font-bold uppercase leading-6 text-base-white md:mt-10 md:w-[357px] xl:mx-0 xl:mt-12">
+                  Order a consultation
+                  <svg class="w-4 fill-base-white" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.6274 4.29995H1.97298V0.699951H21.773V20.5H18.173V6.84554L3.24578 21.7727L0.700195 19.2272L15.6274 4.29995Z" />
+                  </svg>
+                </button>
+              </a>
             </div>
           </div>
-
-        </div> <!-- grid -->
+        </div>
+        <!-- grid -->
       </div>
       <!-- ./container -->
     </section>
@@ -1591,9 +1643,9 @@
       <div class="container xl:pb-2 xl:pt-2">
         <!-- Head, Slider -->
         <div class="pb-[104px] md:pb-36 xl:pb-48">
-          <div class="flex items-center justify-between">
+          <div class="flex items-start justify-between">
             <div class="text-4xl font-bold uppercase leading-[1.2] text-base-white md:text-[45px] xl:text-[90px]">
-              Användbart från bloggen
+              Our blog
             </div>
             <div class="flex flex-shrink-0 items-center gap-3">
               <div class="hidden text-base font-bold leading-[1.4] text-base-white md:block xl:text-2xl">
@@ -1609,7 +1661,7 @@
             </div>
           </div>
           <!-- SLIDER -->
-          <div class="flex gap-8 overflow-hidden pt-8 md:gap-5 md:pt-11 xl:gap-7 xl:pt-14">
+          <div class="flex gap-8 overflow-hidden pt-8 md:gap-5 md:pt-11 md:pb-3 xl:gap-7 xl:pt-14">
             <!-- 1 slider -->
             <div class="flex-shrink-0 md:w-[305px] xl:w-[530px]">
               <div class="">
@@ -1619,10 +1671,12 @@
                   alt="Advertising for bisness" />
               </div>
               <div class="flex items-center gap-3 pt-[22px] xl:pt-6">
-                <button
-                  class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:px-5">
-                  Business
-                </button>
+                <a href="#">
+                  <button
+                    class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:px-5">
+                    Business
+                  </button>
+                </a>
                 <div class="text-xs font-medium leading-[1.2] text-base-gray xl:text-sm">
                   24.08.2022
                 </div>
@@ -1640,10 +1694,12 @@
                   alt="Advertising for bisness" />
               </div>
               <div class="flex items-center gap-3 pt-[22px] xl:pt-6">
-                <button
-                  class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:px-5">
-                  Business
-                </button>
+                <a href="#">
+                  <button
+                    class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:px-5">
+                    Business
+                  </button>
+                </a>
                 <div class="text-xs font-medium leading-[1.2] text-base-gray xl:text-sm">
                   24.08.2022
                 </div>
@@ -1661,10 +1717,12 @@
                   alt="Advertising for bisness" />
               </div>
               <div class="flex items-center gap-3 pt-[22px] xl:pt-6">
-                <button
-                  class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:px-5">
-                  Business
-                </button>
+                <a href="#">
+                  <button
+                    class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:px-5">
+                    Business
+                  </button>
+                </a>
                 <div class="text-xs font-medium leading-[1.2] text-base-gray xl:text-sm">
                   24.08.2022
                 </div>
@@ -1679,10 +1737,12 @@
                 <img class="md:h-[220px] md:w-full" src="./images/slider-blog-1.jpg" alt="Advertising for bisness" />
               </div>
               <div class="flex items-center gap-3 pt-[22px] xl:pt-6">
-                <button
-                  class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:px-5">
-                  Business
-                </button>
+                <a href="#">
+                  <button
+                    class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:px-5">
+                    Business
+                  </button>
+                </a>
                 <div class="text-xs font-medium leading-[1.2] text-base-gray xl:text-sm">
                   24.08.2022
                 </div>
@@ -1694,24 +1754,21 @@
           </div>
         </div>
         <!-- Article -->
-        <div class="border-t border-base-gray xl:grid xl:grid-cols-2col25">
-          <div class="pb-3 md:grid md:grid-cols-2 md:pt-1 xl:col-start-2">
-            <!-- main article -->
-            <div class="pb-10 md:col-span-2 xl:flex xl:justify-between xl:pb-12">
-              <div
-                class="pt-[30px] text-sm font-bold uppercase leading-[1.2] text-middle-gray md:pt-8 md:text-base xl:pl-11 xl:pt-12">
-                Why we are
-              </div>
-              <div
-                class="xl:flex-0 pt-5 text-xl font-medium leading-[1.4] text-white md:pt-7 md:indent-[86px] xl:max-w-[950px] xl:pt-12 xl:indent-32 xl:text-[32px]">
-                Our company is the quintessence of marketing talents and
-                Ukrainian diligence. Through our expertise, attention to
-                detail, and deep analytics, we find a solution for any
-                business problem.
-              </div>
-            </div>
+        <div class="border-t border-base-gray md:grid md:grid-cols-12">
+          <div
+            class="pt-[30px] text-sm font-bold uppercase leading-[1.2] text-middle-gray md:col-span-12 md:pt-8 md:text-base xl:col-span-2 xl:col-start-4 xl:pl-11 xl:pt-12">
+            Why we are
+          </div>
+          <div
+            class="xl:flex-0 pb-10 pt-5 text-xl font-medium leading-[1.4] text-white md:col-span-12 md:pt-7 md:indent-[86px] xl:col-span-7 xl:col-start-6 xl:pb-12 xl:pt-12 xl:indent-32 xl:text-[32px]">
+            Our company is the quintessence of marketing talents and Ukrainian
+            diligence. Through our expertise, attention to detail, and deep
+            analytics, we find a solution for any business problem.
+          </div>
+          <div class="md:col-span-12 md:grid md:grid-cols-12 xl:col-span-9 xl:col-start-4">
             <!-- BLOG 1 article -->
-            <div class="pb-8 md:border-r md:border-base-gray md:pb-20 xl:border-t xl:pl-11 xl:pb-16">
+            <div
+              class="pb-[30px] md:col-span-6 md:col-start-1 md:border-r md:border-base-gray md:pb-20 xl:border-t xl:pl-11 xl:pb-16">
               <div
                 class="border-t border-base-gray pt-[30px] text-base font-bold leading-[1.3] text-white md:pr-5 md:pt-8 md:text-lg md:font-medium xl:border-t-0 xl:pt-14 xl:text-2xl">
                 We help companies speak the language of the customer.
@@ -1723,7 +1780,8 @@
               </div>
             </div>
             <!-- BLOG 2 article -->
-            <div class="pb-[30px] md:pb-20 xl:border-t xl:border-base-gray xl:pl-11 xl:pb-16">
+            <div
+              class="pb-[30px] md:col-span-6 md:col-start-7 md:pb-20 xl:border-t xl:border-base-gray xl:pl-11 xl:pb-16">
               <div
                 class="border-t border-base-gray pt-[30px] text-base font-bold leading-[1.3] text-white md:pl-7 md:text-lg md:font-medium xl:border-t-0 xl:pl-0 xl:pt-14 xl:text-2xl">
                 We break the wall: transforming traditional marketing into
@@ -1736,7 +1794,8 @@
               </div>
             </div>
             <!-- BLOG 3 article -->
-            <div class="pb-[30px] md:border-r md:border-base-gray md:pb-0 xl:border-t xl:pl-11">
+            <div
+              class="pb-[30px] md:col-span-6 md:col-start-1 md:border-r md:border-base-gray md:pb-0 xl:border-t xl:pl-11">
               <div
                 class="border-t border-base-gray pt-[30px] text-base font-bold leading-[1.3] text-white md:pr-5 md:pt-8 md:text-lg md:font-medium xl:border-t-0 xl:pt-12 xl:text-2xl">
                 We provide a full range of business promotion services:
@@ -1749,7 +1808,7 @@
               </div>
             </div>
             <!-- BLOG 4 article -->
-            <div class="pb-[30px] md:pb-0 xl:border-t xl:border-base-gray xl:pl-11">
+            <div class="pb-[30px] md:col-span-6 md:col-start-7 md:pb-0 xl:border-t xl:border-base-gray xl:pl-11">
               <div
                 class="border-t border-base-gray pt-[30px] text-base font-bold leading-[1.3] text-white md:pl-7 md:text-lg md:font-medium xl:border-t-0 xl:pl-0 xl:pt-12 xl:text-2xl">
                 We reveal the unique story of your brand.
@@ -1762,19 +1821,22 @@
             </div>
           </div>
           <!-- Button -->
-          <div class="mt-2 pb-14 md:pb-12 xl:col-start-1 xl:row-span-full xl:mt-0 xl:border-r xl:border-base-gray">
-            <button class="btn-red">
-              <div class="pr-2 text-base font-bold uppercase leading-[21px] tracking-[0.16px]">
-                Order a consultation
-              </div>
-              <div class="">
-                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M11.6083 4.87452L11.6083 14.594L14 14.594L14 0.499999L0.84559 0.5L0.84559 3.06255L9.91709 3.06255L1.82814e-06 13.688L1.69118 15.5L11.6083 4.87452Z"
-                    fill="white" />
-                </svg>
-              </div>
-            </button>
+          <div
+            class="mt-6 pb-14 md:col-span-12 md:mt-2 md:pb-12 xl:col-span-3 xl:col-start-1 xl:row-span-2 xl:row-start-1 xl:mt-0 xl:border-r xl:border-base-gray">
+            <a href="#">
+              <button class="btn-red">
+                <div class="pr-2 text-base font-bold uppercase leading-[21px] tracking-[0.16px]">
+                  Order a consultation
+                </div>
+                <div class="">
+                  <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.6083 4.87452L11.6083 14.594L14 14.594L14 0.499999L0.84559 0.5L0.84559 3.06255L9.91709 3.06255L1.82814e-06 13.688L1.69118 15.5L11.6083 4.87452Z"
+                      fill="white" />
+                  </svg>
+                </div>
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -1796,17 +1858,17 @@
           <div class="mt-8 xl:col-start-2 xl:mt-0 xl:border-l xl:border-base-gray xl:pb-12">
             <!-- FAQ 1 article -->
             <div class="border-b border-base-gray py-5 md:mt-0 md:py-8 md:pb-7 xl:ml-[152px] xl:pb-10 xl:pt-12">
-              <div class="accordion flex cursor-pointer items-center justify-between gap-8">
+              <div class="accordion flex cursor-pointer items-center justify-between gap-8 text-base-red">
                 <div class="text-base font-semibold leading-[1.3] md:text-2xl">
                   What is a full-service marketing agency?
                 </div>
-                <div class="plus-minus relative py-3">
+                <div class="toggle-plus plus-minus relative py-3">
                   <div
                     class="h-[3px] w-6 bg-base-black before:absolute before:h-[3px] before:w-6 before:rotate-90 before:bg-base-black before:transition-all before:duration-500 before:content-[''] md:w-9 md:before:w-9">
                   </div>
                 </div>
               </div>
-              <div class="body-accordion max-h-0 overflow-hidden">
+              <div class="body-accordion overflow-hidden">
                 <div
                   class="pt-4 text-sm font-medium leading-[19.6px] text-base-black md:pt-6 md:text-base md:leading-[1.4] xl:pr-36">
                   <p>
@@ -2014,19 +2076,21 @@
                 of personal data.
                 <a href="#" class="leading-[1.3] text-[#6355FF] underline">More details</a>
               </div>
-              <button
-                class="flex w-full items-center justify-center rounded-full bg-base-red py-5 text-base-white md:w-[290px] md:py-4 xl:m-0">
-                <div class="pr-2 text-base font-bold uppercase leading-[21px] tracking-[0.16px]">
-                  Discuss the project
-                </div>
-                <div class="">
-                  <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M11.6083 4.87452L11.6083 14.594L14 14.594L14 0.499999L0.84559 0.5L0.84559 3.06255L9.91709 3.06255L1.82814e-06 13.688L1.69118 15.5L11.6083 4.87452Z"
-                      fill="white" />
-                  </svg>
-                </div>
-              </button>
+              <a href="#">
+                <button
+                  class="flex w-full items-center justify-center rounded-full bg-base-red py-5 text-base-white md:w-[290px] md:py-4 xl:m-0">
+                  <div class="pr-2 text-base font-bold uppercase leading-[21px] tracking-[0.16px]">
+                    Discuss the project
+                  </div>
+                  <div class="">
+                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.6083 4.87452L11.6083 14.594L14 14.594L14 0.499999L0.84559 0.5L0.84559 3.06255L9.91709 3.06255L1.82814e-06 13.688L1.69118 15.5L11.6083 4.87452Z"
+                        fill="white" />
+                    </svg>
+                  </div>
+                </button>
+              </a>
             </div>
           </div>
           <!-- Contact 4 -->
@@ -2056,12 +2120,10 @@
             <ul
               class="flex h-36 flex-col flex-wrap gap-7 md:h-auto md:flex-row md:items-center md:gap-[51px] md:pb-[22px] xl:gap-16">
               <li>
-                <a href="#" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">About
-                  us</a>
+                <a href="#" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">About us</a>
               </li>
               <li>
-                <a href="#" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Case
-                  studies</a>
+                <a href="#" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Case studies</a>
               </li>
               <li>
                 <a href="#" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Services</a>

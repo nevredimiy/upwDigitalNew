@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.radial-red {
-    background: radial-gradient(50% 50% at 50% 50%, #FF304D 0%, rgba(255, 48, 77, 0) 100%);
-}
-
-.linegradient-red {
-    background: linear-gradient(180deg, rgba(255, 48, 77, 0) 0%, rgba(255, 48, 77, 0.56) 100%);
-}
-
 @layer base {
     body {
         font-family: 'Montserrat', sans-serif;
@@ -20,12 +11,13 @@
 @layer components {
 
     .body-bg {
-        @apply before:content-[''] before:fixed before:bg-base-red before:left-0 before:right-0 before:top-0 before:bottom-0 before:z-10 overflow-hidden;
+        @apply md:before:content-[''] md:before:fixed md:before:bg-base-red md:before:left-0 md:before:right-0 md:before:top-0 md:before:bottom-0 md:before:z-20 overflow-hidden fixed;
     }
 
-    .lets-talk {
-        @apply md:py-3 md:pr-7 md:pl-6
+    .active-link {
+        @apply active:text-middle-gray
     }
+
     .without-lets-talk {
         @apply md:py-4 md:px-4
     }
