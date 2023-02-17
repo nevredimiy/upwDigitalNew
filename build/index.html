@@ -82,14 +82,14 @@
           <div class="">
             <nav>
               <ul id="main-menu"
-                class="relative flex flex-col justify-start gap-7 xl:static xl:h-[90px] xl:flex-row xl:items-center xl:justify-center xl:gap-12 xl:text-base-white">
+                class="relative uppercase flex flex-col justify-start gap-7 xl:static xl:h-[90px] xl:flex-row xl:items-center xl:justify-center xl:gap-12 xl:text-base-white">
                 <li>
                   <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
                     href="#">Case
                     Studies</a>
                 </li>
-                <li class="xl:relative">
-                  <a class="flex items-center gap-5 text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
+                <li class="xl:relative group py-5">
+                  <a class=" flex items-center gap-5 text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
                     href="#">
                     Services
                     <svg class="h-[18px] w-[9px] xl:rotate-90" viewBox="0 0 9 18" fill="none"
@@ -99,7 +99,7 @@
                     </svg>
                   </a>
                   <div id="dropmenu"
-                    class="absolute top-0 right-[200%] min-h-screen w-full bg-base-black md:w-[465px] xl:-right-[370px] xl:top-24 xl:hidden xl:h-[225px] xl:min-h-min xl:w-[500px] xl:rounded-xl xl:bg-base-white xl:text-base-black">
+                    class="absolute top-0 left-[200%] min-h-screen w-full bg-base-black md:w-[465px] xl:-right-[370px] xl:top-14 xl:hidden group-hover:block xl:h-[225px] xl:min-h-min xl:w-[500px] xl:rounded-xl xl:bg-base-white xl:text-base-black">
                     <a id="back-to-menu"
                       class="flex items-center gap-2 pb-4 text-xs uppercase leading-1.3 text-base-red xl:hidden"
                       href="#">
@@ -355,7 +355,7 @@
       </div>
     </div>
     <section id="contact-form"
-      class="fixed top-0 right-[200%] z-30 min-h-screen min-w-full overflow-y-scroll bg-base-black text-white xl:z-50 xl:flex">
+      class="fixed top-0 left-[200%] z-30 min-h-screen min-w-full overflow-y-scroll bg-base-black text-white xl:z-50 xl:flex">
       <div class="hidden xl:block xl:min-h-screen xl:w-full xl:flex-1 xl:bg-base-red"></div>
       <div class="container mx-auto pt-8 md:px-1 md:pt-6 xl:max-w-[1081px]">
         <div class="z-1 relative">
@@ -2220,6 +2220,17 @@
     </footer>
     <!-- FOOTER END-->
   </main>
+  <!-- Cookies -->
+  <div id="cookies-window" class="w-screen h-screen fixed top-0 hidden items-end z-[9999] text-base-black">
+    <div class="bg-base-white px-10 py-5 mx-auto mb-10 shadow  shadow-middle-gray  rounded-lg max-w-xl">
+      <h2 class="font-bold text-xl">We use cookies</h2>
+      <p class="font-medium">Cookies help us deliver the best experience on our website. By using our website, you agree
+        to the use of
+        cookies.</p>
+      <button id="cookies-accept-btn"
+        class="border border-base-black rounded-lg uppercase mt-4 py-2 px-5 hover:bg-middle-gray hover:text-base-white text-sm">Accept</button>
+    </div>
+  </div>
   <script src="./js/script.js" defer></script>
 </body>
 </html>

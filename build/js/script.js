@@ -43,7 +43,7 @@ const initApp = () => {
       mobileMenu.classList.toggle('md:px-7') 
       header.children[0].classList.toggle('md:px-7') 
     } else {
-      e.target.nextElementSibling.classList.toggle('right-[200%]')
+      e.target.nextElementSibling.classList.toggle('left-[200%]')
     }
   }
 
@@ -60,7 +60,7 @@ const initApp = () => {
       mobileMenu.classList.toggle('md:px-7') 
       header.children[0].classList.toggle('md:px-7') 
    }
-    contactForm.classList.toggle('right-[200%]')
+    contactForm.classList.toggle('left-[200%]')
     body.classList.toggle('body-bg')
 
   }
@@ -73,7 +73,7 @@ const initApp = () => {
   hamburgerBtn.addEventListener('click', toggleMenu)
   mainMenu.addEventListener('click', dropMenu)
   backToMenu.addEventListener('click', (e) => {
-    e.target.parentElement.classList.toggle('right-[200%]')
+    e.target.parentElement.classList.toggle('left-[200%]')
   })
   btnContact.addEventListener('click', getContactForm)
   btnContactForm.addEventListener('click', getContactForm)
@@ -188,3 +188,22 @@ document.addEventListener("scroll", (event) => {
     ticking = true;
   }
 });
+
+//cookies 
+const cookiesAcceptBtn = document.getElementById('cookies-accept-btn')
+const cookiesWindow = document.getElementById('cookies-window')
+
+cookiesAcceptBtn.addEventListener('click', () => {
+  cookiesWindow.classList.remove('flex')
+  cookiesWindow.classList.add('hidden')
+  localStorage.setItem('cookiesAccepted', 'yes')
+})
+
+setTimeout(() => {
+  let cookiesAccepted = localStorage.getItem('cookiesAccepted')
+  if (cookiesAccepted != 'yes') {
+    cookiesWindow.classList.remove('hidden')
+    cookiesWindow.classList.add('flex')    
+  }
+}, 2000)
+
