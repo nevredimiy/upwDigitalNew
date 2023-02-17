@@ -86,14 +86,14 @@ document.addEventListener('DOMContentLoaded', initApp)
 
 
 //dropmenu for screen min 1280px
-const dropmenu = document.getElementById('dropmenu');
-const dropbtn = dropmenu.previousElementSibling;
+// const dropmenu = document.getElementById('dropmenu');
+// const dropbtn = dropmenu.previousElementSibling;
 
-const clickDropMenu = () => {
-  dropmenu.classList.toggle('xl:hidden')
-}
+// const clickDropMenu = () => {
+//   dropmenu.classList.toggle('xl:hidden')
+// }
 
-dropbtn.addEventListener('click', clickDropMenu)
+// dropbtn.addEventListener('click', clickDropMenu)
 
 //ACCORDION
 const acc = document.querySelectorAll(".accordion")
