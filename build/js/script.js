@@ -3,22 +3,17 @@ const burger = document.getElementById('burger');
 const menu = document.getElementById('header_menu');
 
 const initApp = () => {
-  //about burger
+  //about burger and lets talk
   const hamburgerBtn = document.getElementById('hamburger-button')
   const mobileMenu = document.getElementById('mobile-menu')
   const mainMenu = document.getElementById('main-menu')
   const backToMenu = document.getElementById('back-to-menu')
   const body = document.querySelector('body')
   const header = document.querySelector('header')
-  //const letsTalkRed = document.getElementById('lets-talk')
   const moon = document.getElementById('moon')
-  //about lets talk
   const btnContact = document.getElementById('contact-details')
   const contactForm = document.getElementById('contact-form') 
   const btnContactForm = document.getElementById('button-close') //button-close
-
-
-
 
   const toggleMenu = () => {
     mobileMenu.classList.toggle('hidden')
@@ -29,10 +24,6 @@ const initApp = () => {
     header.classList.toggle('md:w-[465px]') 
     header.classList.toggle('md:left-full')
     header.children[0].classList.toggle('md:px-7')  
-    //letsTalkRed.classList.toggle('text-base-red')
-    //letsTalkRed.classList.toggle('md:pr-4')
-    //letsTalkRed.parentElement.classList.toggle('bg-base-red')
-   // letsTalkRed.parentElement.classList.toggle('md:pr-0')
     hamburgerBtn.parentElement.classList.toggle('md:pl-9')
     moon.classList.toggle('md:hidden')
     mobileMenu.classList.toggle('md:px-7')
@@ -47,10 +38,6 @@ const initApp = () => {
       body.classList.toggle('body-bg')
       header.classList.toggle('md:w-[465px]') 
       moon.classList.toggle('md:hidden')
-     // letsTalkRed.classList.toggle('text-base-red')
-      //letsTalkRed.classList.toggle('md:pr-4')
-      //letsTalkRed.parentElement.classList.toggle('bg-base-red')
-      //letsTalkRed.parentElement.classList.toggle('md:pr-0')
       hamburgerBtn.classList.toggle('toggle-btn')
       header.classList.toggle('md:left-full')
       mobileMenu.classList.toggle('md:px-7') 
@@ -68,10 +55,6 @@ const initApp = () => {
       body.classList.toggle('body-bg')
       header.classList.toggle('md:w-[465px]') 
       moon.classList.toggle('md:hidden')
-      //letsTalkRed.classList.toggle('text-base-red')
-      //letsTalkRed.classList.toggle('md:pr-4')
-      //letsTalkRed.parentElement.classList.toggle('bg-base-red')
-      //letsTalkRed.parentElement.classList.toggle('md:pr-0')
       hamburgerBtn.classList.toggle('toggle-btn')
       header.classList.toggle('md:left-full')
       mobileMenu.classList.toggle('md:px-7') 
@@ -102,7 +85,7 @@ document.addEventListener('DOMContentLoaded', initApp)
 
 
 
-//dropmenu for screnn min 1280px
+//dropmenu for screen min 1280px
 const dropmenu = document.getElementById('dropmenu');
 const dropbtn = dropmenu.previousElementSibling;
 
@@ -168,7 +151,7 @@ acc.forEach(accordion => {
     })
   })
 
-
+//remove menu at scroll down and add menu at scroll up
 let lastKnownScrollPosition = 0;
 let ticking = false;
 let newScrollPosition = 0;

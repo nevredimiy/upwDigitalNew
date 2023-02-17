@@ -528,32 +528,24 @@ body {
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
-    padding-right: fluid-1;
-    padding-left: fluid-1;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-right: 0.25rem;
-    padding-left: 0.25rem;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding-right: 0.25rem;
-    padding-left: 0.25rem;
   }
 }
 
@@ -1130,11 +1122,6 @@ body {
   border-color: rgb(255 48 77 / var(--tw-border-opacity));
 }
 
-.bg-base-red {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
-}
-
 .bg-base-black {
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
@@ -1143,6 +1130,11 @@ body {
 .bg-base-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(145 145 145 / var(--tw-bg-opacity));
+}
+
+.bg-base-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 48 77 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -2402,14 +2394,6 @@ body {
   .md\:px-\[250px\] {
     padding-left: 250px;
     padding-right: 250px;
-  }
-
-  .md\:pr-4 {
-    padding-right: 1rem;
-  }
-
-  .md\:pr-0 {
-    padding-right: 0px;
   }
 
   .md\:pl-9 {

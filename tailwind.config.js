@@ -5,10 +5,6 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        sm: 'fluid-1',
-        md: '0.25rem',
-        lg: '0.5rem',
-        xl: '0.25rem',
         DEFAULT: '1.25rem',
       }
     },
