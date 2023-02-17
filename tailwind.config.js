@@ -5,6 +5,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
+        sm: 'fluid-1',
         md: '0.25rem',
         lg: '0.5rem',
         xl: '0.25rem',
@@ -13,6 +14,11 @@ module.exports = {
     },
 
     extend: {
+
+      spacing: {
+      'fluid-1': 'clamp(1.31rem, calc(0.65rem + 3.29vw), 3.00rem)',
+      'fluid-2': 'clamp(1.31rem, calc(0.07rem + 6.22vw), 4.50rem)',
+    },
 
       backgroundImage: {
           'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',

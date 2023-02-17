@@ -10,7 +10,7 @@ const initApp = () => {
   const backToMenu = document.getElementById('back-to-menu')
   const body = document.querySelector('body')
   const header = document.querySelector('header')
-  const letsTalkRed = document.getElementById('lets-talk')
+  //const letsTalkRed = document.getElementById('lets-talk')
   const moon = document.getElementById('moon')
   //about lets talk
   const btnContact = document.getElementById('contact-details')
@@ -29,10 +29,10 @@ const initApp = () => {
     header.classList.toggle('md:w-[465px]') 
     header.classList.toggle('md:left-full')
     header.children[0].classList.toggle('md:px-7')  
-    letsTalkRed.classList.toggle('text-base-red')
-    letsTalkRed.classList.toggle('md:pr-4')
-    letsTalkRed.parentElement.classList.toggle('bg-base-red')
-    letsTalkRed.parentElement.classList.toggle('md:pr-0')
+    //letsTalkRed.classList.toggle('text-base-red')
+    //letsTalkRed.classList.toggle('md:pr-4')
+    //letsTalkRed.parentElement.classList.toggle('bg-base-red')
+   // letsTalkRed.parentElement.classList.toggle('md:pr-0')
     hamburgerBtn.parentElement.classList.toggle('md:pl-9')
     moon.classList.toggle('md:hidden')
     mobileMenu.classList.toggle('md:px-7')
@@ -47,10 +47,10 @@ const initApp = () => {
       body.classList.toggle('body-bg')
       header.classList.toggle('md:w-[465px]') 
       moon.classList.toggle('md:hidden')
-      letsTalkRed.classList.toggle('text-base-red')
-      letsTalkRed.classList.toggle('md:pr-4')
-      letsTalkRed.parentElement.classList.toggle('bg-base-red')
-      letsTalkRed.parentElement.classList.toggle('md:pr-0')
+     // letsTalkRed.classList.toggle('text-base-red')
+      //letsTalkRed.classList.toggle('md:pr-4')
+      //letsTalkRed.parentElement.classList.toggle('bg-base-red')
+      //letsTalkRed.parentElement.classList.toggle('md:pr-0')
       hamburgerBtn.classList.toggle('toggle-btn')
       header.classList.toggle('md:left-full')
       mobileMenu.classList.toggle('md:px-7') 
@@ -63,11 +63,22 @@ const initApp = () => {
   const getContactForm = () => {
 
     if (mobileMenu.classList.contains('fixed')) {
-    console.log('work')
-//      dropMenu
       mobileMenu.classList.toggle('hidden')
+      mobileMenu.classList.toggle('fixed')
+      body.classList.toggle('body-bg')
+      header.classList.toggle('md:w-[465px]') 
+      moon.classList.toggle('md:hidden')
+      //letsTalkRed.classList.toggle('text-base-red')
+      //letsTalkRed.classList.toggle('md:pr-4')
+      //letsTalkRed.parentElement.classList.toggle('bg-base-red')
+      //letsTalkRed.parentElement.classList.toggle('md:pr-0')
+      hamburgerBtn.classList.toggle('toggle-btn')
+      header.classList.toggle('md:left-full')
+      mobileMenu.classList.toggle('md:px-7') 
+      header.children[0].classList.toggle('md:px-7') 
    }
-  contactForm.classList.toggle('right-[200%]')
+    contactForm.classList.toggle('right-[200%]')
+    body.classList.toggle('body-bg')
 
   }
 
