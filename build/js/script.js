@@ -91,9 +91,11 @@ document.addEventListener('DOMContentLoaded', initApp)
 
 // const clickDropMenu = () => {
 //   dropmenu.classList.toggle('xl:hidden')
-// }
+//   dropmenu.classList.toggle('xl:min-h-min')
+//  }
 
-// dropbtn.addEventListener('click', clickDropMenu)
+// dropbtn.addEventListener('mouseover', clickDropMenu)
+// dropbtn.addEventListener('mouseover', clickDropMenu)
 
 //ACCORDION
 const acc = document.querySelectorAll(".accordion")
