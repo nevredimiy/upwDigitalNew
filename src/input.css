@@ -14,6 +14,10 @@
         @apply md:before:content-[''] md:before:fixed md:before:bg-base-red md:before:left-0 md:before:right-0 md:before:top-0 md:before:bottom-0 md:before:z-20 overflow-hidden fixed;
     }
 
+    .show-mobile-menu {
+        @apply fixed md:px-7 md:pt-[3.25rem]
+    }
+
     .active-link {
         @apply active:text-middle-gray
     }
@@ -41,10 +45,6 @@
 
     .burger_span {
         @apply block w-8 h-[3px] bg-white absolute left-1/2 ml-[-16px];
-    }
-
-    .btn-red {
-        @apply flex w-full items-center justify-center rounded-full bg-base-red py-5 text-base-white md:mx-auto md:mt-9 md:w-[357px] xl:m-0 xl:mt-14
     }
 
 }

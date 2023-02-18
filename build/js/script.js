@@ -5,8 +5,8 @@ const menu = document.getElementById('header_menu');
 const initApp = () => {
   //about burger and lets talk
   const hamburgerBtn = document.getElementById('hamburger-button')
-  const mobileMenu = document.getElementById('mobile-menu')
   const mainMenu = document.getElementById('main-menu')
+  const basicMenu = document.getElementById('basic-menu')
   const backToMenu = document.getElementById('back-to-menu')
   const body = document.querySelector('body')
   const header = document.querySelector('header')
@@ -16,32 +16,29 @@ const initApp = () => {
   const btnContactForm = document.getElementById('button-close') //button-close
 
   const toggleMenu = () => {
-    mobileMenu.classList.toggle('hidden')
-    mobileMenu.classList.toggle('fixed')
+    mainMenu.classList.toggle('hidden')
+    mainMenu.classList.toggle('show-mobile-menu')
     hamburgerBtn.classList.toggle('toggle-btn')
-    mainMenu.classList.toggle('min-h-[500px]')
+    basicMenu.classList.toggle('min-h-[500px]')
     body.classList.toggle('body-bg')
     header.classList.toggle('md:w-[465px]') 
     header.classList.toggle('md:left-full')
     header.children[0].classList.toggle('md:px-7')  
     hamburgerBtn.parentElement.classList.toggle('md:pl-9')
     moon.classList.toggle('md:hidden')
-    mobileMenu.classList.toggle('md:px-7')
-    mobileMenu.classList.toggle('md:pt-[3.25rem]') 
   }
 
   const dropMenu = (e) => {
-    console.log(e)
     if (e.target.nextElementSibling == null) {
-      mobileMenu.classList.toggle('hidden')
-      mobileMenu.classList.toggle('fixed')
+      mainMenu.classList.toggle('hidden')
+      mainMenu.classList.toggle('fixed')
       body.classList.toggle('body-bg')
       header.classList.toggle('md:w-[465px]') 
-      moon.classList.toggle('md:hidden')
-      hamburgerBtn.classList.toggle('toggle-btn')
       header.classList.toggle('md:left-full')
-      mobileMenu.classList.toggle('md:px-7') 
       header.children[0].classList.toggle('md:px-7') 
+      moon.classList.toggle('md:hidden')
+      hamburgerBtn.classList.toggle('toggle-btn')      
+      mainMenu.classList.toggle('md:px-7')       
     } else {
       e.target.nextElementSibling.classList.toggle('left-[200%]')
     }
@@ -49,16 +46,16 @@ const initApp = () => {
 
   const getContactForm = () => {
 
-    if (mobileMenu.classList.contains('fixed')) {
-      mobileMenu.classList.toggle('hidden')
-      mobileMenu.classList.toggle('fixed')
+    if (mainMenu.classList.contains('fixed')) {
+      mainMenu.classList.toggle('hidden')
+      mainMenu.classList.toggle('fixed')
       body.classList.toggle('body-bg')
       header.classList.toggle('md:w-[465px]') 
+      header.classList.toggle('md:left-full')
+      header.children[0].classList.toggle('md:px-7') 
       moon.classList.toggle('md:hidden')
       hamburgerBtn.classList.toggle('toggle-btn')
-      header.classList.toggle('md:left-full')
-      mobileMenu.classList.toggle('md:px-7') 
-      header.children[0].classList.toggle('md:px-7') 
+      mainMenu.classList.toggle('md:px-7') 
    }
     contactForm.classList.toggle('left-[200%]')
     body.classList.toggle('body-bg')
@@ -71,7 +68,7 @@ const initApp = () => {
 
 
   hamburgerBtn.addEventListener('click', toggleMenu)
-  mainMenu.addEventListener('click', dropMenu)
+  basicMenu.addEventListener('click', dropMenu)
   backToMenu.addEventListener('click', (e) => {
     e.target.parentElement.classList.toggle('left-[200%]')
   })
@@ -176,8 +173,8 @@ function doSomething(scrollPos) {
 
 document.addEventListener("scroll", (event) => {
   lastKnownScrollPosition = window.scrollY;
-  const mobileMenu1 = document.getElementById('mobile-menu')
-  if (mobileMenu1.classList.contains('hidden')) {
+  const mainMenu1 = document.getElementById('mobile-menu')
+  if (mainMenu1.classList.contains('hidden')) {
     console.log('is a')
   }
 
@@ -209,3 +206,4 @@ setTimeout(() => {
   }
 }, 2000)
 
+  

@@ -5,10 +5,10 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1rem',
-       
-        md: '3*1vw',
-        lg: 'clamp(0.5rem, 0.75rem, 2rem)',
+        DEFAULT: '1rem',       
+        md: '0.5rem',
+        lg: 'clamp(0.75rem, 1rem, 2rem)',
+        xl: 'clamp(1rem, 1.25rem, 4.5rem)'
       }
     },
 
@@ -70,7 +70,7 @@ module.exports = {
       },
       
       screens: {
-        '2xl': '1650px'
+        '2xl': '1690px'
       },
 
       keyframes: {
