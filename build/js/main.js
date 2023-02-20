@@ -6,7 +6,7 @@ const burger = document.getElementById('burger');
 const menu = document.getElementById('header_menu');
 const hamburgerBtn = document.getElementById('hamburger-button')
 const backToMenu = document.getElementById('back-to-menu')
-const moon = document.getElementById('moon')
+const dark = document.getElementById('dark')
 const btnContact = document.getElementById('contact-details')
 const contactForm = document.getElementById('contact-form') 
 const btnContactForm = document.getElementById('button-close') //button-close
@@ -22,7 +22,7 @@ const toggleMenu = () => {
     header.classList.toggle('md:left-full')
     header.children[0].classList.toggle('md:px-7')  
     hamburgerBtn.parentElement.classList.toggle('md:pl-9')
-    moon.classList.toggle('md:hidden')
+    dark.classList.toggle('md:hidden')
     dropMenu.classList.toggle('md:w-[465px]')
 }
 
@@ -38,7 +38,7 @@ const showDropMenu = (e) => {
         header.classList.toggle('md:left-full')
         header.children[0].classList.toggle('md:px-7') 
         hamburgerBtn.parentElement.classList.toggle('md:pl-9')
-        moon.classList.toggle('md:hidden')
+        dark.classList.toggle('md:hidden')
         dropMenu.classList.toggle('md:w-[465px]')
     } else {
         e.target.nextElementSibling.classList.toggle('left-[200%]')
@@ -59,7 +59,7 @@ const hiddenMobileMenu = () => {
           header.children[0].classList.remove('md:px-7')  
           basicMenu.classList.remove('min-h-[500px]')
           dropMenu.classList.remove('md:w-[465px]')
-          moon.classList.toggle('md:hidden')
+          dark.classList.toggle('md:hidden')
       }
   }
 };
@@ -77,7 +77,7 @@ const getContactForm = () => {
           header.children[0].classList.remove('md:px-7')  
           basicMenu.classList.remove('min-h-[500px]')
           dropMenu.classList.remove('md:w-[465px]')
-          moon.classList.toggle('md:hidden')
+          dark.classList.toggle('md:hidden')
     }
     contactForm.classList.toggle('left-[200%]')
     body.classList.toggle('body-bg')
@@ -177,4 +177,17 @@ setTimeout(() => {
   }
 }, 2000)
 
-  
+//Dark templates
+
+const html = document.querySelector('html')
+const moon = document.getElementById('moon')
+const sun = document.getElementById('sun')
+
+const switchTemplate = () => {
+  html.classList.toggle('dark')  
+  sun.classList.toggle('hidden')
+  moon.classList.toggle('hidden')
+}
+
+dark.addEventListener('click', switchTemplate)
+

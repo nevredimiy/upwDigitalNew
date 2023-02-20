@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ["./build/*.html", "./build/js/script.js/"],
   theme: {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1rem',       
-        md: '0.5rem',
+        DEFAULT: '1.25rem',       
+        md: '0.25rem',
         lg: 'clamp(0.75rem, 1rem, 2rem)',
         xl: 'clamp(1rem, 1.25rem, 4.5rem)'
       }
@@ -20,10 +21,11 @@ module.exports = {
     },
 
       backgroundImage: {
-          'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
+        'gradient-radial': 'radial-gradient(50% 50% at 50% 50%, #FF304D 0%, rgba(255, 48, 77, 0) 100%, var(--tw-gradient-stops))',
       },
       
-
+      
+    
       gridRow: {
         'span-8': 'span 8 / span 8',
         'span-11': 'span 11 / span 11',
@@ -61,14 +63,6 @@ module.exports = {
         'dark-gray': '#474747',
       },
            
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(#FF304D,#171717)',
-      },
-      
-      backgroundImage: {
-        'our-achievements': "url('/images/our_achievements_820.jpg')",
-      },
-      
       screens: {
         '2xl': '1690px'
       },

@@ -521,8 +521,8 @@ body {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
 }
 
 @media (min-width: 640px) {
@@ -534,8 +534,8 @@ body {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
   }
 }
 
@@ -661,12 +661,16 @@ body {
   left: 1.25rem;
 }
 
-.-bottom-4 {
-  bottom: -1rem;
+.-bottom-5 {
+  bottom: -1.25rem;
 }
 
 .right-\[200\%\] {
   right: 200%;
+}
+
+.-bottom-4 {
+  bottom: -1rem;
 }
 
 .z-40 {
@@ -727,10 +731,6 @@ body {
   margin-top: 2.5rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -753,6 +753,10 @@ body {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-7 {
@@ -805,6 +809,10 @@ body {
 
 .h-1 {
   height: 0.25rem;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .h-6 {
@@ -869,10 +877,6 @@ body {
 
 .h-\[39px\] {
   height: 39px;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .max-h-0 {
@@ -1102,6 +1106,10 @@ body {
   overflow: hidden;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .overflow-y-scroll {
   overflow-y: scroll;
 }
@@ -1187,6 +1195,10 @@ body {
 .bg-dark-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(71 71 71 / var(--tw-bg-opacity));
+}
+
+.bg-gradient-radial {
+  background-image: radial-gradient(50% 50% at 50% 50%, #FF304D 0%, rgba(255, 48, 77, 0) 100%, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-l {
@@ -1423,6 +1435,10 @@ body {
   padding-top: 2.5rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-\[19px\] {
   padding-bottom: 19px;
 }
@@ -1636,6 +1652,11 @@ body {
   color: rgb(255 48 77 / var(--tw-text-opacity));
 }
 
+.text-base-black {
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity));
+}
+
 .text-base-white {
   --tw-text-opacity: 1;
   color: rgb(248 248 248 / var(--tw-text-opacity));
@@ -1656,19 +1677,14 @@ body {
   color: rgb(99 85 255 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-base-black {
-  --tw-text-opacity: 1;
-  color: rgb(23 23 23 / var(--tw-text-opacity));
-}
-
 .text-middle-gray {
   --tw-text-opacity: 1;
   color: rgb(144 144 144 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1697,6 +1713,11 @@ body {
 
 .blur-\[45px\] {
   --tw-blur: blur(45px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur {
+  --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1745,6 +1766,51 @@ body {
 .toggle-plus>div::before {
   --tw-rotate: 0deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.file\:mr-4::file-selector-button {
+  margin-right: 1rem;
+}
+
+.file\:border-none::file-selector-button {
+  border-style: none;
+}
+
+.file\:bg-base-black::file-selector-button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+.file\:py-2::file-selector-button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.file\:px-4::file-selector-button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.file\:text-sm::file-selector-button {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.file\:font-medium::file-selector-button {
+  font-weight: 500;
+}
+
+.file\:leading-\[1\.3\]::file-selector-button {
+  line-height: 1.3;
+}
+
+.file\:tracking-\[1px\]::file-selector-button {
+  letter-spacing: 1px;
+}
+
+.file\:text-base-gray::file-selector-button {
+  --tw-text-opacity: 1;
+  color: rgb(145 145 145 / var(--tw-text-opacity));
 }
 
 .before\:absolute::before {
@@ -1972,6 +2038,16 @@ body {
   color: rgb(23 23 23 / var(--tw-text-opacity));
 }
 
+.dark .dark\:bg-base-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:text-base-white {
+  --tw-text-opacity: 1;
+  color: rgb(248 248 248 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:left-full {
     left: 100%;
@@ -2082,12 +2158,16 @@ body {
     margin-top: 86px;
   }
 
-  .md\:mt-36 {
-    margin-top: 9rem;
+  .md\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .md\:ml-9 {
     margin-left: 2.25rem;
+  }
+
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
   }
 
   .md\:mt-2 {
@@ -2108,6 +2188,10 @@ body {
 
   .md\:mt-12 {
     margin-top: 3rem;
+  }
+
+  .md\:mt-36 {
+    margin-top: 9rem;
   }
 
   .md\:mt-10 {
@@ -2537,6 +2621,10 @@ body {
     padding-right: 2.25rem;
   }
 
+  .md\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
   .md\:pb-11 {
     padding-bottom: 2.75rem;
   }
@@ -2593,6 +2681,10 @@ body {
     padding-bottom: 2.5rem;
   }
 
+  .md\:pr-4 {
+    padding-right: 1rem;
+  }
+
   .md\:pl-12 {
     padding-left: 3rem;
   }
@@ -2601,16 +2693,16 @@ body {
     padding-left: 0.25rem;
   }
 
-  .md\:pb-9 {
-    padding-bottom: 2.25rem;
+  .md\:pb-8 {
+    padding-bottom: 2rem;
   }
 
   .md\:pb-1 {
     padding-bottom: 0.25rem;
   }
 
-  .md\:pb-36 {
-    padding-bottom: 9rem;
+  .md\:pb-32 {
+    padding-bottom: 8rem;
   }
 
   .md\:pt-11 {
@@ -2639,6 +2731,14 @@ body {
 
   .md\:pr-10 {
     padding-right: 2.5rem;
+  }
+
+  .md\:pb-9 {
+    padding-bottom: 2.25rem;
+  }
+
+  .md\:pb-36 {
+    padding-bottom: 9rem;
   }
 
   .md\:indent-\[86px\] {
@@ -2962,10 +3062,6 @@ body {
     margin-top: 92px;
   }
 
-  .xl\:mt-36 {
-    margin-top: 9rem;
-  }
-
   .xl\:ml-1 {
     margin-left: 0.25rem;
   }
@@ -2980,6 +3076,10 @@ body {
 
   .xl\:ml-\[152px\] {
     margin-left: 152px;
+  }
+
+  .xl\:mt-36 {
+    margin-top: 9rem;
   }
 
   .xl\:mt-12 {
@@ -3471,8 +3571,8 @@ body {
     padding-right: 10rem;
   }
 
-  .xl\:pb-3 {
-    padding-bottom: 0.75rem;
+  .xl\:pb-36 {
+    padding-bottom: 9rem;
   }
 
   .xl\:pt-\[70px\] {
@@ -3603,6 +3703,10 @@ body {
     padding-right: 0px;
   }
 
+  .xl\:pb-3 {
+    padding-bottom: 0.75rem;
+  }
+
   .xl\:indent-32 {
     text-indent: 8rem;
   }
@@ -3725,6 +3829,11 @@ body {
 
   .xl\:blur-\[80px\] {
     --tw-blur: blur(80px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  .xl\:blur-\[90px\] {
+    --tw-blur: blur(90px);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 

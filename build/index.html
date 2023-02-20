@@ -31,8 +31,9 @@
   <!-- favicon end -->
 </head>
 
-<body class="text-base font-medium text-base-white w-full">
-  <header class="sticky z-40 bg-base-black transition-opacity duration-300 ease-in md:h-[82px] xl:h-[90px] w-full ">
+<body class="w-full text-base font-medium text-base-black dark:bg-base-black dark:text-base-white">
+  <header
+    class="sticky z-40 w-full bg-base-black text-base-white transition-opacity duration-300 ease-in md:h-[82px] xl:h-[90px]">
     <div class="container flex h-[76px] flex-wrap items-center justify-between md:h-[82px] xl:relative xl:h-[90px]">
       <!-- Logo & Moon -->
       <div class="flex items-center gap-11 md:gap-14">
@@ -49,19 +50,26 @@
         </div>
 
         <!-- moon -->
-        <div id="moon" class="">
-          <button>
+        <div id="dark" class="">
+          <button id="moon">
             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M8.64195 1.00439L8.64196 1.00439C9.17383 0.827256 9.43477 0.938357 9.49125 0.988379C9.50652 1.0019 9.51618 1.01448 9.51563 1.05327C9.51491 1.10516 9.49146 1.21876 9.37103 1.38979L9.37102 1.38979C7.93626 3.42747 7.37097 5.08324 7.37281 7.32785C7.37936 15.3015 16.4493 19.7034 22.798 14.8407L22.494 14.4438L22.798 14.8407C23.0445 14.6519 23.2304 14.5695 23.3487 14.5436C23.4061 14.531 23.4361 14.5333 23.4488 14.5361C23.4582 14.549 23.485 14.595 23.4958 14.7103C23.5104 14.8666 23.489 15.1027 23.3958 15.4218C20.5793 25.0622 7.85599 26.9858 2.38111 18.6141C-0.326425 14.474 -0.0798655 8.62186 2.91788 4.99832C4.56619 3.00592 6.34274 1.77009 8.64195 1.00439ZM23.4564 14.5389C23.4563 14.5391 23.4546 14.5386 23.4519 14.5369C23.4552 14.5378 23.4566 14.5387 23.4564 14.5389Z"
                 stroke="white" />
             </svg>
           </button>
+          <button id="sun" class="hidden">
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.6221 4.24476C14.7855 4.66513 14.9841 4.85527 15.1438 4.90956C15.4531 5.01464 15.6682 5.03144 15.8138 5.00688C15.9428 4.98512 16.0428 4.92759 16.1342 4.80969C16.2357 4.67869 16.3353 4.45971 16.4069 4.10967C16.4779 3.76288 16.5156 3.31728 16.5156 2.76049C16.5156 1.62222 16.3477 0.998116 16.124 0.7117C16.0292 0.590367 15.9261 0.531597 15.7967 0.509786C15.6517 0.485339 15.4385 0.502551 15.1341 0.609982L14.6221 4.24476ZM14.6221 4.24476C14.4651 3.84082 14.3781 3.31304 14.3765 2.76613M14.6221 4.24476L14.3765 2.76613M16.9234 26.5956C17.0605 26.9831 17.0567 29.6035 16.9184 30.0081L16.9234 26.5956ZM16.9234 26.5956C16.6456 25.8105 15.7487 25.3742 14.9909 25.6556L16.9234 26.5956ZM14.3765 2.76613C14.3749 2.21927 14.4588 1.69018 14.6136 1.28385M14.3765 2.76613L14.6136 1.28385M14.6136 1.28385C14.7747 0.861146 14.9729 0.666904 15.134 0.609993L14.6136 1.28385ZM22.7435 7.01229C22.7442 7.01261 22.7586 6.98412 22.8057 6.91812C22.8595 6.84277 22.9354 6.74636 23.0308 6.63309C23.2207 6.40738 23.471 6.13439 23.7352 5.86288C23.9993 5.59154 24.2717 5.32735 24.5047 5.11859C24.6213 5.01405 24.7247 4.92653 24.8098 4.8601C24.8523 4.82695 24.8879 4.80098 24.9164 4.78164C24.9305 4.77206 24.9418 4.76485 24.9505 4.75962L24.9605 4.75378L24.9633 4.7523L24.9638 4.75204L24.9642 4.75183L22.7435 7.01229ZM22.7435 7.01229C22.4723 7.83423 23.2069 8.57323 24.038 8.30008C24.0377 8.29942 24.0663 8.28502 24.1327 8.23789C24.2083 8.18424 24.305 8.10847 24.4186 8.01339C24.6449 7.82393 24.9187 7.5743 25.1909 7.3108C25.463 7.04748 25.7279 6.77583 25.9372 6.54346C26.042 6.42709 26.1298 6.32406 26.1964 6.23913C26.2296 6.19676 26.2556 6.16137 26.275 6.13295C26.2846 6.11889 26.2918 6.10762 26.297 6.09899L26.3028 6.08905C26.3041 6.08686 26.3046 6.0857 26.3047 6.0855C26.723 5.24836 25.8135 4.32981 24.9642 4.75181L22.7435 7.01229ZM22.7435 24.0413C22.5654 23.4993 22.8579 22.919 23.3242 22.7544C23.56 22.6712 23.7886 22.669 24.0487 22.7571C24.0418 22.7547 24.0381 22.7533 24.038 22.7535C24.0377 22.7542 24.0663 22.7686 24.1327 22.8157C24.2083 22.8694 24.305 22.9451 24.4186 23.0402C24.6449 23.2297 24.9187 23.4793 25.1909 23.7428C25.463 24.0061 25.7279 24.2778 25.9372 24.5101C26.042 24.6265 26.1298 24.7295 26.1964 24.8145C26.2296 24.8568 26.2556 24.8922 26.275 24.9206C26.2783 24.9255 26.2813 24.93 26.2841 24.9342C26.2893 24.9421 26.2936 24.9489 26.297 24.9546L26.3028 24.9645C26.3041 24.9667 26.3046 24.9679 26.3047 24.9681C26.3048 24.9681 26.3048 24.9681 26.3048 24.9681C26.723 25.8053 25.8135 26.7238 24.9642 26.3018L22.7435 24.0413ZM22.7435 24.0413C22.7444 24.0414 22.7589 24.0699 22.8057 24.1355C22.8595 24.2108 22.9354 24.3072 23.0308 24.4205C23.2207 24.6462 23.471 24.9192 23.7352 25.1907C23.9993 25.462 24.2717 25.7262 24.5047 25.935C24.6213 26.0395 24.7247 26.1271 24.8098 26.1935C24.8523 26.2266 24.8879 26.2526 24.9164 26.272C24.9305 26.2815 24.9418 26.2887 24.9505 26.294L24.9605 26.2998L24.9633 26.3013C24.9638 26.3016 24.9641 26.3017 24.9642 26.3018L22.7435 24.0413ZM10.7295 10.0649L10.7296 10.0649C11.8398 9.10628 12.8588 8.64377 14.6789 8.31075C18.2626 7.65513 21.028 9.88374 22.1301 12.878C23.2328 15.874 22.6156 19.5015 19.5222 21.5582C15.8145 24.0232 11.9463 22.6328 9.81341 19.8435C7.68088 17.0546 7.3625 12.9719 10.7295 10.0649ZM26.5763 14.1094C25.239 14.598 25.2532 16.4743 26.5977 16.9474L30.0194 16.9425C31.3269 16.4982 31.3269 14.5554 30.0194 14.1111C29.6272 13.9778 26.9399 13.9765 26.5763 14.1094ZM15.1535 30.4454L14.9926 30.9188L15.1535 30.4454C14.9871 30.3889 14.7866 30.1962 14.6232 29.7788C14.4656 29.3764 14.379 28.8506 14.3788 28.3045C14.3786 27.7587 14.4648 27.229 14.6229 26.8196C14.7868 26.3954 14.9906 26.189 15.1649 26.1243C15.6477 25.9451 16.2625 26.2268 16.452 26.7624C16.451 26.7595 16.4511 26.7603 16.4522 26.7654C16.4547 26.7781 16.4625 26.8172 16.4715 26.8947C16.4827 26.9903 16.4925 27.115 16.5006 27.2627C16.5167 27.5573 16.5247 27.9241 16.5241 28.2947C16.5236 28.6653 16.5146 29.0332 16.4976 29.3301C16.4891 29.4789 16.4788 29.6052 16.4673 29.7028C16.4568 29.7921 16.4478 29.8341 16.4456 29.8443C16.4451 29.8466 16.445 29.8472 16.4453 29.8464L16.4452 29.8464C16.2786 30.3343 15.6925 30.6286 15.1535 30.4454ZM6.53706 7.94711C5.82498 7.58348 5.10276 6.90547 4.69302 6.0855C4.57408 5.84745 4.56832 5.5471 4.67348 5.27138C4.77889 4.99499 4.97562 4.79389 5.20022 4.71453C5.46995 4.61927 5.83308 4.66233 6.26396 4.88823C6.68866 5.11088 7.11806 5.48207 7.46794 5.91993C7.8193 6.35964 8.06325 6.83236 8.15341 7.23861C8.24368 7.64536 8.16825 7.90351 8.01256 8.05879C7.90679 8.16427 7.74052 8.23419 7.48237 8.22645C7.2194 8.21856 6.89225 8.12848 6.53706 7.94711ZM24.0487 8.29652L24.0486 8.29653L24.0487 8.29652ZM26.7637 16.4758C25.8593 16.1576 25.8542 14.9069 26.7464 14.5795C26.7443 14.5803 26.7431 14.5808 26.7432 14.5809C26.7434 14.5815 26.7779 14.573 26.8691 14.5626C26.9644 14.5518 27.0898 14.5421 27.2391 14.5341C27.5369 14.5183 27.9098 14.5103 28.2869 14.5104C28.6639 14.5106 29.0387 14.519 29.3403 14.5352C29.4914 14.5433 29.6195 14.5532 29.718 14.5642C29.8017 14.5736 29.8431 14.5818 29.8554 14.5842C29.8596 14.585 29.8605 14.5852 29.8585 14.5845C30.7138 14.8752 30.7138 16.1784 29.8585 16.469C29.8592 16.4688 29.8586 16.469 29.8565 16.4694C29.8466 16.4715 29.8043 16.4807 29.7138 16.4913C29.6158 16.5027 29.4891 16.513 29.3398 16.5214C29.0421 16.5384 28.673 16.5474 28.3014 16.5479C27.9297 16.5485 27.5619 16.5405 27.2663 16.5245C27.1182 16.5164 26.9931 16.5066 26.8971 16.4954C26.8188 16.4864 26.7793 16.4785 26.7667 16.476C26.7617 16.475 26.761 16.4748 26.7637 16.4758ZM4.69302 24.9681L4.69305 24.968C4.69372 24.9668 4.70076 24.9539 4.7193 24.9269C4.73798 24.8998 4.76343 24.8654 4.79628 24.8238C4.86208 24.7404 4.94932 24.6383 5.05381 24.5223C5.26241 24.2908 5.52724 24.018 5.79889 23.7529C6.0707 23.4876 6.34389 23.2352 6.56864 23.0435C6.68145 22.9473 6.77724 22.8706 6.85169 22.8162C6.91253 22.7718 6.94024 22.7566 6.94235 22.7547C7.77858 22.4716 8.52558 23.2188 8.25425 24.0413C8.25359 24.041 8.23918 24.0695 8.19208 24.1355C8.13831 24.2108 8.06235 24.3072 7.96702 24.4205C7.77706 24.6462 7.52675 24.9192 7.26255 25.1907C6.99852 25.462 6.72612 25.7262 6.49312 25.935C6.37643 26.0395 6.27311 26.1271 6.18793 26.1935C6.14543 26.2266 6.10992 26.2526 6.08139 26.272C6.06727 26.2815 6.05595 26.2887 6.04726 26.294L6.03723 26.2998L6.03449 26.3013C6.03395 26.3016 6.03365 26.3017 6.03358 26.3018C6.03357 26.3018 6.03356 26.3018 6.03355 26.3018C5.18429 26.7238 4.27479 25.8053 4.693 24.9681L4.69302 24.9681Z"
+                stroke="#171717" />
+            </svg>
+          </button>
         </div>
       </div>
 
       <div id="main-menu"
-        class="absolute top-[76px] right-0 z-40 hidden min-h-screen w-full origin-top animate-open-menu bg-base-black pt-8 md:right-0 md:max-w-[465px] xl:static xl:block xl:min-h-[90px] xl:max-w-full xl:flex-1 xl:flex-nowrap xl:p-0">
+        class="bg-base-black pt-8 absolute top-[76px] right-0 z-40 hidden min-h-screen w-full origin-top animate-open-menu md:right-0 md:max-w-[465px] xl:static xl:block xl:min-h-[90px] xl:max-w-full xl:flex-1 xl:flex-nowrap xl:p-0">
         <div class="container">
           <div id="list-lang"
             class="items-center gap-10 xl:absolute xl:-right-72 xl:top-20 xl:hidden xl:rounded-sm xl:bg-base-white xl:py-3 xl:px-5 xl:text-black xl:opacity-70">
@@ -82,14 +90,13 @@
           <div class="">
             <nav>
               <ul id="basic-menu"
-                class="relative uppercase flex flex-col justify-start gap-7 xl:static xl:h-[90px] xl:flex-row xl:items-center xl:justify-center xl:gap-12 xl:text-base-white">
+                class="relative flex flex-col justify-start gap-7 uppercase xl:static xl:h-[90px] xl:flex-row xl:items-center xl:justify-center xl:gap-12 xl:text-base-white">
                 <li>
                   <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
-                    href="#">Case
-                    Studies</a>
+                    href="#">Case Studies</a>
                 </li>
-                <li class="xl:relative py-5 group">
-                  <a class=" flex items-center gap-5 text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
+                <li class="group py-5 xl:relative">
+                  <a class="flex items-center gap-5 text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
                     href="#">
                     Services
                     <svg class="h-[18px] w-[9px] xl:rotate-90" viewBox="0 0 9 18" fill="none"
@@ -99,7 +106,7 @@
                     </svg>
                   </a>
                   <div id="dropmenu"
-                    class="group-hover:block group-hover:min-h-min absolute top-0 left-[200%] min-h-screen w-full bg-base-black xl:left-0 xl:top-14 xl:hidden xl:h-[225px] xl:w-[500px] xl:rounded-xl xl:bg-base-white xl:text-base-black">
+                    class="absolute top-0 left-[200%] min-h-screen w-full bg-base-black group-hover:block group-hover:min-h-min xl:left-0 xl:top-14 xl:hidden xl:h-[225px] xl:w-[500px] xl:rounded-xl xl:bg-base-white xl:text-base-black">
                     <a id="back-to-menu"
                       class="flex items-center gap-2 pb-4 text-xs uppercase leading-1.3 text-base-red xl:hidden"
                       href="#">
@@ -246,8 +253,7 @@
                 </li>
                 <li>
                   <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
-                    href="#">About
-                    us</a>
+                    href="#">About us</a>
                 </li>
                 <li>
                   <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
@@ -262,7 +268,7 @@
           </div>
           <div class="fixed bottom-0 left-0 z-10 flex w-full items-center justify-between px-12 pb-24 xl:hidden">
             <a href="">
-              <svg class="fill-white hover:fill-base-gray active:fill-base-red h-[32px] w-[32px]" viewBox="0 0 32 32"
+              <svg class="h-[32px] w-[32px] fill-white hover:fill-base-gray active:fill-base-red" viewBox="0 0 32 32"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M15.9995 9.84229C12.5984 9.84229 9.8418 12.5988 9.8418 16C9.8418 19.4012 12.5984 22.1577 15.9995 22.1577C19.4007 22.1577 22.1572 19.4012 22.1572 16C22.1572 12.5988 19.4007 9.84229 15.9995 9.84229ZM15.9995 20.0046C13.7915 20.0046 11.9949 18.208 11.9949 16C11.9949 13.792 13.7915 11.9954 15.9995 11.9954C18.2075 11.9954 20.0041 13.792 20.0041 16C20.0041 18.208 18.2075 20.0046 15.9995 20.0046Z" />
@@ -273,7 +279,7 @@
               </svg>
             </a>
             <a href="">
-              <svg class="fill-white hover:fill-base-gray active:fill-base-red h-[24px] w-[24px]" viewBox="0 0 24 24"
+              <svg class="h-[24px] w-[24px] fill-white hover:fill-base-gray active:fill-base-red" viewBox="0 0 24 24"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_3668_33195)">
                   <path
@@ -287,7 +293,7 @@
               </svg>
             </a>
             <a href="">
-              <svg class="fill-white hover:fill-base-gray active:fill-base-red h-[32px] w-[32px]" viewBox="0 0 32 32"
+              <svg class="h-[32px] w-[32px] fill-white hover:fill-base-gray active:fill-base-red" viewBox="0 0 32 32"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M6.32919 9.13885C7.86366 9.13885 9.1076 7.89491 9.1076 6.36044C9.1076 4.82597 7.86366 3.58203 6.32919 3.58203C4.79472 3.58203 3.55078 4.82597 3.55078 6.36044C3.55078 7.89491 4.79472 9.13885 6.32919 9.13885Z" />
@@ -296,7 +302,7 @@
               </svg>
             </a>
             <a href="">
-              <svg class="fill-white hover:fill-base-gray active:fill-base-red h-[32px] w-[32px]" viewBox="0 0 32 32"
+              <svg class="h-[32px] w-[32px] fill-white hover:fill-base-gray active:fill-base-red" viewBox="0 0 32 32"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_3668_33200)">
                   <path
@@ -317,13 +323,13 @@
         <!-- pencil -->
         <div id="contact-details" class="md:flex md:items-center">
           <button
-            class="flex items-center justify-center rounded-full bg-base-red md:px-3 group hover:bg-base-white active:border-base-red active:border">
+            class="group flex items-center justify-center rounded-full bg-base-red hover:bg-base-white active:border active:border-base-red md:px-3">
             <div id="lets-talk"
-              class="md:pl-4 hidden text-base font-medium uppercase leading-1.3 md:block group-hover:text-base-black group-active:text-base-red">
+              class="hidden text-base font-medium uppercase leading-1.3 group-hover:text-base-black group-active:text-base-red md:block md:pl-4">
               Let's talk
             </div>
-            <div class="rounded-full bg-base-red group-hover:bg-base-white p-3 md:p-4">
-              <svg class="w-4 h-[15px] fill-white group-hover:fill-black group-active:fill-base-red" viewBox="0 0 16 15"
+            <div class="rounded-full bg-base-red p-3 group-hover:bg-base-white md:p-4">
+              <svg class="h-[15px] w-4 fill-white group-hover:fill-black group-active:fill-base-red" viewBox="0 0 16 15"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M1.43416 9.93883L0.522806 13.5585C0.491368 13.6908 0.492445 13.8279 0.525961 13.9598C0.559476 14.0917 0.624582 14.215 0.716523 14.3208C0.808464 14.4265 0.924918 14.5121 1.05738 14.5711C1.18983 14.6302 1.33495 14.6612 1.48213 14.662C1.5507 14.6684 1.6198 14.6684 1.68838 14.662L5.64557 13.8233L13.2434 6.8577L9.00319 2.96436L1.43416 9.93883Z" />
@@ -355,14 +361,14 @@
       </div>
     </div>
     <section id="contact-form"
-      class="fixed top-0 left-[200%] z-50 min-h-screen min-w-full overflow-y-scroll bg-base-black text-white xl:z-50 xl:flex">
+      class="fixed top-0 left-[200%] z-50 h-screen min-w-full overflow-scroll bg-base-black text-white xl:z-50 xl:flex">
       <div class="hidden xl:block xl:min-h-screen xl:w-full xl:flex-1 xl:bg-base-red"></div>
       <div class="container pt-8 md:px-1 md:pt-6 xl:max-w-[1081px]">
         <div class="z-1 relative">
           <!-- Button close -->
           <button id="button-close"
-            class="absolute top-0 right-0 z-30 cursor-pointer rounded-full border border-base-white py-2 px-4 xl:right-14 xl:top-5 xl:py-2 xl:px-6 hover:bg-base-white group">
-            <svg class="fill-white w-6 h-6 group-hover:fill-black" viewBox="0 0 24 24" fill="none"
+            class="group absolute top-0 right-0 z-30 cursor-pointer rounded-full border border-base-white py-2 px-4 hover:bg-base-white xl:right-14 xl:top-5 xl:py-2 xl:px-6">
+            <svg class="h-6 w-6 fill-white group-hover:fill-black" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M2.84766 0.814453L23.1853 21.1521L21.1516 23.1859L0.813887 2.84822L2.84766 0.814453Z" />
               <path d="M0.814453 21.1523L21.1521 0.814654L23.1859 2.84842L2.84822 23.1861L0.814453 21.1523Z" />
@@ -503,7 +509,8 @@
   </header>
 
   <main>
-    <section class="relative overflow-hidden bg-base-black pt-7 pb-16 xl:py-28">
+
+    <section class="relative overflow-hidden bg-base-black pt-7 pb-16 text-base-white xl:py-28">
       <div class="container">
         <div
           class="relative z-10 pt-5 text-center text-4xl font-bold uppercase leading-1.2 md:text-6xl md:leading-1.1 xl:pt-1 xl:text-[120px] xl:leading-1.0">
@@ -519,9 +526,9 @@
           needs.
         </div>
       </div>
-      <!-- Red Spot -->
+      <!-- Red Blur -->
       <div
-        class="z-5 absolute top-0 right-0 h-[212px] w-[212px] translate-x-1/3 bg-gradient-to-l from-base-red to-base-black blur-[45px] md:top-[110px] md:-right-40 md:h-[322px] md:w-[322px] md:blur-[60px] xl:h-[591px] xl:w-[591px]">
+        class="spot z-5 absolute top-0 right-0 h-[212px] w-[212px] translate-x-1/3 bg-gradient-radial from-base-red to-base-black blur-[45px] md:h-[322px] md:w-[322px] md:blur-[60px] xl:h-[591px] xl:w-[591px] xl:blur-[90px]">
       </div>
     </section>
 
@@ -540,8 +547,8 @@
         </div>
       </div>
 
-      <video class="w-full h-auto" width="320" height="240" muted autoplay controls>
-        <source src="./images/uwp.mp4" type="video/mp4">
+      <video class="h-auto w-full" width="320" height="240" muted autoplay controls>
+        <source src="./images/uwp.mp4" type="video/mp4" />
         Error load video
       </video>
     </section>
@@ -549,7 +556,7 @@
     <section>
       <div class="container md:mt-11 xl:mt-[105px]">
         <div
-          class="pt-20 text-xl text-black md:grid md:grid-cols-2col33 md:border-t md:border-middle-gray md:pt-0 md:text-base xl:grid-cols-2col25 xl:text-2xl">
+          class="pt-20 text-xl md:grid md:grid-cols-2col33 md:border-t md:border-middle-gray md:pt-0 md:text-base xl:grid-cols-2col25 xl:text-2xl">
           <div
             class="border-b border-middle-gray pb-[30px] pr-5 font-bold uppercase leading-1.1 md:border-0 md:border-r md:border-middle-gray md:pb-20 md:pt-7 md:leading-1.4 xl:pr-10 xl:pt-[3.25rem] xl:leading-1.3">
             Limitless is your new rule in business development
@@ -570,12 +577,12 @@
         <div class="grid grid-cols-12 gap-5 md:gap-6 md:pt-3 xl:gap-0">
           <!-- Services Titile -->
           <div
-            class="col-span-12 border-b border-middle-gray pt-2 pb-7 text-4xl font-bold uppercase leading-1.1 text-black md:text-[45px] xl:pb-11 xl:text-[90px]">
+            class="col-span-12 border-b border-middle-gray pt-2 pb-7 text-4xl font-bold uppercase leading-1.1 md:text-[45px] xl:pb-11 xl:text-[90px]">
             Our Cases
           </div>
           <!-- Services Description -->
           <div
-            class="col-span-12 pt-2 text-base font-medium leading-1.4 text-base-black md:pb-3 xl:col-span-3 xl:col-start-1 xl:row-start-2 xl:border-r xl:border-middle-gray xl:pr-10 xl:pt-[3.25rem]">
+            class="col-span-12 pt-2 text-base font-medium leading-1.4 md:pb-3 xl:col-span-3 xl:col-start-1 xl:row-start-2 xl:border-r xl:border-middle-gray xl:pr-10 xl:pt-[3.25rem]">
             Whether you need to create a website, develop a UX UI design,
             conduct SEO optimization, develop a marketing strategy for your
             business, set up Google ads, and Facebook ads, or get more
@@ -585,7 +592,7 @@
 
           <!-- //Services Article 1 -->
           <div
-            class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:row-span-2 xl:col-span-9 xl:col-start-4 xl:ml-11 xl:border-none xl:pt-0">
+            class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-span-9 xl:col-start-4 xl:row-span-2 xl:ml-11 xl:border-none xl:pt-0">
             <!-- image -->
             <div class="z-1 relative md:col-start-2 xl:py-[3.25rem] xl:pl-[3rem]">
               <div
@@ -623,8 +630,8 @@
             <!-- article -->
             <div
               class="pt-7 pb-3 md:col-start-1 md:row-start-1 md:flex md:flex-col md:justify-between md:pr-9 md:pb-0 md:pt-0 xl:border-r xl:border-b-0 xl:border-middle-gray xl:py-[3.25rem] xl:pr-[3rem]">
-              <div class="text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
-                <a href="#" class="flex items-start justify-between hover:underline hover:text-base-red ">
+              <div class="text-xl font-bold leading-1.2 md:gap-2 xl:gap-10 xl:text-[32px]">
+                <a href="#" class="flex items-start justify-between hover:text-base-red hover:underline md:gap-2">
                   <div class="">
                     Gambling vs. Marketing: when advertising boosts betting
                     revenue
@@ -637,14 +644,12 @@
                   </svg>
                 </a>
               </div>
-              <div
-                class="pt-7 text-sm font-medium leading-1.4 text-base-black md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
+              <div class="pt-7 text-sm font-medium leading-1.4 md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
                 Establishing a Next-Level Geosocial Networking App
                 Establishing a Next-Level Geosocial Networking AppEstablishing
                 a Next-Level Geosocial Networking App
               </div>
-              <div
-                class="pt-10 text-xs font-medium uppercase leading-1.4 text-base-black md:pt-0 md:text-sm xl:text-base">
+              <div class="pt-10 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
                 marketing strategy, design
               </div>
             </div>
@@ -690,9 +695,8 @@
             <!-- article -->
             <div
               class="pt-7 pb-3 md:flex md:flex-col md:justify-between md:pl-9 md:pb-0 md:pt-0 xl:border-r xl:border-none xl:border-middle-gray xl:py-[3.25rem] xl:pl-[3rem]">
-              <div class="text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10
-                xl:text-[32px]">
-                <a href="#" class="flex items-start justify-between">
+              <div class="text-xl font-bold leading-1.2 md:gap-2 xl:gap-10 xl:text-[32px]">
+                <a href="#" class="flex items-start justify-between md:gap-2">
                   <div class="">
                     Gambling vs. Marketing: when advertising boosts betting
                     revenue
@@ -705,14 +709,12 @@
                   </svg>
                 </a>
               </div>
-              <div
-                class="pt-7 text-sm font-medium leading-1.4 text-base-black md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
+              <div class="pt-7 text-sm font-medium leading-1.4 md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
                 Establishing a Next-Level Geosocial Networking App
                 Establishing a Next-Level Geosocial Networking AppEstablishing
                 a Next-Level Geosocial Networking App
               </div>
-              <div
-                class="pt-10 text-xs font-medium uppercase leading-1.4 text-base-black md:pt-0 md:text-sm xl:text-base">
+              <div class="pt-10 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
                 marketing strategy, design
               </div>
             </div>
@@ -758,8 +760,8 @@
             <!-- article -->
             <div
               class="pt-7 pb-3 md:col-start-1 md:row-start-1 md:flex md:flex-col md:justify-between md:pr-9 md:pb-0 md:pt-0 xl:border-r xl:border-b-0 xl:border-middle-gray xl:py-[3.25rem] xl:pr-[3rem]">
-              <div class="text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
-                <a href="#" class="flex items-start justify-between">
+              <div class="text-xl font-bold leading-1.2 md:gap-2 xl:gap-10 xl:text-[32px]">
+                <a href="#" class="flex items-start justify-between md:gap-2">
                   <div class="">
                     Gambling vs. Marketing: when advertising boosts betting
                     revenue
@@ -772,14 +774,12 @@
                   </svg>
                 </a>
               </div>
-              <div
-                class="pt-7 text-sm font-medium leading-1.4 text-base-black md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
+              <div class="pt-7 text-sm font-medium leading-1.4 md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
                 Establishing a Next-Level Geosocial Networking App
                 Establishing a Next-Level Geosocial Networking AppEstablishing
                 a Next-Level Geosocial Networking App
               </div>
-              <div
-                class="pt-10 text-xs font-medium uppercase leading-1.4 text-base-black md:pt-0 md:text-sm xl:text-base">
+              <div class="pt-10 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
                 marketing strategy, design
               </div>
             </div>
@@ -825,9 +825,8 @@
             <!-- article -->
             <div
               class="pt-7 pb-3 md:flex md:flex-col md:justify-between md:pl-9 md:pb-0 md:pt-0 xl:border-r xl:border-none xl:py-[3.25rem] xl:pl-[3rem]">
-              <div class="text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10
-                xl:text-[32px]">
-                <a href="#" class="flex items-start justify-between">
+              <div class="text-xl font-bold leading-1.2 md:gap-2 xl:gap-10 xl:text-[32px]">
+                <a href="#" class="flex items-start justify-between md:gap-2">
                   <div class="">
                     Gambling vs. Marketing: when advertising boosts betting
                     revenue
@@ -840,14 +839,12 @@
                   </svg>
                 </a>
               </div>
-              <div
-                class="pt-7 text-sm font-medium leading-1.4 text-base-black md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
+              <div class="pt-7 text-sm font-medium leading-1.4 md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
                 Establishing a Next-Level Geosocial Networking App
                 Establishing a Next-Level Geosocial Networking AppEstablishing
                 a Next-Level Geosocial Networking App
               </div>
-              <div
-                class="pt-10 text-xs font-medium uppercase leading-1.4 text-base-black md:pt-0 md:text-sm xl:text-base">
+              <div class="pt-10 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
                 marketing strategy, design
               </div>
             </div>
@@ -892,8 +889,8 @@
             <!-- article -->
             <div
               class="pt-7 pb-3 md:col-start-1 md:row-start-1 md:flex md:flex-col md:justify-between md:pr-9 md:pb-0 md:pt-0 xl:border-r xl:border-b-0 xl:border-middle-gray xl:py-[3.25rem] xl:pr-[3rem]">
-              <div class="text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
-                <a href="#" class="flex items-start justify-between">
+              <div class="text-xl font-bold leading-1.2 md:gap-2 xl:gap-10 xl:text-[32px]">
+                <a href="#" class="flex items-start justify-between md:gap-2">
                   <div class="">
                     Gambling vs. Marketing: when advertising boosts betting
                     revenue
@@ -906,14 +903,12 @@
                   </svg>
                 </a>
               </div>
-              <div
-                class="pt-7 text-sm font-medium leading-1.4 text-base-black md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
+              <div class="pt-7 text-sm font-medium leading-1.4 md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
                 Establishing a Next-Level Geosocial Networking App
                 Establishing a Next-Level Geosocial Networking AppEstablishing
                 a Next-Level Geosocial Networking App
               </div>
-              <div
-                class="pt-10 text-xs font-medium uppercase leading-1.4 text-base-black md:pt-0 md:text-sm xl:text-base">
+              <div class="pt-10 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
                 marketing strategy, design
               </div>
             </div>
@@ -958,8 +953,8 @@
             <!-- article -->
             <div
               class="pt-7 pb-3 md:flex md:flex-col md:justify-between md:pl-9 md:pb-0 md:pt-0 xl:py-[3.25rem] xl:pl-[3rem]">
-              <div class="text-xl font-bold leading-1.2 text-base-black md:gap-2 xl:gap-10 xl:text-[32px]">
-                <a href="#" class="flex items-start justify-between">
+              <div class="text-xl font-bold leading-1.2 md:gap-2 xl:gap-10 xl:text-[32px]">
+                <a href="#" class="flex items-start justify-between md:gap-2">
                   <div class="">
                     Gambling vs. Marketing: when advertising boosts betting
                     revenue
@@ -972,26 +967,24 @@
                   </svg>
                 </a>
               </div>
-              <div
-                class="pt-7 text-sm font-medium leading-1.4 text-base-black md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
+              <div class="pt-7 text-sm font-medium leading-1.4 md:flex-auto md:pt-16 md:text-base xl:pt-7 xl:pr-40">
                 Establishing a Next-Level Geosocial Networking App
                 Establishing a Next-Level Geosocial Networking AppEstablishing
                 a Next-Level Geosocial Networking App
               </div>
-              <div
-                class="pt-10 text-xs font-medium uppercase leading-1.4 text-base-black md:pt-0 md:text-sm xl:text-base">
+              <div class="pt-10 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
                 marketing strategy, design
               </div>
             </div>
           </div>
 
           <div
-            class="col-span-12 xl:col-span-3 xl:col-start-1 xl:row-start-3 xl:row-span-11 xl:row-span-12 xl:border-r xl:border-middle-gray">
+            class="xl:row-span-12 col-span-12 xl:col-span-3 xl:col-start-1 xl:row-span-11 xl:row-start-3 xl:border-r xl:border-middle-gray">
             <div
               class="mx-auto pt-4 md:w-[357px] md:pt-7 xl:relative xl:bottom-0 xl:left-0 xl:m-0 xl:w-full xl:pr-10 xl:pt-0">
               <a href="#">
                 <button
-                  class="flex w-full items-center justify-center gap-4 rounded-full bg-base-red hover:bg-red-600 py-4 text-base font-bold uppercase leading-24 md:py-5 md:leading-1.2">
+                  class="flex w-full items-center justify-center gap-4 rounded-full bg-base-red py-4 text-base text-base-white font-bold uppercase leading-24 hover:bg-red-600 md:py-5 md:leading-1.2">
                   All Cases
                   <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1007,26 +1000,26 @@
     </section>
 
     <!-- OUR SERVISE START-->
-    <section class="xl:pb-3">
+    <section class="pb-12 md:pb-24 xl:pb-36">
       <div class="container">
         <div class="xl:relative xl:grid xl:grid-cols-12 xl:pt-[70px]">
           <div class="wrapper_body flex pt-4 md:w-full md:pt-0 xl:col-span-12 xl:block">
             <h2
-              class="w-full border-b border-middle-gray py-7 text-4xl font-bold uppercase leading-[1.1] text-black md:w-full md:pt-7 md:pb-11 md:text-[45px] md:leading-[1.1] xl:pt-11 xl:pb-12 xl:text-[90px]">
+              class="w-full border-b border-middle-gray py-7 text-4xl font-bold uppercase leading-[1.1] md:w-full md:pt-7 md:pb-11 md:text-[45px] md:leading-[1.1] xl:pt-11 xl:pb-12 xl:text-[90px]">
               Our Services
             </h2>
           </div>
           <div
-            class="wrapper_body pt-8 md:pt-10 xl:col-start-1 xl:col-span-3 xl:row-start-2 xl:border-r xl:border-middle-gray xl:pt-8">
+            class="wrapper_body pt-8 md:pt-10 xl:col-span-3 xl:col-start-1 xl:row-start-2 xl:border-r xl:border-middle-gray xl:pt-8">
             <div
-              class="text text-base font-medium leading-[1.4] text-base-black md:w-full xl:border-b-0 xl:pt-5 xl:text-base xl:leading-[22.4px] xl:pr-12">
+              class="text text-base font-medium leading-[1.4] md:w-full xl:border-b-0 xl:pt-5 xl:pr-12 xl:text-base xl:leading-[22.4px]">
               Our advantage is not in one-time contact with the customer, but
               in complex interaction with him. It allows for attracting
               attention and forming a trusting relationship between the
               company and customers for a long time.
             </div>
           </div>
-          <div class="md:grid md:grid-cols-2 md:grid-rows-1 xl:col-start-4 xl:col-span-9 xl:row-start-2">
+          <div class="md:grid md:grid-cols-2 md:grid-rows-1 xl:col-span-9 xl:col-start-4 xl:row-start-2">
             <div class="md:col-start-1 xl:pt-10">
               <!--  1  -->
               <div class="flex flex-col md:pt-7 md:pb-[22px] xl:col-start-2 xl:ml-12 xl:w-full xl:pr-12">
@@ -1042,7 +1035,7 @@
                   <div
                     class="title-article flex cursor-pointer items-center justify-between border-b border-middle-gray pt-5 pb-[19px] md:pt-0 md:pb-7 md:pr-9 xl:pr-12 xl:pb-10">
                     <div
-                      class="text-2xl font-bold uppercase leading-[1.2] text-black md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
+                      class="text-2xl font-bold uppercase leading-[1.2] md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
                       Branding
                     </div>
                     <svg class="block w-6 md:w-[22px]" viewBox="0 0 22 22" fill="none"
@@ -1053,7 +1046,7 @@
                     </svg>
                   </div>
                   <div
-                    class="body-article overflow-hidden text-base font-medium leading-[1.4] text-base-black md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pr-7 xl:block xl:pt-14 xl:pr-12 xl:leading-1.5">
+                    class="body-article overflow-hidden text-base font-medium leading-[1.4] md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pr-7 xl:block xl:pt-14 xl:pr-12 xl:leading-1.5">
                     <div class="py-5 md:py-0">
                       UWP Digital knows how to combine creativity and
                       effectiveness in one solution. We reveal the unique
@@ -1064,7 +1057,7 @@
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
                       <a href="#">
                         <button
-                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 dark:bg-base-black dark:text-base-white md:hidden">
                           Read more
                         </button>
                       </a>
@@ -1088,7 +1081,7 @@
                   <div
                     class="title-article flex cursor-pointer items-center justify-between border-b border-middle-gray pt-5 pb-[19px] md:pb-7 md:pr-9 xl:pt-9 xl:pr-12 xl:pb-12">
                     <div
-                      class="text-2xl font-bold uppercase leading-[1.2] text-black md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
+                      class="text-2xl font-bold uppercase leading-[1.2] md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
                       Web development
                     </div>
                     <svg class="block h-6 w-6 md:h-[22px] md:w-[22px]" viewBox="0 0 22 22" fill="none"
@@ -1099,7 +1092,7 @@
                     </svg>
                   </div>
                   <div
-                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] text-base-black md:block md:max-h-full md:min-w-[350px] md:pt-9 md:pr-7 xl:block xl:pt-10 xl:pr-12 xl:leading-1.5">
+                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] md:block md:max-h-full md:min-w-[350px] md:pt-9 md:pr-7 xl:block xl:pt-10 xl:pr-12 xl:leading-1.5">
                     <div class="py-5 md:py-0">
                       Websites are the business card of your company in the
                       digital world. What can we do for you? Make your own
@@ -1110,7 +1103,7 @@
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
                       <a href="#">
                         <button
-                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 dark:bg-base-black dark:text-base-white md:hidden">
                           Read more
                         </button>
                       </a>
@@ -1134,7 +1127,7 @@
                   <div
                     class="title-article flex cursor-pointer items-center justify-between border-b border-middle-gray pt-5 pb-[19px] md:pb-7 md:pr-9 xl:pt-9 xl:pb-10">
                     <div
-                      class="text-2xl font-bold uppercase leading-[1.2] text-black md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
+                      class="text-2xl font-bold uppercase leading-[1.2] md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
                       SEO
                     </div>
                     <svg class="block w-6 md:w-[22px]" viewBox="0 0 22 22" fill="none"
@@ -1145,7 +1138,7 @@
                     </svg>
                   </div>
                   <div
-                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] text-base-black md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pr-7 xl:block xl:pt-14 xl:pr-10 xl:leading-1.5">
+                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pr-7 xl:block xl:pt-14 xl:pr-10 xl:leading-1.5">
                     <div class="py-5 md:py-0">
                       There are millions of websites, but not all of them make
                       it to the top of Google searches. UWP.Digital knows the
@@ -1159,7 +1152,7 @@
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
                       <a href="#">
                         <button
-                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 dark:bg-base-black dark:text-base-white md:hidden">
                           Read more
                         </button>
                       </a>
@@ -1182,7 +1175,7 @@
                   <div
                     class="title-article flex cursor-pointer items-center justify-between border-b border-middle-gray pt-5 pb-[19px] md:pb-7 md:pr-9 xl:pt-12 xl:pb-12">
                     <div
-                      class="text-2xl font-bold uppercase leading-[1.2] text-black md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
+                      class="text-2xl font-bold uppercase leading-[1.2] md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
                       Mobile promotion
                     </div>
                     <svg class="block w-6 md:w-[22px]" viewBox="0 0 22 22" fill="none"
@@ -1193,7 +1186,7 @@
                     </svg>
                   </div>
                   <div
-                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] text-base-black md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pr-7 xl:block xl:pt-10 xl:pr-12 xl:leading-1.5">
+                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pr-7 xl:block xl:pt-10 xl:pr-12 xl:leading-1.5">
                     <div class="py-5 md:py-0">
                       Mobile promotion is a separate marketing instrument that
                       can increase your sales. UWP.Digital offers you mobile
@@ -1205,7 +1198,7 @@
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
                       <a href="#">
                         <button
-                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 dark:bg-base-black dark:text-base-white md:hidden">
                           Read more
                         </button>
                       </a>
@@ -1228,7 +1221,7 @@
                   <div
                     class="title-article flex cursor-pointer items-center justify-between border-b border-middle-gray pt-5 pb-[19px] md:pb-7 md:pr-9 xl:pt-5 xl:pb-10">
                     <div
-                      class="text-2xl font-bold uppercase leading-[1.2] text-black md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
+                      class="text-2xl font-bold uppercase leading-[1.2] md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
                       PPC
                     </div>
                     <svg class="block w-6 md:w-[22px]" viewBox="0 0 22 22" fill="none"
@@ -1239,7 +1232,7 @@
                     </svg>
                   </div>
                   <div
-                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] text-base-black md:block md:max-h-full md:min-w-[350px] md:pt-5 md:pr-7 xl:block xl:pt-12 xl:pr-12 xl:leading-1.5">
+                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] md:block md:max-h-full md:min-w-[350px] md:pt-5 md:pr-7 xl:block xl:pt-12 xl:pr-12 xl:leading-1.5">
                     <div class="py-5 md:py-0">
                       PPC marketing attracts only targeted users who see the
                       ads, become interested in the product, click on the link
@@ -1252,7 +1245,7 @@
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
                       <a href="#">
                         <button
-                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 dark:bg-base-black dark:text-base-white md:hidden">
                           Read more
                         </button>
                       </a>
@@ -1277,7 +1270,7 @@
                   <div
                     class="title-article flex cursor-pointer items-center justify-between border-b border-middle-gray pt-5 pb-[19px] md:pt-4 md:pl-7 md:pb-7 xl:pt-14 xl:pl-16">
                     <div
-                      class="text-2xl font-bold uppercase leading-[1.2] text-black md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
+                      class="text-2xl font-bold uppercase leading-[1.2] md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
                       Digital Marketing
                     </div>
                     <svg class="block w-6 md:w-[22px]" viewBox="0 0 22 22" fill="none"
@@ -1288,7 +1281,7 @@
                     </svg>
                   </div>
                   <div
-                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] text-base-black md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pl-7 xl:block xl:pl-16 xl:pt-14 xl:leading-1.5">
+                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pl-7 xl:block xl:pl-16 xl:pt-14 xl:leading-1.5">
                     <div class="py-5 md:py-0">
                       Digital marketing is a complete immersion of your
                       business in the online space: from developing the most
@@ -1302,7 +1295,7 @@
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
                       <a href="#">
                         <button
-                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 dark:bg-base-black md:hidden">
                           Read more
                         </button>
                       </a>
@@ -1325,7 +1318,7 @@
                   <div
                     class="title-article flex cursor-pointer items-center justify-between border-b border-middle-gray pt-5 pb-[19px] md:pb-7 md:pl-7 xl:pb-12 xl:pt-6 xl:pl-16">
                     <div
-                      class="text-2xl font-bold uppercase leading-[1.2] text-black md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
+                      class="text-2xl font-bold uppercase leading-[1.2] md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
                       Video Motion
                     </div>
                     <svg class="block w-6 md:w-[22px]" viewBox="0 0 22 22" fill="none"
@@ -1336,7 +1329,7 @@
                     </svg>
                   </div>
                   <div
-                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] text-base-black md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pl-8 xl:block xl:pt-10 xl:pl-16 xl:leading-1.5">
+                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pl-8 xl:block xl:pt-10 xl:pl-16 xl:leading-1.5">
                     <div class="py-5 md:py-0">
                       34% higher conversion rate for marketing campaigns with
                       video ads. Tempting? UWP.Digital turns an idea into a
@@ -1347,7 +1340,7 @@
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
                       <a href="#">
                         <button
-                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 dark:bg-base-black dark:text-base-white md:hidden">
                           Read more
                         </button>
                       </a>
@@ -1370,7 +1363,7 @@
                   <div
                     class="title-article flex cursor-pointer items-center justify-between border-b border-middle-gray pt-5 pb-[19px] md:pb-7 md:pl-8 xl:pt-7 xl:pb-10 xl:pl-16">
                     <div
-                      class="text-2xl font-bold uppercase leading-[1.2] text-black md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
+                      class="text-2xl font-bold uppercase leading-[1.2] md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
                       SMM
                     </div>
                     <svg class="block w-6 md:w-[22px]" viewBox="0 0 22 22" fill="none"
@@ -1381,7 +1374,7 @@
                     </svg>
                   </div>
                   <div
-                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] text-base-black md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pl-7 xl:block xl:pt-12 xl:pl-16 xl:leading-1.5">
+                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pl-7 xl:block xl:pt-12 xl:pl-16 xl:leading-1.5">
                     <div class="py-5 md:py-0">
                       Open a new sales channel for your business with the help
                       of SMM promotion. UWP.Digital provides a full range of
@@ -1394,7 +1387,7 @@
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
                       <a href="#">
                         <button
-                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 dark:bg-base-black dark:text-base-white md:hidden">
                           Read more
                         </button>
                       </a>
@@ -1417,7 +1410,7 @@
                   <div
                     class="title-article flex cursor-pointer items-center justify-between border-b border-middle-gray pt-5 pb-[19px] md:pb-7 md:pl-16 xl:pb-12 xl:pt-10">
                     <div
-                      class="text-2xl font-bold uppercase leading-[1.2] text-black md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
+                      class="text-2xl font-bold uppercase leading-[1.2] md:pr-8 md:text-2xl md:normal-case xl:text-[42px]">
                       TikTok
                     </div>
                     <svg class="block w-6 md:w-[22px]" viewBox="0 0 22 22" fill="none"
@@ -1428,7 +1421,7 @@
                     </svg>
                   </div>
                   <div
-                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] text-base-black md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pl-7 xl:block xl:pt-10 xl:pl-16 xl:leading-1.5">
+                    class="body-article max-h-0 overflow-hidden text-base font-medium leading-[1.4] md:block md:max-h-full md:min-w-[350px] md:pt-7 md:pl-7 xl:block xl:pt-10 xl:pl-16 xl:leading-1.5">
                     <div class="py-5 md:py-0">
                       TikTok is a fairly new platform with a young audience.
                       Can a site with light content be used to promote a
@@ -1440,7 +1433,7 @@
                       <img class="pt-9 md:hidden" src="./images/our-service/our-service-1-360.png" alt="Our Service" />
                       <a href="#">
                         <button
-                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 text-base-black md:hidden">
+                          class="mx-auto mt-10 w-full rounded-full border border-base-red bg-base-white py-3 text-sm font-bold uppercase leading-6 dark:bg-base-black dark:text-base-white md:hidden">
                           Read more
                         </button>
                       </a>
@@ -1451,10 +1444,10 @@
             </div>
             <!-- ./wrapper_body -->
           </div>
-          <div class="xl:absolute xl:top-[15rem] pt-5 md:pt-12 xl:col-start-1 xl:row-start-2 xl:col-span-3 xl:w-full">
-            <a href="#" class="xl:pr-12 block">
+          <div class="pt-5 md:pt-12 xl:absolute xl:top-[15rem] xl:col-span-3 xl:col-start-1 xl:row-start-2 xl:w-full">
+            <a href="#" class="block xl:pr-12">
               <button
-                class="xl:sticky xl:top-0 mx-auto hidden w-full items-center rounded-full bg-base-red py-4 font-bold uppercase leading-6 text-base-white md:flex md:w-[350px] md:justify-center md:py-5 md:leading-[21px] xl:w-full xl:text-base">
+                class="mx-auto hidden w-full items-center rounded-full bg-base-red py-4 font-bold uppercase leading-6 text-base-white md:flex md:w-[350px] md:justify-center md:py-5 md:leading-[21px] xl:sticky xl:top-0 xl:w-full xl:text-base">
                 <span class="hidden md:block md:pr-3">Order a consultation</span>
                 <svg class="w-4" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1469,8 +1462,9 @@
       </div>
     </section>
     <!-- OUR SERVICE END-->
+
     <!-- LET'S DISCUS START-->
-    <section class="mt-16 bg-base-black md:mt-36 xl:mt-36">
+    <section class="bg-base-black md:mt-3">
       <div class="container">
         <div class="grid grid-cols-12 pt-14 xl:pt-32">
           <div
@@ -1480,7 +1474,7 @@
 
           <!-- image -->
           <div
-            class="relative col-span-6 col-start-1 pt-9 md:col-span-4 md:row-span-2 md:pt-10 xl:col-span-3 xl:col-start-5 xl:pt-1">
+            class="relative col-span-6 col-start-1 pr-2 pt-8 md:col-span-4 md:row-span-2 md:pr-4 md:pt-10 xl:col-span-3 xl:col-start-5 xl:pt-1">
             <div class="relative w-full xl:pt-12">
               <picture class="">
                 <source media="(max-width: 819px)" srcset="./images/letsDiscus/lts-discus-360.png" />
@@ -1490,12 +1484,12 @@
                   alt="Daniella" />
               </picture>
               <div
-                class="xl:bg-gradient-to-t xl:absolute  xl:from-base-red xl:opacity-50 xl:bottom-0 xl:left-0 xl:h-1/2 xl:w-full">
+                class="xl:absolute xl:bottom-0 xl:left-0 xl:h-1/2 xl:w-full xl:bg-gradient-to-t xl:from-base-red xl:opacity-50">
               </div>
             </div>
             <!-- arrow (position: absolute), nav-->
             <div
-              class="absolute -bottom-4 flex h-[37px] w-[37px] items-center justify-center rounded-full bg-base-white text-base-black md:bottom-[0.75rem] md:h-[60px] md:w-[60px] xl:-bottom-9 xl:ml-1 xl:h-[72px] xl:w-[72px]">
+              class="absolute -bottom-5 flex h-[37px] w-[37px] items-center justify-center rounded-full bg-base-white text-base-black md:h-[60px] md:w-[60px] xl:-bottom-9 xl:ml-1 xl:h-[72px] xl:w-[72px]">
               <svg class="h-4 w-4 fill-base-black md:h-6 md:w-6" viewBox="0 0 26 26" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1568,7 +1562,7 @@
 
           <!-- pagination -->
           <div class="col-span-12 md:col-span-8 md:col-start-5 xl:col-span-4 xl:col-start-8">
-            <nav class="pt-5 pb-6 md:pt-5 md:pb-9 md:pl-12 xl:col-start-2 xl:row-start-2 xl:pt-14 xl:pb-4 xl:pl-16">
+            <nav class="pt-5 pb-6 md:pt-2 md:pb-8 md:pl-12 xl:pt-14 xl:pb-4 xl:pl-16">
               <ul class="mx-auto flex justify-center gap-3 md:justify-start md:gap-[13px] md:pl-1 xl:gap-5">
                 <li>
                   <a href="">
@@ -1642,11 +1636,12 @@
       <!-- ./container -->
     </section>
     <!-- LET'S DISCUS END-->
+
     <!-- BLOG -->
     <section id="blog" class="bg-base-black pt-20 pb-2 md:pb-1 xl:pb-44 xl:pt-28">
       <div class="container xl:pb-2 xl:pt-2">
         <!-- Head, Slider -->
-        <div class="pb-[104px] md:pb-36 xl:pb-48">
+        <div class="pb-[104px] md:mb-2 md:pb-32 xl:pb-48">
           <div class="flex items-start justify-between">
             <div class="text-4xl font-bold uppercase leading-[1.2] text-base-white md:text-[45px] xl:text-[90px]">
               Our blog
@@ -1665,7 +1660,7 @@
             </div>
           </div>
           <!-- SLIDER -->
-          <div class="flex gap-8 overflow-hidden pt-8 md:gap-5 md:pt-11 md:pb-3 xl:gap-7 xl:pt-14">
+          <div class="flex gap-8 overflow-hidden pt-7 md:gap-5 md:pt-11 md:pb-3 xl:gap-7 xl:pt-14">
             <!-- 1 slider -->
             <div class="flex-shrink-0 md:w-[305px] xl:w-[530px]">
               <div class="">
@@ -1848,8 +1843,9 @@
       <!-- container -->
     </section>
     <!-- BLOG END -->
+
     <!--FAQ -->
-    <section class="mb-9 py-10 text-base-black md:mb-20 xl:pb-11">
+    <section class="mb-9 py-10 md:mb-20 xl:pb-11">
       <div class="container mx-auto md:px-1 xl:px-0">
         <div class="md:pt-9 xl:grid xl:grid-cols-2col25">
           <div
@@ -1857,10 +1853,10 @@
             VI SVARAR PÅ DE VANLIGASTE FRÅGOR
           </div>
           <div
-            class="border-b border-base-gray py-5 text-4xl font-bold uppercase leading-[1.2] text-base-black md:py-3 md:text-[45px] xl:col-span-2 xl:col-start-1 xl:row-start-1 xl:pt-5 xl:pb-12 xl:text-[90px]">
+            class="border-b border-base-gray py-5 text-4xl font-bold uppercase leading-[1.2] md:py-3 md:text-[45px] xl:col-span-2 xl:col-start-1 xl:row-start-1 xl:pt-5 xl:pb-12 xl:text-[90px]">
             FAQ
           </div>
-          <div class="mt-8 xl:col-start-2 xl:mt-0 xl:border-l xl:border-base-gray xl:pb-12">
+          <div class="mt-8 md:mt-0 xl:col-start-2 xl:mt-0 xl:border-l xl:border-base-gray xl:pb-12">
             <!-- FAQ 1 article -->
             <div class="border-b border-base-gray py-5 md:mt-0 md:py-8 md:pb-7 xl:ml-[152px] xl:pb-10 xl:pt-12">
               <div class="accordion flex cursor-pointer items-center justify-between gap-8 text-base-red">
@@ -1874,8 +1870,7 @@
                 </div>
               </div>
               <div class="body-accordion overflow-hidden">
-                <div
-                  class="pt-4 text-sm font-medium leading-[19.6px] text-base-black md:pt-6 md:text-base md:leading-[1.4] xl:pr-36">
+                <div class="pt-4 text-sm font-medium leading-[19.6px] md:pt-6 md:text-base md:leading-[1.4] xl:pr-36">
                   <p>
                     It means that we provide a full range of digital marketing
                     services for your business. We offer a 360° range of any
@@ -1904,8 +1899,7 @@
                 </div>
               </div>
               <div class="body-accordion max-h-0 overflow-hidden">
-                <div
-                  class="pt-4 text-sm font-medium leading-[1.4] text-base-black md:pt-6 md:text-base md:leading-[1.4] xl:pr-36">
+                <div class="pt-4 text-sm font-medium leading-[1.4] md:pt-6 md:text-base md:leading-[1.4] xl:pr-36">
                   All of our customers can change the content on their website
                   at any given time. However, for complex design changes we
                   need to get in touch with you. As the design of your website
@@ -1929,8 +1923,7 @@
                 </div>
               </div>
               <div class="body-accordion max-h-0 overflow-hidden">
-                <div
-                  class="pt-4 text-sm font-medium leading-[1.4] text-base-black md:pt-6 md:text-base md:leading-[1.4] xl:pr-36">
+                <div class="pt-4 text-sm font-medium leading-[1.4] md:pt-6 md:text-base md:leading-[1.4] xl:pr-36">
                   All of our customers can change the content on their website
                   at any given time. However, for complex design changes we
                   need to get in touch with you. As the design of your website
@@ -2018,13 +2011,14 @@
       </div>
     </section>
     <!--FAQ END -->
+
     <!--CONTACT -->
-    <section class="overflow-hidden bg-base-black pt-8 text-white md:pt-10 xl:pb-8 xl:pt-16">
+    <section class="relative overflow-hidden bg-base-black pt-8 text-white md:pt-10 xl:pb-8 xl:pt-16">
       <div class="container">
         <div class="xl:grid-cols-[2fr 5fr 3fr] xl:grid-rows-[1fr 2fr] relative pb-6 xl:grid">
           <!-- Contact 1 -->
           <div
-            class="text-xs font-bold leading-[1.4] text-base-gray md:pt-2 xl:col-start-1 xl:row-start-2 xl:max-w-[320px] xl:pt-[60px] xl:text-base">
+            class="text-xs font-bold uppercase leading-[1.4] text-base-gray md:pt-2 xl:col-start-1 xl:row-start-2 xl:max-w-[320px] xl:pt-[60px] xl:text-base">
             Get a detailed and clear commercial proposal
           </div>
           <!-- Contact 2 -->
@@ -2033,70 +2027,80 @@
             Låt oss diskutera projektet
           </div>
           <!-- Contact 3 -->
-          <div class="py-6 md:py-7 xl:col-start-2 xl:row-start-2 xl:max-w-[870px] xl:px-[72px] xl:pt-[60px]">
-            <div
-              class="flex flex-col gap-3 pt-4 md:grid md:grid-cols-2 md:justify-between md:gap-5 md:pt-0 xl:max-w-[730px] xl:gap-6">
-              <div class="">
-                <input type="text"
-                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-6 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base"
-                  placeholder="Your name?*" />
-              </div>
-              <div class="">
-                <input type="text"
-                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-6 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base"
-                  placeholder="Your email?*" />
-              </div>
-              <div class="">
-                <input type="text"
-                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-6 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base"
-                  placeholder="Phone number*" />
-              </div>
-              <div class="">
-                <input type="text"
-                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-6 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base"
-                  placeholder="Company*" />
-              </div>
-              <div class="md:col-span-2">
-                <input type="text"
-                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-6 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base"
-                  placeholder="Tell us about your project" />
-              </div>
-            </div>
-            <div class="flex items-center gap-2 pt-7">
-              <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-base-gray">
-                <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.90685 18.8475C6.66628 20.0755 9.9129 18.8285 11.1387 16.0699L14.5426 8.42857C14.5648 8.37877 14.5651 8.32277 14.5456 8.27198C14.5261 8.22118 14.4884 8.17982 14.4386 8.15766L13.3576 7.67665C13.3083 7.65482 13.2523 7.65343 13.2019 7.67278C13.1516 7.69212 13.1109 7.73064 13.0888 7.77989L9.68496 15.4212C9.26261 16.3703 8.49512 17.0974 7.52579 17.4697C6.55647 17.842 5.49958 17.8156 4.5526 17.3925C3.60349 16.9701 2.87641 16.2026 2.50492 15.2354C2.13261 14.2661 2.15979 13.2113 2.58214 12.2622L6.05039 4.47232L6.61222 3.20978C7.13755 2.02926 8.52382 1.49681 9.70434 2.02214C10.2756 2.27633 10.7126 2.73751 10.9369 3.32165C11.1613 3.90579 11.1454 4.54092 10.8912 5.11214L7.45029 12.8405C7.36214 13.0347 7.20597 13.1845 7.00702 13.2609L7.00491 13.2618C6.80596 13.3382 6.59176 13.3306 6.39842 13.2445C6.20215 13.1572 6.05443 13.0002 5.97801 12.8013C5.90242 12.6045 5.90919 12.3881 5.99522 12.1948L8.8086 5.88045C8.83076 5.83065 8.83111 5.77466 8.8116 5.72386C8.79209 5.67307 8.75435 5.63171 8.70455 5.60955L7.62363 5.12854C7.57428 5.10671 7.51829 5.10532 7.46792 5.12466C7.41754 5.14401 7.37688 5.18253 7.35484 5.23178L4.54439 11.5474C4.28499 12.1304 4.2689 12.7777 4.49732 13.3724C4.72574 13.9671 5.17397 14.4386 5.75398 14.6967C6.95793 15.2324 8.3709 14.6873 8.90747 13.4855L9.24037 12.7334L12.3462 5.75789C12.5577 5.28632 12.6735 4.77744 12.6869 4.26077C12.7002 3.74411 12.6109 3.22993 12.424 2.74807C12.0476 1.76816 11.3109 0.994639 10.353 0.568379C9.36078 0.128593 8.28371 0.131839 7.34401 0.492764C6.40431 0.853688 5.60199 1.57229 5.16139 2.56241L1.12919 11.6157C0.536893 12.9506 0.496976 14.4402 1.02129 15.8053C1.5443 17.1733 2.57107 18.2531 3.90685 18.8475Z"
-                    fill="#F8F8F8" />
-                </svg>
-              </div>
-              <div class="text-sm font-medium leading-[1.3] tracking-[1px] text-base-gray">
-                Attach a file
-              </div>
-            </div>
-            <div class="justify-between md:flex md:items-center md:pb-7 md:pt-10 xl:pt-10">
+          <div class="py-5 md:py-7 xl:col-start-2 xl:row-start-2 xl:max-w-[870px] xl:px-[72px] xl:pt-[60px]">
+            <form action="#">
               <div
-                class="pb-6 pt-6 text-xs font-medium leading-[1.4] text-base-gray md:w-1/2 md:pt-0 md:pb-0 md:text-sm">
-                By clicking the "Send" button, you consent to the processing
-                of personal data.
-                <a href="#" class="leading-[1.3] text-[#6355FF] underline">More details</a>
+                class="flex flex-col gap-3 pt-4 md:grid md:grid-cols-2 md:justify-between md:gap-5 md:pt-0 xl:max-w-[730px] xl:gap-6">
+                <label class="">
+                  <input name="name" type="text"
+                    class="required block w-full rounded-full border border-base-gray bg-transparent py-5 px-6 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base"
+                    placeholder="Your name?*" />
+                </label>
+                <label class="">
+                  <input name="email" type="email"
+                    class="required block w-full rounded-full border border-base-gray bg-transparent py-5 px-6 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base"
+                    placeholder="Your email?*" />
+                </label>
+                <label class="">
+                  <input name="Phone" type="text"
+                    class="required block w-full rounded-full border border-base-gray bg-transparent py-5 px-6 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base"
+                    placeholder="Phone number*" />
+                </label>
+                <label class="">
+                  <input name="company" type="text"
+                    class="required block w-full rounded-full border border-base-gray bg-transparent py-5 px-6 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base"
+                    placeholder="Company*" />
+                </label>
+                <div class="md:col-span-2">
+                  <input type="text"
+                    class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-6 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base"
+                    placeholder="Tell us about your project" />
+                </div>
               </div>
-              <a href="#">
-                <button
-                  class="flex w-full items-center justify-center rounded-full bg-base-red py-5 text-base-white md:w-[290px] md:py-4 xl:m-0">
-                  <div class="pr-2 text-base font-bold uppercase leading-[21px] tracking-[0.16px]">
-                    Discuss the project
-                  </div>
-                  <div class="">
-                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M11.6083 4.87452L11.6083 14.594L14 14.594L14 0.499999L0.84559 0.5L0.84559 3.06255L9.91709 3.06255L1.82814e-06 13.688L1.69118 15.5L11.6083 4.87452Z"
-                        fill="white" />
-                    </svg>
-                  </div>
-                </button>
-              </a>
-            </div>
+              <div class="flex items-center gap-2 pt-7">
+                <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-base-gray">
+                  <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.90685 18.8475C6.66628 20.0755 9.9129 18.8285 11.1387 16.0699L14.5426 8.42857C14.5648 8.37877 14.5651 8.32277 14.5456 8.27198C14.5261 8.22118 14.4884 8.17982 14.4386 8.15766L13.3576 7.67665C13.3083 7.65482 13.2523 7.65343 13.2019 7.67278C13.1516 7.69212 13.1109 7.73064 13.0888 7.77989L9.68496 15.4212C9.26261 16.3703 8.49512 17.0974 7.52579 17.4697C6.55647 17.842 5.49958 17.8156 4.5526 17.3925C3.60349 16.9701 2.87641 16.2026 2.50492 15.2354C2.13261 14.2661 2.15979 13.2113 2.58214 12.2622L6.05039 4.47232L6.61222 3.20978C7.13755 2.02926 8.52382 1.49681 9.70434 2.02214C10.2756 2.27633 10.7126 2.73751 10.9369 3.32165C11.1613 3.90579 11.1454 4.54092 10.8912 5.11214L7.45029 12.8405C7.36214 13.0347 7.20597 13.1845 7.00702 13.2609L7.00491 13.2618C6.80596 13.3382 6.59176 13.3306 6.39842 13.2445C6.20215 13.1572 6.05443 13.0002 5.97801 12.8013C5.90242 12.6045 5.90919 12.3881 5.99522 12.1948L8.8086 5.88045C8.83076 5.83065 8.83111 5.77466 8.8116 5.72386C8.79209 5.67307 8.75435 5.63171 8.70455 5.60955L7.62363 5.12854C7.57428 5.10671 7.51829 5.10532 7.46792 5.12466C7.41754 5.14401 7.37688 5.18253 7.35484 5.23178L4.54439 11.5474C4.28499 12.1304 4.2689 12.7777 4.49732 13.3724C4.72574 13.9671 5.17397 14.4386 5.75398 14.6967C6.95793 15.2324 8.3709 14.6873 8.90747 13.4855L9.24037 12.7334L12.3462 5.75789C12.5577 5.28632 12.6735 4.77744 12.6869 4.26077C12.7002 3.74411 12.6109 3.22993 12.424 2.74807C12.0476 1.76816 11.3109 0.994639 10.353 0.568379C9.36078 0.128593 8.28371 0.131839 7.34401 0.492764C6.40431 0.853688 5.60199 1.57229 5.16139 2.56241L1.12919 11.6157C0.536893 12.9506 0.496976 14.4402 1.02129 15.8053C1.5443 17.1733 2.57107 18.2531 3.90685 18.8475Z"
+                      fill="#F8F8F8" />
+                  </svg>
+                </div>
+
+                <label for="input_file" class="block"></label>
+                <input id="input_file" type="file" class="
+              text-sm font-medium leading-[1.3] tracking-[1px] text-base-gray
+              file:text-sm file:font-medium 
+                file:leading-[1.3] file:tracking-[1px] file:text-base-gray
+                file:mr-4 file:py-2 file:px-4 file:bg-base-black file:border-none
+                bg-base-black 
+                  " />
+
+
+              </div>
+              <div class="justify-between md:flex md:items-center md:pb-7 md:pt-10 xl:pt-10">
+                <div
+                  class="pb-6 pt-6 text-xs font-medium leading-[1.4] text-base-gray md:w-1/2 md:pt-0 md:pb-0 md:text-sm">
+                  By clicking the "Send" button, you consent to the processing
+                  of personal data.
+                  <a href="#" class="leading-[1.3] text-[#6355FF] underline">More details</a>
+                </div>
+                <a href="#">
+                  <button
+                    class="flex w-full items-center justify-center rounded-full bg-base-red py-5 text-base-white md:w-[290px] md:py-4 xl:m-0">
+                    <div class="pr-2 text-base font-bold uppercase leading-[21px] tracking-[0.16px]">
+                      Discuss the project
+                    </div>
+                    <div class="">
+                      <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M11.6083 4.87452L11.6083 14.594L14 14.594L14 0.499999L0.84559 0.5L0.84559 3.06255L9.91709 3.06255L1.82814e-06 13.688L1.69118 15.5L11.6083 4.87452Z"
+                          fill="white" />
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+              </div>
+            </form>
           </div>
           <!-- Contact 4 -->
           <div
@@ -2115,10 +2119,15 @@
           </div>
         </div>
       </div>
+      <!-- Red Blur -->
+      <div
+        class="spot z-5 absolute top-0 right-0 h-[212px] w-[212px] translate-x-1/3 bg-gradient-radial from-base-red to-base-black blur-[45px] md:h-[322px] md:w-[322px] md:blur-[60px] xl:h-[591px] xl:w-[591px] xl:blur-[90px]">
+      </div>
     </section>
     <!--CONTACT END -->
+
     <!-- FOOTER -->
-    <footer id="#footer" class="pt-12 text-base-black md:pt-8 xl:pt-10">
+    <footer id="#footer" class="pt-12 md:pt-8 xl:pt-10">
       <div class="container mx-auto md:px-1 xl:px-0">
         <div class="xl:grid-cols-[4fr 1fr] md:grid-rows-[1fr 1fr 1fr 1fr] md:grid md:grid-cols-1">
           <div class="md:row-start-1">
@@ -2224,16 +2233,21 @@
       </div>
     </footer>
     <!-- FOOTER END-->
+
   </main>
+
   <!-- Cookies -->
-  <div id="cookies-window" class="w-screen h-screen fixed top-0 hidden items-end z-[9999] text-base-black">
-    <div class="bg-base-white px-10 py-5 mx-auto mb-10 shadow  shadow-middle-gray  rounded-lg max-w-xl">
-      <h2 class="font-bold text-xl">We use cookies</h2>
-      <p class="font-medium">Cookies help us deliver the best experience on our website. By using our website, you agree
-        to the use of
-        cookies.</p>
+  <div id="cookies-window" class="fixed top-0 z-[9999] hidden h-screen w-screen items-end text-base-black">
+    <div class="mx-auto mb-10 max-w-xl rounded-lg bg-base-white px-10 py-5 shadow shadow-middle-gray">
+      <h2 class="text-xl font-bold">We use cookies</h2>
+      <p class="font-medium">
+        Cookies help us deliver the best experience on our website. By using
+        our website, you agree to the use of cookies.
+      </p>
       <button id="cookies-accept-btn"
-        class="border border-base-black rounded-lg uppercase mt-4 py-2 px-5 hover:bg-middle-gray hover:text-base-white text-sm">Accept</button>
+        class="mt-4 rounded-lg border border-base-black py-2 px-5 text-sm uppercase hover:bg-middle-gray hover:text-base-white">
+        Accept
+      </button>
     </div>
   </div>
   <script src="./js/main.js" defer></script>

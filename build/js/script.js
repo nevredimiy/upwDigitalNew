@@ -205,5 +205,3 @@ setTimeout(() => {
     cookiesWindow.classList.add('flex')    
   }
 }, 2000)
-
-  
