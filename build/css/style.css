@@ -661,6 +661,10 @@ body {
   left: 1.25rem;
 }
 
+.top-24 {
+  top: 6rem;
+}
+
 .-bottom-5 {
   bottom: -1.25rem;
 }
@@ -687,6 +691,10 @@ body {
 
 .z-30 {
   z-index: 30;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .z-\[9999\] {
@@ -953,6 +961,10 @@ body {
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-\[271px\] {
+  width: 271px;
 }
 
 .w-\[15px\] {
@@ -1716,11 +1728,6 @@ body {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.blur {
-  --tw-blur: blur(8px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .transition-opacity {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2065,10 +2072,6 @@ body {
     top: -4rem;
   }
 
-  .md\:top-\[110px\] {
-    top: 110px;
-  }
-
   .md\:-top-\[4\.6rem\] {
     top: -4.6rem;
   }
@@ -2083,6 +2086,10 @@ body {
 
   .md\:left-8 {
     left: 2rem;
+  }
+
+  .md\:top-\[110px\] {
+    top: 110px;
   }
 
   .md\:bottom-\[0\.75rem\] {
@@ -2310,10 +2317,6 @@ body {
     width: 22px;
   }
 
-  .md\:w-\[350px\] {
-    width: 350px;
-  }
-
   .md\:w-\[60px\] {
     width: 60px;
   }
@@ -2348,6 +2351,10 @@ body {
 
   .md\:w-\[23px\] {
     width: 23px;
+  }
+
+  .md\:w-\[350px\] {
+    width: 350px;
   }
 
   .md\:min-w-\[350px\] {
@@ -2673,10 +2680,6 @@ body {
     padding-top: 3rem;
   }
 
-  .md\:pr-3 {
-    padding-right: 0.75rem;
-  }
-
   .md\:pb-10 {
     padding-bottom: 2.5rem;
   }
@@ -2731,6 +2734,10 @@ body {
 
   .md\:pr-10 {
     padding-right: 2.5rem;
+  }
+
+  .md\:pr-3 {
+    padding-right: 0.75rem;
   }
 
   .md\:pb-9 {
@@ -2820,16 +2827,16 @@ body {
     line-height: 1.1;
   }
 
-  .md\:leading-\[21px\] {
-    line-height: 21px;
-  }
-
   .md\:leading-\[1\.4\] {
     line-height: 1.4;
   }
 
   .md\:leading-\[22px\] {
     line-height: 22px;
+  }
+
+  .md\:leading-\[21px\] {
+    line-height: 21px;
   }
 
   .md\:tracking-\[1px\] {
@@ -2867,10 +2874,6 @@ body {
 
   .xl\:relative {
     position: relative;
-  }
-
-  .xl\:sticky {
-    position: sticky;
   }
 
   .xl\:-right-72 {
@@ -2921,16 +2924,12 @@ body {
     left: 74px;
   }
 
-  .xl\:bottom-0 {
-    bottom: 0px;
-  }
-
   .xl\:top-\[15rem\] {
     top: 15rem;
   }
 
-  .xl\:top-0 {
-    top: 0px;
+  .xl\:bottom-0 {
+    bottom: 0px;
   }
 
   .xl\:-bottom-9 {

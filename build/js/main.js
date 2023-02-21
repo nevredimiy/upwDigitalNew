@@ -11,6 +11,7 @@ const btnContact = document.getElementById('contact-details')
 const contactForm = document.getElementById('contact-form') 
 const btnContactForm = document.getElementById('button-close') //button-close
 const dropMenu = document.getElementById('dropmenu')
+const discusProject = document.getElementById('discuss-project')
 
 const toggleMenu = () => {
     mainMenu.classList.toggle('hidden')
@@ -85,12 +86,13 @@ const getContactForm = () => {
 
 btnContact.addEventListener('click', getContactForm)
 btnContactForm.addEventListener('click', getContactForm)
+discusProject.addEventListener('click', getContactForm)
 hamburgerBtn.addEventListener('click', toggleMenu)
 backToMenu.addEventListener('click', (e) => {
     e.target.parentElement.classList.toggle('left-[200%]')
 })
-btnContact.addEventListener('click', getContactForm)
-btnContactForm.addEventListener('click', getContactForm)
+//btnContact.addEventListener('click', getContactForm)
+//btnContactForm.addEventListener('click', getContactForm)
 
 //ACCORDION
 const acc = document.querySelectorAll(".accordion")
@@ -191,3 +193,36 @@ const switchTemplate = () => {
 
 dark.addEventListener('click', switchTemplate)
 
+// Создаем новый observer (наблюдатель)
+let btnElement = document.querySelector('.btn-element')
+let observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+// Выводим в консоль true (если элемент виден) или false (если нет)
+      console.log(entry.isIntersecting);
+      
+        if (entry.isIntersecting) {
+        btnElement.classList.add('sticky') 
+      }     
+      if (!entry.isIntersecting) {
+        btnElement.classList.remove('sticky') 
+      }    
+      
+      
+    });
+});
+
+// Задаем элемент для наблюдения
+let el1 = document.getElementById('element1');
+
+// Прикрепляем его к «наблюдателю»
+observer.observe(el1);  
+
+var swiper = new Swiper(".swiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+});
+swiper.slideNext();
