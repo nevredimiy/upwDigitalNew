@@ -44,7 +44,7 @@
     }
 
     .burger_span {
-        @apply block w-8 h-[3px] bg-white absolute left-1/2 ml-[-16px]
+        @apply block w-8 h-[3px] bg-white dark:bg-black absolute left-1/2 ml-[-16px]
     }
 
 }

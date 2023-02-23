@@ -31,13 +31,11 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- favicon end -->
 
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <!--Swiper End -->
 </head>
 
 <body class="w-full text-base font-medium text-base-black dark:bg-base-black dark:text-base-white">
-    <header class="sticky z-40 w-full transition-opacity duration-300 ease-in md:h-[82px] xl:h-[90px] xl:w-full">
+    <header
+        class="bg-base-white dark:bg-base-black sticky z-40 w-full transition-opacity duration-300 ease-in md:h-[82px] xl:h-[90px] xl:w-full">
         <div class="container flex h-[76px] flex-wrap items-center justify-between md:h-[82px] xl:relative xl:h-[90px]">
             <!-- Logo & Moon -->
             <div class="flex items-center flex-wrap gap-11 md:gap-14">
@@ -76,13 +74,6 @@
                                 </clipPath>
                             </defs>
                         </svg>
-
-                        <!-- <picture>
-              <source media="(max-width: 819px)" srcset="./images/logo/logo-UWP.svg" type="image/svg+xml" />
-              <source media="(max-width: 1279px)" srcset="./images/logo/logo_820.svg" type="image/svg+xml" />
-              <source media="(min-width: 1280px)" srcset="./images/logo/logo_1920.svg" type="image/svg+xml" />
-              <img src="./images/logo/logo_1920.svg" alt="Logo" />
-            </picture> -->
                     </a>
                 </div>
 
@@ -108,17 +99,17 @@
             </div>
 
             <div id="main-menu"
-                class="dark:bg-base-black pt-8 absolute top-[76px] right-0 z-40 hidden min-h-screen w-full origin-top animate-open-menu md:right-0 md:max-w-[465px] xl:static xl:block xl:min-h-[90px] xl:max-w-full xl:flex-1 xl:flex-nowrap xl:p-0">
+                class="dark:bg-base-black bg-base-white pt-8 absolute top-[76px] right-0 z-40 hidden min-h-screen w-full origin-top animate-open-menu md:right-0 md:max-w-[465px] xl:static xl:block xl:min-h-[90px] xl:max-w-full xl:flex-1 xl:flex-nowrap xl:p-0">
                 <div class="container">
                     <div id="list-lang"
                         class="items-center gap-10 xl:absolute xl:-right-72 xl:top-20 xl:hidden xl:rounded-sm xl:bg-base-white xl:py-3 xl:px-5 xl:text-black xl:opacity-70">
                         <div class="flex gap-10 xl:block">
-                            <a class="flex items-center gap-[10px] rounded-sm py-[5px] px-[10px] hover:bg-[#262626] xl:hover:text-base-white"
+                            <a class="flex items-center gap-[10px] rounded-sm py-[5px] px-[10px] hover:bg-[#262626] hover:text-base-white"
                                 href="#">
                                 <img class="" src="./images/sv.png" alt="SV" />
                                 <div class="">SV</div>
                             </a>
-                            <a class="flex items-center gap-[10px] rounded-sm py-[5px] px-[10px] hover:bg-[#262626] xl:hover:text-base-white"
+                            <a class="flex items-center gap-[10px] rounded-sm py-[5px] px-[10px] hover:bg-[#262626] hover:text-base-white"
                                 href="#">
                                 <img class="" src="./images/en.png" alt="EN" />
                                 <div class="">EN</div>
@@ -404,7 +395,7 @@
                     <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl text-white xl:hidden">
                         <!-- &#9776; -->
                         <div
-                            class="absolute top-4 -mt-0.5 h-1 w-8 bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:bg-white after:transition-all after:duration-500 after:content-['']">
+                            class="absolute top-4 -mt-0.5 h-1 w-8 bg-black  transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:bg-black dark:before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:bg-black dark:after:bg-white after:transition-all after:duration-500 after:content-['']">
                         </div>
                     </button>
                 </div>
@@ -592,59 +583,68 @@
 
         <section class="dark:bg-base-black dark:text-base-white ">
             <div class="container">
-                <div class="flex gap-3 border-t border-middle-gray py-9 xl:gap-[10px]">
+                <div class="flex flex-wrap gap-3 border-t border-middle-gray py-9 xl:gap-[10px]">
                     <a href="#" class="">
                         <button
-                            class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
-                            Brandign <span class="pl-1">[3]</span>
+                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            <div>Brandign</div>
+                            <div class="pl-1">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
-                            Web design <span class="pl-1">[3]</span>
+                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            <div>Web design</div>
+                            <div class="pl-1">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
-                            Seo <span class="pl-1">[3]</span>
+                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            <div>Seo</div>
+                            <div class="pl-1">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
-                            PPS <span class="pl-1">[3]</span>
+                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            <div>PPS</div>
+                            <div class="pl-1">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
-                            TikTok <span class="pl-1">[3]</span>
+                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            <div>TikTok</div>
+                            <div class="pl-1">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
-                            SMM <span class="pl-1">[3]</span>
+                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            <div>SMM</div>
+                            <div class="pl-1">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
-                            DIGITAL MARKETING <span class="pl-1">[3]</span>
+                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            <div>DIGITAL MARKETING</div>
+                            <div class="pl-1">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
-                            MOBILE PROMOTION <span class="pl-1">[3]</span>
+                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            <div>MOBILE PROMOTION</div>
+                            <div class="pl-1">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
-                            VIDEO MOTION <span class="pl-1">[3]</span>
+                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            <div>VIDEO MOTION</div>
+                            <div class="pl-1">[3]</div>
                         </button>
                     </a>
                 </div>
@@ -668,18 +668,18 @@
                     <div
                         class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-span-9 xl:col-start-4 xl:row-span-2 xl:ml-36 xl:border-none xl:pt-[74px]">
                         <!-- Service title -->
-                        <div class="xl:col-start-1 xl:col-span-2 xl:border-b xl:border-middle-gray xl:pb-10">
-                            <div class="">
+                        <div class="xl:col-start-1 md:col-span-2 xl:border-b xl:border-middle-gray xl:pb-10">
+                            <div class="pb-7 xl:pb-0">
                                 <a href="#"
                                     class="flex items-start justify-between hover:text-base-red hover:underline md:gap-2 xl:gap-0">
                                     <div
-                                        class="flex-none w-32 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
+                                        class="flex-none w-12 xl:w-32 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
                                         /2022</div>
                                     <div
-                                        class="flex-auto text-xl font-bold leading-1.1 md:gap-2 xl:gap-10 xl:text-[42px] xl:px-2">
+                                        class="flex-auto text-base md:text-xl font-bold leading-1.1 md:gap-2 xl:gap-10 xl:text-[42px] xl:px-2">
                                         HoReCa campaign: Increasing sales with a restaurant landing page optimization
                                     </div>
-                                    <div class="flex justify-end flex-none w-32">
+                                    <div class="flex justify-end flex-none w-12 xl:w-32">
                                         <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -727,7 +727,7 @@
                         </div>
                         <!-- article -->
                         <div
-                            class="pt-7 pb-3 md:flex md:flex-col xl:pb-0 md:justify-between md:pl-32 xl:pt-10 md:col-start-2">
+                            class="pt-7 pb-3 md:flex md:flex-col xl:pb-0 md:justify-between md:pl-7 xl:pl-32 xl:pt-10 md:col-start-2">
                             <div class="text-sm font-medium leading-1.4 md:flex-auto md:text-base">
                                 We build engaging user experience forearly-stage startups by connecting thedots between
                                 users’ needs and theclient’s
@@ -745,18 +745,18 @@
                     <div
                         class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-span-9 xl:col-start-4 xl:row-span-2 xl:ml-36 xl:border-none xl:pt-[74px]">
                         <!-- Service title -->
-                        <div class="xl:col-start-1 xl:col-span-2 xl:border-b xl:border-middle-gray xl:pb-10 xl:pt-8">
-                            <div class="">
+                        <div class="xl:col-start-1 md:col-span-2 xl:border-b xl:border-middle-gray xl:pb-10 xl:pt-8">
+                            <div class="pb-7 xl:pb-0">
                                 <a href="#"
                                     class="flex items-start justify-between hover:text-base-red hover:underline md:gap-2 xl:gap-0">
                                     <div
-                                        class="flex-none w-32 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
+                                        class="flex-none w-12 xl:w-32 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
                                         /2022</div>
                                     <div
-                                        class="flex-auto text-xl font-bold leading-1.1 md:gap-2 xl:gap-10 xl:text-[42px] xl:px-2">
+                                        class="flex-auto text-base md:text-xl font-bold leading-1.1 md:gap-2 xl:gap-10 xl:text-[42px] xl:px-2">
                                         Gambling vs. Marketing: when advertising boosts betting revenue
                                     </div>
-                                    <div class="flex justify-end flex-none w-32">
+                                    <div class="flex justify-end flex-none w-12 xl:w-32">
                                         <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -796,7 +796,7 @@
                             </div>
                             <picture class="md:z-1 col-span-12">
                                 <source media="(max-width: 767px)" srcset="./images/services/services_1_360.png" />
-                                <source media="(max-width: 1279px)" srcset="./images/services/services_2_820.png" />
+                                <source media="(max-width: 1279px)" srcset="./images/services/services_1_820.png" />
                                 <source media="(min-width: 1279px)" srcset="./images/services/services_2_1920.png" />
                                 <img class="w-full object-cover" src="./images/services/services_1_1920.png" alt="Gambling
                                                    vs. Marketing" />
@@ -804,7 +804,7 @@
                         </div>
                         <!-- article -->
                         <div
-                            class="pt-7 pb-3 md:flex md:flex-col xl:pb-0 md:justify-between md:pl-32 xl:pt-10 md:col-start-2">
+                            class="pt-7 pb-3 md:flex md:flex-col xl:pb-0 md:justify-between md:pl-7 xl:pl-32 xl:pt-10 md:col-start-2">
                             <div class="text-sm font-medium leading-1.4 md:flex-auto md:text-base">
                                 We build engaging user experience forearly-stage startups by connecting thedots between
                                 users’ needs and theclient’s
@@ -822,18 +822,18 @@
                     <div
                         class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-span-9 xl:col-start-4 xl:row-span-2 xl:ml-36 xl:border-none xl:pt-[74px]">
                         <!-- Service title -->
-                        <div class="xl:col-start-1 xl:col-span-2 xl:border-b xl:border-middle-gray xl:pb-10 xl:pt-8">
-                            <div class="">
+                        <div class="xl:col-start-1 md:col-span-2 xl:border-b xl:border-middle-gray xl:pb-10 xl:pt-8">
+                            <div class="pb-7 xl:pb-0">
                                 <a href="#"
                                     class="flex items-start justify-between hover:text-base-red hover:underline md:gap-2 xl:gap-0">
                                     <div
-                                        class="flex-none w-32 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
+                                        class="flex-none w-12 xl:w-32 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
                                         /2022</div>
                                     <div
-                                        class="flex-auto text-xl font-bold leading-1.1 md:gap-2 xl:gap-10 xl:text-[42px] xl:px-2">
+                                        class="flex-auto text-base md:text-xl font-bold leading-1.1 md:gap-2 xl:gap-10 xl:text-[42px] xl:px-2">
                                         Gambling vs. Marketing: when advertising boosts betting revenue
                                     </div>
-                                    <div class="flex justify-end flex-none w-32">
+                                    <div class="flex justify-end flex-none w-12 xl:w-32">
                                         <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -881,7 +881,7 @@
                         </div>
                         <!-- article -->
                         <div
-                            class="pt-7 pb-3 md:flex md:flex-col xl:pb-0 md:justify-between md:pl-32 xl:pt-10 md:col-start-2">
+                            class="pt-7 pb-3 md:flex md:flex-col xl:pb-0 md:justify-between md:pl-7 xl:pl-32 xl:pt-10 md:col-start-2">
                             <div class="text-sm font-medium leading-1.4 md:flex-auto md:text-base">
                                 We build engaging user experience forearly-stage startups by connecting thedots between
                                 users’ needs and theclient’s
@@ -899,18 +899,18 @@
                     <div
                         class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-span-9 xl:col-start-4 xl:row-span-2 xl:ml-36 xl:border-none xl:pt-[74px]">
                         <!-- Service title -->
-                        <div class="xl:col-start-1 xl:col-span-2 xl:border-b xl:border-middle-gray xl:pb-10 xl:pt-8">
-                            <div class="">
+                        <div class="xl:col-start-1 md:col-span-2 xl:border-b xl:border-middle-gray xl:pb-10 xl:pt-8">
+                            <div class="pb-7 xl:pb-0">
                                 <a href="#"
                                     class="flex items-start justify-between hover:text-base-red hover:underline md:gap-2 xl:gap-0">
                                     <div
-                                        class="flex-none w-32 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
+                                        class="flex-none w-12 xl:w-32 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
                                         /2022</div>
                                     <div
-                                        class="flex-auto text-xl font-bold leading-1.1 md:gap-2 xl:gap-10 xl:text-[42px] xl:px-2">
+                                        class="flex-auto text-base md:text-xl font-bold leading-1.1 md:gap-2 xl:gap-10 xl:text-[42px] xl:px-2">
                                         Gambling vs. Marketing: when advertising boosts betting revenue
                                     </div>
-                                    <div class="flex justify-end flex-none w-32">
+                                    <div class="flex justify-end flex-none w-12 xl:w-32">
                                         <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -958,7 +958,7 @@
                         </div>
                         <!-- article -->
                         <div
-                            class="pt-7 pb-3 md:flex md:flex-col xl:pb-0 md:justify-between md:pl-32 xl:pt-10 md:col-start-2">
+                            class="pt-7 pb-3 md:flex md:flex-col xl:pb-0 md:justify-between md:pl-7 xl:pl-32 xl:pt-10 md:col-start-2">
                             <div class="text-sm font-medium leading-1.4 md:flex-auto md:text-base">
                                 We build engaging user experience forearly-stage startups by connecting thedots between
                                 users’ needs and theclient’s
@@ -973,7 +973,7 @@
                         </div>
                     </div>
                     <!-- Button -->
-                    <div
+                    <div id="discuss-project"
                         class="pt-4 md:pt-7 xl:pr-10 xl:pt-[4.5rem] xl:row-span-12 col-span-12 xl:col-span-3 xl:col-start-1 xl:row-span-11 xl:row-start-2 xl:border-r xl:border-middle-gray">
                         <button
                             class="group flex h-[133px] md:h-[142px] md:w-[142px] w-[133px] flex-col items-center justify-center gap-2 rounded-full bg-base-red hover:bg-base-white active:border active:border-base-red xl:h-[177px] xl:w-[177px]">
@@ -1257,6 +1257,6 @@
         </div>
     </div>
     <script src="./js/main.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 </body>
 </html>
