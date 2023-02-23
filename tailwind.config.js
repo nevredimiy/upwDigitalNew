@@ -8,12 +8,17 @@ module.exports = {
       padding: {
         DEFAULT: '1.25rem',       
         md: '0.25rem',
-        lg: 'clamp(0.75rem, 1rem, 2rem)',
-        xl: 'clamp(1rem, 1.25rem, 4.5rem)'
+        lg: '1rem',
+       xl: '1.25rem',
       }
     },
 
     extend: {
+
+      screens: {
+        'xl': '1320px',
+        '2xl': '1690px'
+      },
 
       spacing: {
       'fluid-1': 'clamp(1.31rem, calc(0.65rem + 3.29vw), 3.00rem)',
@@ -63,10 +68,6 @@ module.exports = {
         'dark-gray': '#474747',
       },
            
-      screens: {
-        '2xl': '1690px'
-      },
-
       keyframes: {
         'open-menu': {
           '0%': { transform: 'scaleY(0)' },

@@ -37,36 +37,76 @@
 
 <body class="w-full text-base font-medium text-base-black dark:bg-base-black dark:text-base-white">
   <header
-    class="sticky z-40 w-full bg-base-black text-base-white transition-opacity duration-300 ease-in md:h-[82px] xl:h-[90px]">
+    class="sticky z-40 w-full bg-base-black text-base-white transition-opacity duration-300 ease-in md:h-[82px] xl:h-[90px] xl:w-full">
     <div class="container flex h-[76px] flex-wrap items-center justify-between md:h-[82px] xl:relative xl:h-[90px]">
       <!-- Logo & Moon -->
       <div class="flex items-center gap-11 md:gap-14">
         <!-- logo -->
         <div class="flex-shrink-0">
           <a href="/">
-            <picture>
+            <svg class="w-[103px] h-[40px] md:w-[136px] md:h-[54px] xl:w-[123px] xl:h-12" viewBox="0 0 123 48"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_3692_12255)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.504 17.416L42.6295 40.8085H0.468384L13.504 17.416Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.7412 7.35672L22.7171 0.945312C30.1043 14.1741 37.4756 27.3748 44.8311 40.5476L12.7412 7.35672Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.8935 13.1709L42.6295 40.8087L13.504 17.4162L15.8935 13.1709Z" fill="#ACACAC" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M105.098 15.4092V27.1562H102.611V12.8632H102.981C107.067 12.8632 111.156 12.8632 115.243 12.8632C116.965 12.8632 118.381 12.1586 119.343 10.6478C119.724 10.0463 119.96 9.3596 120.033 8.64463C120.105 7.92966 120.012 7.2071 119.76 6.537C119.508 5.86689 119.106 5.26858 118.585 4.79179C118.065 4.31499 117.442 3.97348 116.768 3.79561C116.253 3.6553 115.722 3.58223 115.189 3.57813C111.482 3.55783 107.771 3.57813 104.064 3.56363C103.968 3.55171 103.872 3.57402 103.791 3.62682C103.71 3.67962 103.649 3.7597 103.618 3.85361C99.8988 11.5168 96.1762 19.1789 92.4499 26.8401L92.2704 27.1446L78.9038 1.01473H79.2488C79.9387 1.01473 80.6314 1.06692 81.3157 1.01473C81.8767 0.956733 82.1178 1.20321 82.359 1.68458C85.3151 7.60205 88.2832 13.5166 91.2635 19.4283C91.5945 20.0837 91.9226 20.7419 92.2788 21.4582C92.3629 21.2987 92.4274 21.1943 92.4779 21.0812C94.2364 17.3608 96.0061 13.6433 97.7421 9.91124C99.0659 7.06656 100.35 4.19868 101.64 1.3366C101.673 1.22988 101.741 1.13832 101.832 1.07751C101.923 1.0167 102.032 0.990412 102.14 1.00313C106.692 1.01473 111.246 1.01473 115.801 1.00313C116.811 0.994722 117.814 1.1826 118.757 1.55699C119.579 1.86545 120.317 2.37567 120.908 3.04386C121.498 3.71206 121.922 4.51829 122.145 5.39339C122.704 7.19813 122.659 9.14492 122.018 10.9204C121.177 13.1416 119.654 14.6147 117.411 15.2207C116.859 15.3543 116.294 15.4147 115.728 15.4005C112.309 15.4179 108.893 15.4005 105.474 15.4005L105.098 15.4092Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M68.0249 4.97293V5.28611C68.0249 9.3023 68.0249 13.3156 68.0249 17.3318C68.0543 18.5868 67.9251 19.8404 67.6406 21.0609C66.8834 23.9839 65.1165 25.8977 62.2867 26.6894C59.8411 27.3737 57.3535 27.4636 54.9331 26.6894C52.0725 25.7614 50.3533 23.6823 49.7839 20.6172C49.5784 19.4113 49.4845 18.1879 49.5035 16.9635C49.5035 11.7942 49.5035 6.62484 49.5035 1.4555V1.03793H51.9883V1.4265C51.9883 7.05014 51.993 12.6709 52.0024 18.2887C51.9581 19.741 52.3933 21.1656 53.2364 22.3281C53.9843 23.3319 55.0425 24.0401 56.2345 24.3347C58.0848 24.8509 60.0443 24.7618 61.8436 24.0796C63.9835 23.2647 65.1362 21.5915 65.4419 19.2833C65.5086 18.7158 65.5377 18.1441 65.5288 17.5725C65.5288 12.2021 65.5288 6.83169 65.5288 1.4613V1.03504C65.6466 1.03504 65.7391 1.01764 65.8317 1.01764C66.9114 1.01764 67.9884 1.01764 69.0654 1.01764C69.1598 1.00601 69.2553 1.02853 69.3356 1.08139C69.4158 1.13424 69.4759 1.21417 69.5057 1.30761C72.385 7.43001 75.2719 13.5495 78.1662 19.6661C78.8505 21.116 79.532 22.5659 80.2247 24.0158C80.2701 24.0963 80.2939 24.1879 80.2939 24.2811C80.2939 24.3743 80.2701 24.4658 80.2247 24.5464C79.8349 25.341 79.4591 26.1471 79.0777 26.9474C79.0524 26.9967 79.0216 27.046 78.9627 27.1533L68.0922 4.97003L68.0249 4.97293Z"
+                  fill="white" />
+                <path
+                  d="M50.572 32.9326H53.657C56.0746 32.9326 57.704 34.5391 57.704 36.8357C57.704 39.1323 56.0746 40.7417 53.657 40.7417H50.572V32.9326ZM53.6038 40.0168C55.609 40.0168 56.9047 38.7003 56.9047 36.827C56.9047 34.9538 55.609 33.6373 53.6038 33.6373H51.3601V40.0168H53.6038Z"
+                  fill="white" />
+                <path d="M64.3368 32.9326H65.1361V40.7417H64.3368V32.9326Z" fill="white" />
+                <path
+                  d="M77.7707 36.8273H78.5279V39.814C77.7504 40.482 76.7648 40.8354 75.7542 40.8087C73.4573 40.8087 71.7717 39.1239 71.7717 36.836C71.7717 34.5481 73.4545 32.8633 75.7654 32.8633C76.9097 32.8633 77.9025 33.2432 78.57 33.9913L78.082 34.5075C77.7828 34.2024 77.4264 33.9638 77.0348 33.8062C76.6432 33.6486 76.2246 33.5754 75.8047 33.5911C73.9397 33.5911 72.5682 34.9656 72.5682 36.8273C72.5682 38.6889 73.9397 40.0634 75.7935 40.0634C76.4981 40.0874 77.1915 39.8759 77.7707 39.4603V36.8273Z"
+                  fill="white" />
+                <path d="M85.646 32.9326H86.4425V40.7417H85.646V32.9326Z" fill="white" />
+                <path d="M95.2264 33.6372H92.5704V32.9238H98.6788V33.6372H96.0229V40.7416H95.2264V33.6372Z"
+                  fill="white" />
+                <path
+                  d="M109.165 38.6539H104.958L104.05 40.7417H103.208L106.661 32.9326H107.449L110.901 40.7417H110.06L109.165 38.6539ZM108.885 37.984L107.073 33.791L105.247 37.9869L108.885 37.984Z"
+                  fill="white" />
+                <path d="M117.018 32.9326H117.817V40.0168H122.046V40.733H117.018V32.9326Z" fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_3692_12255">
+                  <rect width="123" height="48" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <!-- <picture>
               <source media="(max-width: 819px)" srcset="./images/logo/logo-UWP.svg" type="image/svg+xml" />
               <source media="(max-width: 1279px)" srcset="./images/logo/logo_820.svg" type="image/svg+xml" />
               <source media="(min-width: 1280px)" srcset="./images/logo/logo_1920.svg" type="image/svg+xml" />
               <img src="./images/logo/logo_1920.svg" alt="Logo" />
-            </picture>
+            </picture> -->
           </a>
         </div>
 
         <!-- moon -->
-        <div id="dark" class="">
-          <button id="moon">
-            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div id="dark" class="w-8 h-8 relative transition-all duration-500 ease-in xl:block">
+          <button id="moon" class="absolute">
+            <svg class="transition-all duration-500" width="24" height="25" viewBox="0 0 24 25" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M8.64195 1.00439L8.64196 1.00439C9.17383 0.827256 9.43477 0.938357 9.49125 0.988379C9.50652 1.0019 9.51618 1.01448 9.51563 1.05327C9.51491 1.10516 9.49146 1.21876 9.37103 1.38979L9.37102 1.38979C7.93626 3.42747 7.37097 5.08324 7.37281 7.32785C7.37936 15.3015 16.4493 19.7034 22.798 14.8407L22.494 14.4438L22.798 14.8407C23.0445 14.6519 23.2304 14.5695 23.3487 14.5436C23.4061 14.531 23.4361 14.5333 23.4488 14.5361C23.4582 14.549 23.485 14.595 23.4958 14.7103C23.5104 14.8666 23.489 15.1027 23.3958 15.4218C20.5793 25.0622 7.85599 26.9858 2.38111 18.6141C-0.326425 14.474 -0.0798655 8.62186 2.91788 4.99832C4.56619 3.00592 6.34274 1.77009 8.64195 1.00439ZM23.4564 14.5389C23.4563 14.5391 23.4546 14.5386 23.4519 14.5369C23.4552 14.5378 23.4566 14.5387 23.4564 14.5389Z"
                 stroke="white" />
             </svg>
           </button>
-          <button id="sun" class="hidden">
-            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button id="sun" class="transition-all duration-200 ease-in opacity-0 absolute">
+            <svg class="transition-all duration-500" width="31" height="31" viewBox="0 0 31 31" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M14.6221 4.24476C14.7855 4.66513 14.9841 4.85527 15.1438 4.90956C15.4531 5.01464 15.6682 5.03144 15.8138 5.00688C15.9428 4.98512 16.0428 4.92759 16.1342 4.80969C16.2357 4.67869 16.3353 4.45971 16.4069 4.10967C16.4779 3.76288 16.5156 3.31728 16.5156 2.76049C16.5156 1.62222 16.3477 0.998116 16.124 0.7117C16.0292 0.590367 15.9261 0.531597 15.7967 0.509786C15.6517 0.485339 15.4385 0.502551 15.1341 0.609982L14.6221 4.24476ZM14.6221 4.24476C14.4651 3.84082 14.3781 3.31304 14.3765 2.76613M14.6221 4.24476L14.3765 2.76613M16.9234 26.5956C17.0605 26.9831 17.0567 29.6035 16.9184 30.0081L16.9234 26.5956ZM16.9234 26.5956C16.6456 25.8105 15.7487 25.3742 14.9909 25.6556L16.9234 26.5956ZM14.3765 2.76613C14.3749 2.21927 14.4588 1.69018 14.6136 1.28385M14.3765 2.76613L14.6136 1.28385M14.6136 1.28385C14.7747 0.861146 14.9729 0.666904 15.134 0.609993L14.6136 1.28385ZM22.7435 7.01229C22.7442 7.01261 22.7586 6.98412 22.8057 6.91812C22.8595 6.84277 22.9354 6.74636 23.0308 6.63309C23.2207 6.40738 23.471 6.13439 23.7352 5.86288C23.9993 5.59154 24.2717 5.32735 24.5047 5.11859C24.6213 5.01405 24.7247 4.92653 24.8098 4.8601C24.8523 4.82695 24.8879 4.80098 24.9164 4.78164C24.9305 4.77206 24.9418 4.76485 24.9505 4.75962L24.9605 4.75378L24.9633 4.7523L24.9638 4.75204L24.9642 4.75183L22.7435 7.01229ZM22.7435 7.01229C22.4723 7.83423 23.2069 8.57323 24.038 8.30008C24.0377 8.29942 24.0663 8.28502 24.1327 8.23789C24.2083 8.18424 24.305 8.10847 24.4186 8.01339C24.6449 7.82393 24.9187 7.5743 25.1909 7.3108C25.463 7.04748 25.7279 6.77583 25.9372 6.54346C26.042 6.42709 26.1298 6.32406 26.1964 6.23913C26.2296 6.19676 26.2556 6.16137 26.275 6.13295C26.2846 6.11889 26.2918 6.10762 26.297 6.09899L26.3028 6.08905C26.3041 6.08686 26.3046 6.0857 26.3047 6.0855C26.723 5.24836 25.8135 4.32981 24.9642 4.75181L22.7435 7.01229ZM22.7435 24.0413C22.5654 23.4993 22.8579 22.919 23.3242 22.7544C23.56 22.6712 23.7886 22.669 24.0487 22.7571C24.0418 22.7547 24.0381 22.7533 24.038 22.7535C24.0377 22.7542 24.0663 22.7686 24.1327 22.8157C24.2083 22.8694 24.305 22.9451 24.4186 23.0402C24.6449 23.2297 24.9187 23.4793 25.1909 23.7428C25.463 24.0061 25.7279 24.2778 25.9372 24.5101C26.042 24.6265 26.1298 24.7295 26.1964 24.8145C26.2296 24.8568 26.2556 24.8922 26.275 24.9206C26.2783 24.9255 26.2813 24.93 26.2841 24.9342C26.2893 24.9421 26.2936 24.9489 26.297 24.9546L26.3028 24.9645C26.3041 24.9667 26.3046 24.9679 26.3047 24.9681C26.3048 24.9681 26.3048 24.9681 26.3048 24.9681C26.723 25.8053 25.8135 26.7238 24.9642 26.3018L22.7435 24.0413ZM22.7435 24.0413C22.7444 24.0414 22.7589 24.0699 22.8057 24.1355C22.8595 24.2108 22.9354 24.3072 23.0308 24.4205C23.2207 24.6462 23.471 24.9192 23.7352 25.1907C23.9993 25.462 24.2717 25.7262 24.5047 25.935C24.6213 26.0395 24.7247 26.1271 24.8098 26.1935C24.8523 26.2266 24.8879 26.2526 24.9164 26.272C24.9305 26.2815 24.9418 26.2887 24.9505 26.294L24.9605 26.2998L24.9633 26.3013C24.9638 26.3016 24.9641 26.3017 24.9642 26.3018L22.7435 24.0413ZM10.7295 10.0649L10.7296 10.0649C11.8398 9.10628 12.8588 8.64377 14.6789 8.31075C18.2626 7.65513 21.028 9.88374 22.1301 12.878C23.2328 15.874 22.6156 19.5015 19.5222 21.5582C15.8145 24.0232 11.9463 22.6328 9.81341 19.8435C7.68088 17.0546 7.3625 12.9719 10.7295 10.0649ZM26.5763 14.1094C25.239 14.598 25.2532 16.4743 26.5977 16.9474L30.0194 16.9425C31.3269 16.4982 31.3269 14.5554 30.0194 14.1111C29.6272 13.9778 26.9399 13.9765 26.5763 14.1094ZM15.1535 30.4454L14.9926 30.9188L15.1535 30.4454C14.9871 30.3889 14.7866 30.1962 14.6232 29.7788C14.4656 29.3764 14.379 28.8506 14.3788 28.3045C14.3786 27.7587 14.4648 27.229 14.6229 26.8196C14.7868 26.3954 14.9906 26.189 15.1649 26.1243C15.6477 25.9451 16.2625 26.2268 16.452 26.7624C16.451 26.7595 16.4511 26.7603 16.4522 26.7654C16.4547 26.7781 16.4625 26.8172 16.4715 26.8947C16.4827 26.9903 16.4925 27.115 16.5006 27.2627C16.5167 27.5573 16.5247 27.9241 16.5241 28.2947C16.5236 28.6653 16.5146 29.0332 16.4976 29.3301C16.4891 29.4789 16.4788 29.6052 16.4673 29.7028C16.4568 29.7921 16.4478 29.8341 16.4456 29.8443C16.4451 29.8466 16.445 29.8472 16.4453 29.8464L16.4452 29.8464C16.2786 30.3343 15.6925 30.6286 15.1535 30.4454ZM6.53706 7.94711C5.82498 7.58348 5.10276 6.90547 4.69302 6.0855C4.57408 5.84745 4.56832 5.5471 4.67348 5.27138C4.77889 4.99499 4.97562 4.79389 5.20022 4.71453C5.46995 4.61927 5.83308 4.66233 6.26396 4.88823C6.68866 5.11088 7.11806 5.48207 7.46794 5.91993C7.8193 6.35964 8.06325 6.83236 8.15341 7.23861C8.24368 7.64536 8.16825 7.90351 8.01256 8.05879C7.90679 8.16427 7.74052 8.23419 7.48237 8.22645C7.2194 8.21856 6.89225 8.12848 6.53706 7.94711ZM24.0487 8.29652L24.0486 8.29653L24.0487 8.29652ZM26.7637 16.4758C25.8593 16.1576 25.8542 14.9069 26.7464 14.5795C26.7443 14.5803 26.7431 14.5808 26.7432 14.5809C26.7434 14.5815 26.7779 14.573 26.8691 14.5626C26.9644 14.5518 27.0898 14.5421 27.2391 14.5341C27.5369 14.5183 27.9098 14.5103 28.2869 14.5104C28.6639 14.5106 29.0387 14.519 29.3403 14.5352C29.4914 14.5433 29.6195 14.5532 29.718 14.5642C29.8017 14.5736 29.8431 14.5818 29.8554 14.5842C29.8596 14.585 29.8605 14.5852 29.8585 14.5845C30.7138 14.8752 30.7138 16.1784 29.8585 16.469C29.8592 16.4688 29.8586 16.469 29.8565 16.4694C29.8466 16.4715 29.8043 16.4807 29.7138 16.4913C29.6158 16.5027 29.4891 16.513 29.3398 16.5214C29.0421 16.5384 28.673 16.5474 28.3014 16.5479C27.9297 16.5485 27.5619 16.5405 27.2663 16.5245C27.1182 16.5164 26.9931 16.5066 26.8971 16.4954C26.8188 16.4864 26.7793 16.4785 26.7667 16.476C26.7617 16.475 26.761 16.4748 26.7637 16.4758ZM4.69302 24.9681L4.69305 24.968C4.69372 24.9668 4.70076 24.9539 4.7193 24.9269C4.73798 24.8998 4.76343 24.8654 4.79628 24.8238C4.86208 24.7404 4.94932 24.6383 5.05381 24.5223C5.26241 24.2908 5.52724 24.018 5.79889 23.7529C6.0707 23.4876 6.34389 23.2352 6.56864 23.0435C6.68145 22.9473 6.77724 22.8706 6.85169 22.8162C6.91253 22.7718 6.94024 22.7566 6.94235 22.7547C7.77858 22.4716 8.52558 23.2188 8.25425 24.0413C8.25359 24.041 8.23918 24.0695 8.19208 24.1355C8.13831 24.2108 8.06235 24.3072 7.96702 24.4205C7.77706 24.6462 7.52675 24.9192 7.26255 25.1907C6.99852 25.462 6.72612 25.7262 6.49312 25.935C6.37643 26.0395 6.27311 26.1271 6.18793 26.1935C6.14543 26.2266 6.10992 26.2526 6.08139 26.272C6.06727 26.2815 6.05595 26.2887 6.04726 26.294L6.03723 26.2998L6.03449 26.3013C6.03395 26.3016 6.03365 26.3017 6.03358 26.3018C6.03357 26.3018 6.03356 26.3018 6.03355 26.3018C5.18429 26.7238 4.27479 25.8053 4.693 24.9681L4.69302 24.9681Z"
-                stroke="#F8F8F8" />
+                d="M23.1578 22.2829C22.4106 22.5467 22.0067 23.4289 22.2739 24.2134C22.4083 24.6082 24.2582 26.5092 24.7417 26.7495M23.1578 22.2829L23.3241 22.7544M23.1578 22.2829C23.5037 22.1609 23.8475 22.161 24.2091 22.2835C24.6049 22.4176 26.5111 24.2624 26.752 24.7446C27.387 26.0156 26.0161 27.3828 24.7417 26.7495M23.1578 22.2829L23.3242 22.7544C23.3242 22.7544 23.3241 22.7544 23.3241 22.7544M23.3241 22.7544C22.8579 22.9191 22.5655 23.4993 22.7435 24.0413M23.3241 22.7544C23.5599 22.6712 23.7885 22.669 24.0487 22.7571C24.0418 22.7547 24.0381 22.7533 24.038 22.7535C24.0377 22.7542 24.0663 22.7686 24.1327 22.8157C24.2083 22.8694 24.305 22.9451 24.4186 23.0402C24.6449 23.2297 24.9187 23.4793 25.1909 23.7428C25.463 24.0061 25.7279 24.2778 25.9372 24.5101C26.042 24.6265 26.1298 24.7295 26.1964 24.8145C26.2296 24.8568 26.2556 24.8922 26.275 24.9206C26.2846 24.9347 26.2918 24.946 26.297 24.9546L26.3028 24.9645C26.3041 24.9668 26.3047 24.9679 26.3047 24.9681M22.7435 24.0413C22.7435 24.0413 22.7435 24.0413 22.7435 24.0413C22.7433 24.0414 22.7448 24.0452 22.7472 24.0523L22.7472 24.0522C22.746 24.0486 22.7447 24.0449 22.7435 24.0413ZM22.7435 24.0413C22.7444 24.0413 22.7589 24.0699 22.8057 24.1355C22.8595 24.2108 22.9354 24.3072 23.0308 24.4205C23.2207 24.6462 23.471 24.9192 23.7352 25.1907C23.9993 25.462 24.2717 25.7262 24.5047 25.935C24.6213 26.0395 24.7247 26.1271 24.8098 26.1935C24.8523 26.2266 24.8879 26.2526 24.9164 26.272C24.9305 26.2815 24.9418 26.2887 24.9505 26.294L24.9605 26.2998L24.9633 26.3013C24.9639 26.3016 24.9642 26.3018 24.9642 26.3018M24.9642 26.3018C24.9642 26.3018 24.9642 26.3018 24.9642 26.3018L24.7417 26.7495M24.9642 26.3018C25.8135 26.7238 26.723 25.8052 26.3047 24.9681M24.9642 26.3018L24.7417 26.7495M26.3047 24.9681L26.7406 24.7503L26.3048 24.9681L26.3047 24.9681ZM14.6221 4.24476C14.7855 4.66513 14.9841 4.85527 15.1438 4.90956C15.4531 5.01464 15.6682 5.03144 15.8138 5.00688C15.9428 4.98512 16.0428 4.92759 16.1342 4.80969C16.2357 4.67869 16.3353 4.45971 16.4069 4.10967C16.4779 3.76288 16.5156 3.31728 16.5156 2.76049C16.5156 1.62222 16.3477 0.998116 16.124 0.7117C16.0292 0.590367 15.9261 0.531597 15.7967 0.509786C15.6517 0.485339 15.4385 0.502551 15.1341 0.609982L14.6221 4.24476ZM14.6221 4.24476C14.4651 3.84082 14.3781 3.31304 14.3765 2.76613M14.6221 4.24476L14.3765 2.76613M14.3765 2.76613C14.3749 2.21927 14.4588 1.69018 14.6136 1.28385M14.3765 2.76613L14.6136 1.28385M14.6136 1.28385C14.7747 0.861146 14.9729 0.666904 15.134 0.609993L14.6136 1.28385ZM4.67348 5.27138C4.56832 5.5471 4.57408 5.84745 4.69302 6.0855C5.10276 6.90547 5.82498 7.58348 6.53706 7.94711C6.89225 8.12848 7.2194 8.21856 7.48237 8.22645C7.74052 8.23419 7.90679 8.16427 8.01256 8.05879C8.16825 7.90351 8.24368 7.64536 8.15341 7.23861C8.06325 6.83236 7.8193 6.35964 7.46794 5.91993C7.11806 5.48207 6.68866 5.11088 6.26396 4.88823C5.8331 4.66234 5.46997 4.61927 5.20025 4.71452L4.67348 5.27138ZM4.67348 5.27138C4.77889 4.99499 4.97562 4.79389 5.20022 4.71453L4.67348 5.27138ZM0.500045 15.5296C0.503789 15.9532 0.730634 16.3302 1.13924 16.4691C1.13919 16.469 1.13933 16.4691 1.13967 16.4692C1.14441 16.4703 1.18745 16.4808 1.28971 16.493C1.38829 16.5048 1.51517 16.5152 1.66438 16.5237C1.96213 16.5407 2.3301 16.5492 2.70145 16.5489C3.0728 16.5485 3.44093 16.5393 3.739 16.5217C3.88836 16.5129 4.01548 16.5023 4.11433 16.4903C4.16371 16.4844 4.20256 16.4785 4.23153 16.4731C4.25728 16.4683 4.26794 16.4652 4.26795 16.4652C4.26796 16.4653 4.26742 16.4654 4.2664 16.4658L4.42726 16.9392L4.26638 16.4658C4.67926 16.3255 4.90321 15.9478 4.90321 15.5268C4.90321 15.1059 4.6793 14.7282 4.26649 14.5878C4.26702 14.588 4.26639 14.5879 4.26445 14.5875C4.25467 14.5854 4.21164 14.5761 4.11895 14.5653C4.01946 14.5538 3.8908 14.5436 3.73926 14.5352C3.43693 14.5185 3.06223 14.5099 2.68479 14.51C2.30732 14.51 1.93363 14.5187 1.63328 14.5355C1.4827 14.544 1.35543 14.5542 1.25764 14.5657C1.17588 14.5752 1.13525 14.5836 1.12281 14.5861L0.500045 15.5296ZM0.500045 15.5296C0.496302 15.1062 0.716 14.729 1.11975 14.5864L0.500045 15.5296ZM10.7295 10.0649L10.7296 10.0649C11.8398 9.10628 12.8588 8.64377 14.6789 8.31075C18.2626 7.65513 21.028 9.88374 22.1301 12.878C23.2328 15.874 22.6156 19.5015 19.5222 21.5582C15.8145 24.0232 11.9463 22.6328 9.81341 19.8435C7.68088 17.0546 7.3625 12.9719 10.7295 10.0649ZM29.8585 16.469L29.8585 16.4691C29.8592 16.4688 29.8586 16.469 29.8565 16.4694C29.8466 16.4715 29.8043 16.4807 29.7138 16.4913C29.6158 16.5027 29.4891 16.513 29.3398 16.5214C29.0421 16.5384 28.673 16.5474 28.3014 16.5479C27.9297 16.5485 27.5619 16.5405 27.2663 16.5245C27.1182 16.5164 26.9931 16.5066 26.8971 16.4954C26.8188 16.4864 26.7794 16.4785 26.7667 16.476C26.7623 16.4751 26.7612 16.4749 26.7628 16.4755C25.8593 16.1568 25.8545 14.9068 26.7464 14.5795C26.7443 14.5803 26.7431 14.5808 26.7432 14.5809C26.7434 14.5815 26.7779 14.573 26.8691 14.5626C26.9644 14.5518 27.0898 14.5421 27.2391 14.5341C27.5369 14.5183 27.9098 14.5103 28.2869 14.5104C28.6639 14.5106 29.0387 14.519 29.3403 14.5352C29.4914 14.5433 29.6195 14.5532 29.718 14.5642C29.8017 14.5736 29.8431 14.5818 29.8554 14.5842C29.8596 14.585 29.8605 14.5852 29.8585 14.5845C30.7138 14.8752 30.7138 16.1784 29.8585 16.469ZM15.1535 30.4454L14.9926 30.9188L15.1535 30.4454C14.9871 30.3889 14.7866 30.1962 14.6232 29.7788C14.4656 29.3764 14.379 28.8506 14.3788 28.3045C14.3786 27.7587 14.4648 27.229 14.6229 26.8196C14.7868 26.3954 14.9906 26.189 15.1649 26.1243C15.6477 25.9451 16.2625 26.2268 16.452 26.7624C16.451 26.7595 16.4511 26.7603 16.4522 26.7654C16.4547 26.7781 16.4625 26.8172 16.4715 26.8947C16.4827 26.9903 16.4925 27.115 16.5006 27.2627C16.5167 27.5573 16.5247 27.9241 16.5241 28.2947C16.5236 28.6653 16.5146 29.0332 16.4976 29.3301C16.4891 29.4789 16.4788 29.6052 16.4673 29.7028C16.4544 29.8125 16.4437 29.8508 16.4453 29.8464L16.4452 29.8464C16.2786 30.3343 15.6925 30.6286 15.1535 30.4454ZM22.7435 7.01229C22.7442 7.01261 22.7586 6.98412 22.8057 6.91812C22.8595 6.84277 22.9354 6.74636 23.0308 6.63309C23.2207 6.40738 23.471 6.13439 23.7352 5.86288C23.9993 5.59154 24.2717 5.32735 24.5047 5.11859C24.6213 5.01405 24.7247 4.92653 24.8098 4.8601C24.8523 4.82695 24.8879 4.80098 24.9164 4.78164C24.9305 4.77206 24.9418 4.76485 24.9505 4.75962L24.9605 4.75378L24.9633 4.7523C24.9639 4.75196 24.9642 4.75181 24.9642 4.75181C25.8135 4.32981 26.723 5.24836 26.3047 6.0855C26.3046 6.0857 26.3041 6.08686 26.3028 6.08905L26.297 6.09899C26.2918 6.10762 26.2846 6.11889 26.275 6.13295C26.2556 6.16137 26.2296 6.19676 26.1964 6.23913C26.1298 6.32406 26.042 6.42709 25.9372 6.54346C25.7279 6.77583 25.463 7.04748 25.1909 7.3108C24.9187 7.5743 24.6449 7.82393 24.4186 8.01339C24.305 8.10847 24.2083 8.18424 24.1327 8.23789C24.0663 8.28502 24.0377 8.29942 24.038 8.30008C23.2069 8.57323 22.4722 7.83424 22.7435 7.01229ZM4.69302 24.9681L4.69305 24.968C4.69372 24.9668 4.70076 24.9539 4.7193 24.9269C4.73798 24.8998 4.76343 24.8654 4.79628 24.8238C4.86208 24.7404 4.94932 24.6383 5.05381 24.5223C5.26241 24.2908 5.52724 24.018 5.79889 23.7529C6.0707 23.4876 6.34389 23.2352 6.56864 23.0435C6.68145 22.9473 6.77724 22.8706 6.85169 22.8162C6.91252 22.7718 6.94024 22.7566 6.94235 22.7547C7.77858 22.4716 8.52559 23.2188 8.25425 24.0413C8.25359 24.041 8.23918 24.0695 8.19208 24.1355C8.13831 24.2108 8.06235 24.3072 7.96702 24.4205C7.77706 24.6462 7.52675 24.9192 7.26255 25.1907C6.99852 25.462 6.72612 25.7262 6.49312 25.935C6.37643 26.0395 6.27311 26.1271 6.18793 26.1935C6.14543 26.2266 6.10992 26.2526 6.08139 26.272C6.06727 26.2815 6.05595 26.2887 6.04726 26.294L6.03723 26.2998L6.03449 26.3013L6.03403 26.3015L6.03358 26.3018C5.1843 26.7238 4.27475 25.8052 4.69302 24.9681Z"
+                stroke="white"></path>
             </svg>
           </button>
         </div>
@@ -94,10 +134,10 @@
           <div class="">
             <nav>
               <ul id="basic-menu"
-                class="relative flex flex-col justify-start gap-7 uppercase xl:static xl:h-[90px] xl:flex-row xl:items-center xl:justify-center xl:gap-12 xl:text-base-white">
+                class="relative flex flex-col justify-start gap-7 uppercase xl:min-h-[90px] xl:static xl:h-[90px] xl:flex-row xl:items-center xl:justify-center xl:gap-12 xl:text-base-white">
                 <li>
                   <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
-                    href="#">Case Studies</a>
+                    href="cases.html">Case Studies</a>
                 </li>
                 <li class="group py-5 xl:relative">
                   <a class="flex items-center gap-5 text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
@@ -447,27 +487,27 @@
             <div class="flex flex-col gap-[15px] pt-6 md:grid md:grid-cols-2 md:justify-between md:gap-6 md:pt-0">
               <div class="">
                 <input type="text"
-                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-7 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base md:font-normal"
+                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-7 text-sm font-medium leading-1.3 tracking-[1px] md:px-12 md:py-[17px] md:text-base md:font-normal"
                   placeholder="Your name?*" />
               </div>
               <div class="">
                 <input type="text"
-                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-7 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base md:font-normal"
+                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-7 text-sm font-medium leading-1.3 tracking-[1px] md:px-12 md:py-[17px] md:text-base md:font-normal"
                   placeholder="Your e-mail?*" />
               </div>
               <div class="">
                 <input type="text"
-                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-7 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base md:font-normal"
+                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-7 text-sm font-medium leading-1.3 tracking-[1px] md:px-12 md:py-[17px] md:text-base md:font-normal"
                   placeholder="Phone number*" />
               </div>
               <div class="">
                 <input type="text"
-                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-7 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base md:font-normal"
+                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-7 text-sm font-medium leading-1.3 tracking-[1px] md:px-12 md:py-[17px] md:text-base md:font-normal"
                   placeholder="Company*" />
               </div>
               <div class="md:col-span-2">
                 <input type="text"
-                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-7 text-sm font-medium leading-[1.3] tracking-[1px] md:px-12 md:py-[17px] md:text-base md:font-normal"
+                  class="block w-full rounded-full border border-base-gray bg-transparent py-5 px-7 text-sm font-medium leading-1.3 tracking-[1px] md:px-12 md:py-[17px] md:text-base md:font-normal"
                   placeholder="Tell us about your project" />
               </div>
             </div>
@@ -516,9 +556,9 @@
 
     <section class="relative overflow-hidden bg-base-black pt-7 pb-16 text-base-white xl:py-28">
       <div class="container">
-        <div
-          class="relative z-10 pt-5 text-center text-4xl font-bold uppercase leading-1.2 md:text-6xl md:leading-1.1 xl:pt-1 xl:text-[120px] xl:leading-1.0">
-          <h1>
+        <div class="relative z-10 pt-5 text-center xl:pt-1">
+          <h1
+            class="text-4xl font-bold uppercase leading-1.2 md:text-6xl md:leading-1.1 xl:text-[120px] xl:leading-1.0">
             Your reliable digital <br class="hidden md:block" />
             marketing partner
           </h1>
@@ -535,7 +575,7 @@
         class="spot z-5 absolute top-0 right-0 h-[212px] w-[212px] translate-x-1/3 bg-gradient-radial from-base-red to-base-black blur-[45px] md:h-[322px] md:w-[322px] md:blur-[60px] xl:h-[591px] xl:w-[591px] xl:blur-[90px]">
       </div>
     </section>
-
+    <!-- video -->
     <section class="relative">
       <div id="discuss-project"
         class="z-20 absolute -top-[65px] right-5  md:-top-[4.6rem] md:right-[5.8rem] xl:-top-[5.5rem] xl:right-[28rem] ">
@@ -989,7 +1029,7 @@
           <div id="element1"
             class="pt-4 md:pt-7 xl:pr-10 xl:pt-0 xl:row-span-12 col-span-12 xl:col-span-3 xl:col-start-1 xl:row-span-11 xl:row-start-3 xl:border-r xl:border-middle-gray">
             <div class="btn-element mx-auto md:w-[357px]  xl:m-0 xl:w-full top-24">
-              <a class="" href="#">
+              <a class="" href="cases.html">
                 <button
                   class="flex w-full items-center justify-center gap-4 rounded-full bg-base-red py-4 text-base text-base-white font-bold uppercase leading-24 hover:bg-red-600 md:py-5 md:leading-1.2">
                   All Cases
@@ -1072,8 +1112,6 @@
                   </div>
                 </div>
               </div>
-              <!-- ./wrapper_body -->
-
               <!-- 2 -->
               <div class="flex flex-col md:pt-7 md:pb-[22px] xl:col-start-2 xl:ml-12 xl:w-full xl:pt-20 xl:pr-12">
                 <div class="hidden md:block">
@@ -1118,8 +1156,6 @@
                   </div>
                 </div>
               </div>
-              <!-- ./wrapper_body -->
-
               <!-- 3 -->
               <div class="flex flex-col md:pt-7 md:pb-[22px] xl:col-start-2 xl:ml-12 xl:w-full xl:pt-20 xl:pr-12">
                 <div class="hidden md:block">
@@ -1260,9 +1296,10 @@
                   </div>
                 </div>
               </div>
-              <!-- ./wrapper_body -->
             </div>
+
             <div class="md:col-start-2 md:mt-[86px] md:border-l md:border-middle-gray xl:mt-[92px]">
+
               <!-- 6 -->
               <div class="flex flex-col md:pt-7 md:pb-[22px] xl:col-start-2 xl:w-full">
                 <div class="hidden md:block md:pl-5 xl:pt-14 xl:pl-14">
@@ -1452,7 +1489,7 @@
             <!-- ./wrapper_body -->
           </div>
           <div id="element2"
-            class="pt-5 md:pt-12 xl:absolute xl:top-[15rem] xl:col-span-3 xl:col-start-1 xl:row-start-2 xl:w-full xl:pr-10">
+            class="hidden md:block pt-5 md:pt-10 xl:absolute xl:top-[15rem] xl:col-span-3 xl:col-start-1 xl:row-start-2 xl:w-full xl:pr-10">
             <div class="btn-element mx-auto md:w-[357px]  xl:m-0 xl:w-full top-24">
               <a class="" href="#">
                 <button
@@ -1476,7 +1513,7 @@
     <!-- LET'S DISCUS START-->
     <section class="bg-base-black md:mt-3">
       <div class="container">
-        <div class="grid grid-cols-12 pt-14 xl:pt-32">
+        <div class="grid grid-cols-12 md:row-end-auto pt-14 xl:pt-32">
           <div
             class="col-span-12 border-b border-base-white pt-1 pb-8 text-4xl font-bold uppercase leading-[1.2] text-base-white md:pb-10 md:pt-2 md:text-[45px] xl:pb-12 xl:text-[90px]">
             Let's discuss the project
@@ -1484,7 +1521,7 @@
 
           <!-- image -->
           <div
-            class="relative col-span-6 col-start-1 pr-2 pt-8 md:col-span-4 md:row-span-2 md:pr-4 md:pt-10 xl:col-span-3 xl:col-start-5 xl:pt-1">
+            class="relative col-span-6 col-start-1 pr-2 pt-8 md:col-span-4 md:row-span-3 md:pr-4 md:pt-10 xl:col-span-3 xl:col-start-5 xl:pt-1 xl:pl-1">
             <div class="relative w-full xl:pt-12">
               <picture class="">
                 <source media="(max-width: 819px)" srcset="./images/letsDiscus/lts-discus-360.png" />
@@ -1499,7 +1536,7 @@
             </div>
             <!-- arrow (position: absolute), nav-->
             <div
-              class="absolute -bottom-5 flex h-[37px] w-[37px] items-center justify-center rounded-full bg-base-white text-base-black md:h-[60px] md:w-[60px] xl:-bottom-9 xl:ml-1 xl:h-[72px] xl:w-[72px]">
+              class="absolute -bottom-1 md:bottom-2 flex h-[37px] w-[37px] items-center justify-center rounded-full bg-base-white text-base-black md:h-[60px] md:w-[60px] xl:-bottom-9 xl:ml-1 xl:h-[72px] xl:w-[72px]">
               <svg class="h-4 w-4 fill-base-black md:h-6 md:w-6" viewBox="0 0 26 26" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1532,22 +1569,25 @@
               </div>
             </div>
           </div>
+
           <!-- text -->
           <div
-            class="col-span-12 md:col-span-8 md:col-start-5 md:pl-12 md:pt-6 xl:col-span-5 xl:col-start-8 xl:flex xl:flex-col xl:justify-between xl:pl-12">
-            <div class="pt-9 pb-3 md:flex md:w-full md:pl-1 md:pt-0 xl:pl-0">
-              <div class="w-full text-base font-medium leading-[22.4px] text-base-white xl:text-2xl xl:leading-[1.4]">
-                The main advantage of social networks is the lack of
-                boundaries. Even if your target audience lives in Spain or Sri
-                Lanka, you can reach them on Facebook.
-              </div>
+            class="min-h-[275px] pt-9 md:min-h-[210px] xl:min-h-[300px] md:pt-6 col-span-12 md:col-span-8 md:col-start-5 md:pl-12 xl:pt-3 xl:col-span-5 xl:col-start-8 xl:flex xl:flex-col xl:justify-between xl:pl-12">
+
+            <div class="w-full text-base font-medium leading-[22.4px] text-base-white xl:text-2xl xl:leading-[1.4]">
+              The main advantage of social networks is the lack of
+              boundaries. Even if your target audience lives in Spain or Sri
+              Lanka, you can reach them on Facebook.
             </div>
+
+          </div>
+          <div
+            class="pt-9 md:pt-0 col-span-12 md:col-span-8 md:col-start-5 md:pl-12 xl:col-span-5 xl:col-start-8 xl:flex xl:flex-col xl:justify-between xl:pl-12">
             <div
-              class="hidden w-full text-base font-medium leading-[1.3] tracking-[0.16px] text-base-white md:block md:pl-1 md:pt-10 xl:flex-auto">
+              class="hidden w-full text-base font-medium leading-[1.3] tracking-[0.16px] text-base-white md:block xl:flex-auto">
               Працює з John Deere, STVOL, Anabel Arto, Є-Гроші, Kimito
             </div>
-            <div
-              class="flex justify-between pt-20 md:justify-start md:pl-1 md:pt-5 xl:justify-between xl:gap-4 xl:pl-0 xl:pt-0">
+            <div class="flex justify-between md:justify-start md:pl-1 md:pt-5 xl:gap-4 xl:pl-0 xl:pt-0">
               <div class="flex items-center justify-start gap-3 md:w-1/3">
                 <div class="text-4xl font-bold leading-[1.2] text-base-red xl:text-[64px] xl:leading-[2.56px]">
                   6+
@@ -1571,8 +1611,9 @@
           </div>
 
           <!-- pagination -->
-          <div class="col-span-12 md:col-span-8 md:col-start-5 xl:col-span-4 xl:col-start-8">
-            <nav class="pt-5 pb-6 md:pt-2 md:pb-8 md:pl-12 xl:pt-14 xl:pb-4 xl:pl-16">
+          <div
+            class="pt-5 pb-6 md:pb-8 md:pl-12 md:pt-6 xl:pt-12 col-span-12 md:col-span-8 md:col-start-5 xl:col-span-4 xl:col-start-8">
+            <nav class="">
               <ul class="mx-auto flex justify-center gap-3 md:justify-start md:gap-[13px] md:pl-1 xl:gap-5">
                 <li>
                   <a href="">
@@ -1649,14 +1690,14 @@
 
     <!-- BLOG -->
     <section id="blog" class="bg-base-black pt-20 pb-2 md:pb-1 xl:pb-44 xl:pt-28">
-      <div class="container xl:pb-2 xl:pt-2">
+      <div class="container xl:pb-2">
         <!-- Head, Slider -->
-        <div class="pb-[104px] md:mb-2 md:pb-32 xl:pb-48">
+        <div class="pb-[104px] md:mb-2 md:pb-32 xl:pb-44">
           <div class="flex items-start justify-between">
             <div class="text-4xl font-bold uppercase leading-[1.2] text-base-white md:text-[45px] xl:text-[90px]">
-              Our blog
+              Read blog
             </div>
-            <div class="flex flex-shrink-0 items-center gap-3">
+            <div class="flex flex-shrink-0 items-center gap-3 xl:pt-8">
               <div class="hidden text-base font-bold leading-[1.4] text-base-white md:block xl:text-2xl">
                 Read all
               </div>
@@ -1833,10 +1874,10 @@
           </div>
           <!-- Button -->
           <div
-            class="mt-6 pb-14 md:col-span-12 md:mt-2 md:pb-12 xl:col-span-3 xl:col-start-1 xl:row-span-2 xl:row-start-1 xl:mt-0 xl:border-r xl:border-base-gray">
-            <a href="#" class="block xl:pr-12">
+            class="mt-6 pb-14 md:col-span-12 md:pt-6 md:pb-12 xl:col-span-3 xl:col-start-1 xl:row-span-2 xl:row-start-1 xl:mt-0 xl:border-r xl:border-base-gray xl:pr-12">
+            <a href="#" class="block">
               <button
-                class="flex w-full items-center justify-center rounded-full bg-base-red py-5 text-base-white md:mx-auto md:mt-9 md:w-[357px] xl:m-0 xl:mt-14 xl:w-full">
+                class="flex w-full items-center justify-center rounded-full bg-base-red py-5 text-base-white md:mx-auto md:w-[357px] xl:w-full">
                 <div class="pr-2 text-base font-bold uppercase leading-[21px] tracking-[0.16px]">
                   Order a consultation
                 </div>
@@ -1857,12 +1898,12 @@
     <!-- BLOG END -->
 
     <!--FAQ -->
-    <section class="mb-9 py-10 md:mb-20 xl:pb-11">
-      <div class="container mx-auto md:px-1 xl:px-0">
+    <section class="mb-9 py-10 md:mb-[102px] xl:pb-11 xl:pt-12">
+      <div class="container">
         <div class="md:pt-9 xl:grid xl:grid-cols-2col25">
-          <div
-            class="pb-1 text-xs font-bold uppercase leading-[1.4] tracking-[1px] text-base-gray md:pb-1 xl:col-start-1 xl:row-start-2 xl:pt-12 xl:pr-20 xl:text-base">
-            VI SVARAR PÅ DE VANLIGASTE FRÅGOR
+          <div class="pb-1 md:pb-1 xl:col-start-1 xl:row-start-2 xl:pt-12 xl:pr-20 ">
+            <p class="text-xs font-bold uppercase leading-[1.4] tracking-[1px] text-base-gray xl:text-base">VI SVARAR PÅ
+              DE VANLIGASTE FRÅGOR</p>
           </div>
           <div
             class="border-b border-base-gray py-5 text-4xl font-bold uppercase leading-[1.2] md:py-3 md:text-[45px] xl:col-span-2 xl:col-start-1 xl:row-start-1 xl:pt-5 xl:pb-12 xl:text-[90px]">
@@ -1871,7 +1912,7 @@
           <div class="mt-8 md:mt-0 xl:col-start-2 xl:mt-0 xl:border-l xl:border-base-gray xl:pb-12">
             <!-- FAQ 1 article -->
             <div class="border-b border-base-gray py-5 md:mt-0 md:py-8 md:pb-7 xl:ml-[152px] xl:pb-10 xl:pt-12">
-              <div class="accordion flex cursor-pointer items-center justify-between gap-8 text-base-red">
+              <div class="accordion flex cursor-pointer items-center justify-between gap-10 text-base-red">
                 <div class="text-base font-semibold leading-[1.3] md:text-2xl">
                   What is a full-service marketing agency?
                 </div>
@@ -1994,7 +2035,7 @@
               </div>
             </div>
             <!-- FAQ 6 article -->
-            <div class="border-b border-base-gray py-5 md:py-8 xl:ml-[152px] xl:pb-10 xl:pt-[43px]">
+            <div class="md:hidden xl:block border-b border-base-gray py-5 md:py-8 xl:ml-[152px] xl:pb-10 xl:pt-[43px]">
               <div class="accordion flex cursor-pointer items-center justify-between gap-8">
                 <div class="text-base font-semibold leading-[1.3] md:text-2xl">
                   When will I see the financial result of working on promoting
@@ -2149,7 +2190,8 @@
                 <a href="#" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">About us</a>
               </li>
               <li>
-                <a href="#" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Case studies</a>
+                <a href="cases.html" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Case
+                  studies</a>
               </li>
               <li>
                 <a href="#" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Services</a>

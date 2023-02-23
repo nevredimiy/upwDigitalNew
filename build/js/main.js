@@ -187,8 +187,9 @@ const sun = document.getElementById('sun')
 
 const switchTemplate = () => {
   html.classList.toggle('dark')  
-  sun.classList.toggle('hidden')
-  moon.classList.toggle('hidden')
+  sun.classList.toggle('opacity-0')
+  moon.classList.toggle('opacity-0')
+  dark.classList.toggle('rotate-90')
 }
 
 dark.addEventListener('click', switchTemplate)

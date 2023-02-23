@@ -11,7 +11,7 @@
 @layer components {
 
     .body-bg {
-        @apply md:before:content-[''] md:before:fixed md:before:bg-base-red md:before:left-0 md:before:right-0 md:before:top-0 md:before:bottom-0 md:before:z-20 overflow-hidden fixed;
+        @apply md:before:content-[''] md:before:fixed md:before:bg-base-red xl:before:bg-none xl:before:static md:before:left-0 md:before:right-0 md:before:top-0 md:before:bottom-0 md:before:z-20 overflow-hidden fixed;
     }
 
     .show-mobile-menu {
@@ -44,7 +44,7 @@
     }
 
     .burger_span {
-        @apply block w-8 h-[3px] bg-white absolute left-1/2 ml-[-16px];
+        @apply block w-8 h-[3px] bg-white absolute left-1/2 ml-[-16px]
     }
 
 }
@@ -56,4 +56,5 @@
     .toggle-plus {
         @apply [&>div::before]:rotate-0
     }
+
 }
