@@ -21,8 +21,11 @@ module.exports = {
       },
 
       spacing: {
-      'fluid-1': 'clamp(1.31rem, calc(0.65rem + 3.29vw), 3.00rem)',
-      'fluid-2': 'clamp(1.31rem, calc(0.07rem + 6.22vw), 4.50rem)',
+        'fluid-1': 'clamp(1.31rem, calc(0.65rem + 3.29vw), 3.00rem)',
+        'fluid-2': 'clamp(1.31rem, calc(0.07rem + 6.22vw), 4.50rem)',
+        '13': '3.25rem',
+        '22': '5.5rem',
+        '23': '5.75rem',
     },
 
       backgroundImage: {
@@ -63,6 +66,7 @@ module.exports = {
         'base-black': '#171717',
         'base-white': '#F8F8F8',
         'base-red': '#FF304D',
+        'light-gray': '#E0E0E0',
         'base-gray': '#919191',
         'middle-gray': '#909090',
         'dark-gray': '#474747',

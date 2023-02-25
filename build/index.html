@@ -44,7 +44,7 @@
         <!-- logo -->
         <div class="flex-shrink-0">
           <a href="/">
-            <svg class="w-[103px] h-[40px] md:w-[136px] md:h-[54px] xl:w-[123px] xl:h-12" viewBox="0 0 123 48"
+            <svg class="h-[40px] w-[103px] md:h-[54px] md:w-[136px] xl:h-12 xl:w-[123px]" viewBox="0 0 123 48"
               fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_3692_12255)">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.504 17.416L42.6295 40.8085H0.468384L13.504 17.416Z"
@@ -92,7 +92,7 @@
         </div>
 
         <!-- moon -->
-        <div id="dark" class="w-8 h-8 relative transition-all duration-500 ease-in xl:block">
+        <div id="dark" class="relative h-8 w-8 transition-all duration-500 ease-in xl:block">
           <button id="moon" class="absolute">
             <svg class="transition-all duration-500" width="24" height="25" viewBox="0 0 24 25" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +101,7 @@
                 stroke="white" />
             </svg>
           </button>
-          <button id="sun" class="transition-all duration-200 ease-in opacity-0 absolute">
+          <button id="sun" class="absolute opacity-0 transition-all duration-200 ease-in">
             <svg class="transition-all duration-500" width="31" height="31" viewBox="0 0 31 31" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -113,7 +113,7 @@
       </div>
 
       <div id="main-menu"
-        class="bg-base-black pt-8 absolute top-[76px] right-0 z-40 hidden min-h-screen w-full origin-top animate-open-menu md:right-0 md:max-w-[465px] xl:static xl:block xl:min-h-[90px] xl:max-w-full xl:flex-1 xl:flex-nowrap xl:p-0">
+        class="absolute top-[76px] right-0 z-40 hidden min-h-screen w-full origin-top animate-open-menu bg-base-black pt-8 md:right-0 md:max-w-[465px] xl:static xl:block xl:min-h-[90px] xl:max-w-full xl:flex-1 xl:flex-nowrap xl:p-0">
         <div class="container">
           <div id="list-lang"
             class="items-center gap-10 xl:absolute xl:-right-72 xl:top-20 xl:hidden xl:rounded-sm xl:bg-base-white xl:py-3 xl:px-5 xl:text-black xl:opacity-70">
@@ -134,7 +134,7 @@
           <div class="">
             <nav>
               <ul id="basic-menu"
-                class="relative flex flex-col justify-start gap-7 uppercase xl:min-h-[90px] xl:static xl:h-[90px] xl:flex-row xl:items-center xl:justify-center xl:gap-12 xl:text-base-white">
+                class="relative flex flex-col justify-start gap-7 uppercase xl:static xl:h-[90px] xl:min-h-[90px] xl:flex-row xl:items-center xl:justify-center xl:gap-12 xl:text-base-white">
                 <li>
                   <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
                     href="cases.html">Case Studies</a>
@@ -553,7 +553,6 @@
   </header>
 
   <main>
-
     <section class="relative overflow-hidden bg-base-black pt-7 pb-16 text-base-white xl:py-28">
       <div class="container">
         <div class="relative z-10 pt-5 text-center xl:pt-1">
@@ -578,9 +577,9 @@
     <!-- video -->
     <section class="relative">
       <div id="discuss-project"
-        class="z-20 absolute -top-[65px] right-5  md:-top-[4.6rem] md:right-[5.8rem] xl:-top-[5.5rem] xl:right-[28rem] ">
+        class="absolute -top-[65px] right-5 z-20 md:-top-[4.6rem] md:right-[5.8rem] xl:-top-[5.5rem] xl:right-[28rem]">
         <button
-          class="group flex h-[133px] md:h-[142px] md:w-[142px] w-[133px] flex-col items-center justify-center gap-2 rounded-full bg-base-red hover:bg-base-white active:border active:border-base-red xl:h-[177px] xl:w-[177px]">
+          class="group flex h-[133px] w-[133px] flex-col items-center justify-center gap-2 rounded-full bg-base-red hover:bg-base-white active:border active:border-base-red md:h-[142px] md:w-[142px] xl:h-[177px] xl:w-[177px]">
           <div class="pt-4 xl:pt-1">
             <svg class="h-[17px] w-4 fill-white group-hover:fill-black group-active:fill-base-red" viewBox="0 0 16 17"
               fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1027,11 +1026,11 @@
           </div>
 
           <div id="element1"
-            class="pt-4 md:pt-7 xl:pr-10 xl:pt-0 xl:row-span-12 col-span-12 xl:col-span-3 xl:col-start-1 xl:row-span-11 xl:row-start-3 xl:border-r xl:border-middle-gray">
-            <div class="btn-element mx-auto md:w-[357px]  xl:m-0 xl:w-full top-24">
+            class="xl:row-span-12 col-span-12 pt-4 md:pt-7 xl:col-span-3 xl:col-start-1 xl:row-span-11 xl:row-start-3 xl:border-r xl:border-middle-gray xl:pr-10 xl:pt-0">
+            <div class="btn-element top-24 mx-auto md:w-[357px] xl:m-0 xl:w-full">
               <a class="" href="cases.html">
                 <button
-                  class="flex w-full items-center justify-center gap-4 rounded-full bg-base-red py-4 text-base text-base-white font-bold uppercase leading-24 hover:bg-red-600 md:py-5 md:leading-1.2">
+                  class="flex w-full items-center justify-center gap-4 rounded-full bg-base-red py-4 text-base font-bold uppercase leading-24 text-base-white hover:bg-red-600 md:py-5 md:leading-1.2">
                   All Cases
                   <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1299,7 +1298,6 @@
             </div>
 
             <div class="md:col-start-2 md:mt-[86px] md:border-l md:border-middle-gray xl:mt-[92px]">
-
               <!-- 6 -->
               <div class="flex flex-col md:pt-7 md:pb-[22px] xl:col-start-2 xl:w-full">
                 <div class="hidden md:block md:pl-5 xl:pt-14 xl:pl-14">
@@ -1489,11 +1487,11 @@
             <!-- ./wrapper_body -->
           </div>
           <div id="element2"
-            class="hidden md:block pt-5 md:pt-10 xl:absolute xl:top-[15rem] xl:col-span-3 xl:col-start-1 xl:row-start-2 xl:w-full xl:pr-10">
-            <div class="btn-element mx-auto md:w-[357px]  xl:m-0 xl:w-full top-24">
+            class="hidden pt-5 md:block md:pt-10 xl:absolute xl:top-[15rem] xl:col-span-3 xl:col-start-1 xl:row-start-2 xl:w-full xl:pr-10">
+            <div class="btn-element top-24 mx-auto md:w-[357px] xl:m-0 xl:w-full">
               <a class="" href="#">
                 <button
-                  class="flex w-full items-center justify-center gap-4 rounded-full bg-base-red py-4 text-base text-base-white font-bold uppercase leading-24 hover:bg-red-600 md:py-5 md:leading-1.2">
+                  class="flex w-full items-center justify-center gap-4 rounded-full bg-base-red py-4 text-base font-bold uppercase leading-24 text-base-white hover:bg-red-600 md:py-5 md:leading-1.2">
                   Order a consultation
                   <svg class="w-4" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1513,7 +1511,7 @@
     <!-- LET'S DISCUS START-->
     <section class="bg-base-black md:mt-3">
       <div class="container">
-        <div class="grid grid-cols-12 md:row-end-auto pt-14 xl:pt-32">
+        <div class="grid grid-cols-12 pt-14 md:row-end-auto xl:pt-32">
           <div
             class="col-span-12 border-b border-base-white pt-1 pb-8 text-4xl font-bold uppercase leading-[1.2] text-base-white md:pb-10 md:pt-2 md:text-[45px] xl:pb-12 xl:text-[90px]">
             Let's discuss the project
@@ -1536,7 +1534,7 @@
             </div>
             <!-- arrow (position: absolute), nav-->
             <div
-              class="absolute -bottom-1 md:bottom-2 flex h-[37px] w-[37px] items-center justify-center rounded-full bg-base-white text-base-black md:h-[60px] md:w-[60px] xl:-bottom-9 xl:ml-1 xl:h-[72px] xl:w-[72px]">
+              class="absolute -bottom-1 flex h-[37px] w-[37px] items-center justify-center rounded-full bg-base-white text-base-black md:bottom-2 md:h-[60px] md:w-[60px] xl:-bottom-9 xl:ml-1 xl:h-[72px] xl:w-[72px]">
               <svg class="h-4 w-4 fill-base-black md:h-6 md:w-6" viewBox="0 0 26 26" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1572,17 +1570,15 @@
 
           <!-- text -->
           <div
-            class="min-h-[275px] pt-9 md:min-h-[210px] xl:min-h-[300px] md:pt-6 col-span-12 md:col-span-8 md:col-start-5 md:pl-12 xl:pt-3 xl:col-span-5 xl:col-start-8 xl:flex xl:flex-col xl:justify-between xl:pl-12">
-
+            class="col-span-12 min-h-[275px] pt-9 md:col-span-8 md:col-start-5 md:min-h-[210px] md:pt-6 md:pl-12 xl:col-span-5 xl:col-start-8 xl:flex xl:min-h-[300px] xl:flex-col xl:justify-between xl:pt-3 xl:pl-12">
             <div class="w-full text-base font-medium leading-[22.4px] text-base-white xl:text-2xl xl:leading-[1.4]">
-              The main advantage of social networks is the lack of
-              boundaries. Even if your target audience lives in Spain or Sri
-              Lanka, you can reach them on Facebook.
+              The main advantage of social networks is the lack of boundaries.
+              Even if your target audience lives in Spain or Sri Lanka, you
+              can reach them on Facebook.
             </div>
-
           </div>
           <div
-            class="pt-9 md:pt-0 col-span-12 md:col-span-8 md:col-start-5 md:pl-12 xl:col-span-5 xl:col-start-8 xl:flex xl:flex-col xl:justify-between xl:pl-12">
+            class="col-span-12 pt-9 md:col-span-8 md:col-start-5 md:pt-0 md:pl-12 xl:col-span-5 xl:col-start-8 xl:flex xl:flex-col xl:justify-between xl:pl-12">
             <div
               class="hidden w-full text-base font-medium leading-[1.3] tracking-[0.16px] text-base-white md:block xl:flex-auto">
               Працює з John Deere, STVOL, Anabel Arto, Є-Гроші, Kimito
@@ -1612,7 +1608,7 @@
 
           <!-- pagination -->
           <div
-            class="pt-5 pb-6 md:pb-8 md:pl-12 md:pt-6 xl:pt-12 col-span-12 md:col-span-8 md:col-start-5 xl:col-span-4 xl:col-start-8">
+            class="col-span-12 pt-5 pb-6 md:col-span-8 md:col-start-5 md:pb-8 md:pl-12 md:pt-6 xl:col-span-4 xl:col-start-8 xl:pt-12">
             <nav class="">
               <ul class="mx-auto flex justify-center gap-3 md:justify-start md:gap-[13px] md:pl-1 xl:gap-5">
                 <li>
@@ -1901,9 +1897,10 @@
     <section class="mb-9 py-10 md:mb-[102px] xl:pb-11 xl:pt-12">
       <div class="container">
         <div class="md:pt-9 xl:grid xl:grid-cols-2col25">
-          <div class="pb-1 md:pb-1 xl:col-start-1 xl:row-start-2 xl:pt-12 xl:pr-20 ">
-            <p class="text-xs font-bold uppercase leading-[1.4] tracking-[1px] text-base-gray xl:text-base">VI SVARAR PÅ
-              DE VANLIGASTE FRÅGOR</p>
+          <div class="pb-1 md:pb-1 xl:col-start-1 xl:row-start-2 xl:pt-12 xl:pr-20">
+            <p class="text-xs font-bold uppercase leading-[1.4] tracking-[1px] text-base-gray xl:text-base">
+              VI SVARAR PÅ DE VANLIGASTE FRÅGOR
+            </p>
           </div>
           <div
             class="border-b border-base-gray py-5 text-4xl font-bold uppercase leading-[1.2] md:py-3 md:text-[45px] xl:col-span-2 xl:col-start-1 xl:row-start-1 xl:pt-5 xl:pb-12 xl:text-[90px]">
@@ -2035,7 +2032,7 @@
               </div>
             </div>
             <!-- FAQ 6 article -->
-            <div class="md:hidden xl:block border-b border-base-gray py-5 md:py-8 xl:ml-[152px] xl:pb-10 xl:pt-[43px]">
+            <div class="border-b border-base-gray py-5 md:hidden md:py-8 xl:ml-[152px] xl:block xl:pb-10 xl:pt-[43px]">
               <div class="accordion flex cursor-pointer items-center justify-between gap-8">
                 <div class="text-base font-semibold leading-[1.3] md:text-2xl">
                   When will I see the financial result of working on promoting
@@ -2120,15 +2117,8 @@
                 </div>
 
                 <label for="input_file" class="block"></label>
-                <input id="input_file" type="file" class="
-              text-sm font-medium leading-[1.3] tracking-[1px] text-base-gray
-              file:text-sm file:font-medium 
-                file:leading-[1.3] file:tracking-[1px] file:text-base-gray
-                file:mr-4 file:py-2 file:px-4 file:bg-base-black file:border-none
-                bg-base-black 
-                  " />
-
-
+                <input id="input_file" type="file"
+                  class="bg-base-black text-sm font-medium leading-[1.3] tracking-[1px] text-base-gray file:mr-4 file:border-none file:bg-base-black file:py-2 file:px-4 file:text-sm file:font-medium file:leading-[1.3] file:tracking-[1px] file:text-base-gray" />
               </div>
               <div class="justify-between md:flex md:items-center md:pb-7 md:pt-10 xl:pt-10">
                 <div
@@ -2185,28 +2175,29 @@
         <div class="xl:grid-cols-[4fr 1fr] md:grid-rows-[1fr 1fr 1fr 1fr] md:grid md:grid-cols-1">
           <div class="md:row-start-1">
             <ul
-              class="flex h-36 flex-col flex-wrap gap-7 md:h-auto md:flex-row md:items-center md:gap-[51px] md:pb-[22px] xl:gap-16">
+              class="flex h-36 w-full flex-col flex-wrap gap-y-7 gap-x-2 md:h-auto md:flex-row md:items-center md:gap-[51px] md:pb-[22px] xl:gap-16">
               <li>
-                <a href="#" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">About us</a>
+                <a href="#" class="text-lg font-medium uppercase leading-1.3 md:text-xl xl:text-2xl">About
+                  us</a>
               </li>
               <li>
-                <a href="cases.html" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Case
-                  studies</a>
+                <a href="cases.html" class="text-lg font-medium uppercase leading-1.3 md:text-xl xl:text-2xl">Cases
+                </a>
               </li>
               <li>
-                <a href="#" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Services</a>
+                <a href="#" class="text-lg font-medium uppercase leading-1.3 md:text-xl xl:text-2xl">Services</a>
               </li>
               <li>
-                <a href="#" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Blog</a>
+                <a href="#" class="text-lg font-medium uppercase leading-1.3 md:text-xl xl:text-2xl">Blog</a>
               </li>
               <li>
-                <a href="#" class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Contact</a>
+                <a href="#" class="text-lg font-medium uppercase leading-1.3 md:text-xl xl:text-2xl">Contact</a>
               </li>
             </ul>
           </div>
           <div
             class="flex items-center justify-between space-x-14 px-3 pt-9 pb-8 md:row-start-3 md:px-[250px] md:pb-0 md:pt-5 xl:col-start-2 xl:row-start-1 xl:px-0 xl:pt-0 xl:pb-6">
-            <svg class="h-[29px] w-[38px] md:h-[30px] md:w-[30px] xl:h-10 xl:w-10" viewBox="0 0 38 39" fill="none"
+            <svg class="md:h-[30px] md:w-[30px] xl:h-10 xl:w-10" width="38" height="39" viewBox="0 0 38 39" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M18.9997 11.9951C14.9609 11.9951 11.6875 15.3547 11.6875 19.4998C11.6875 23.645 14.9609 27.0045 18.9997 27.0045C23.0387 27.0045 26.3121 23.645 26.3121 19.4998C26.3121 15.3547 23.0387 11.9951 18.9997 11.9951ZM18.9997 24.3805C16.3777 24.3805 14.2443 22.1908 14.2443 19.4998C14.2443 16.8088 16.3777 14.6192 18.9997 14.6192C21.6217 14.6192 23.7553 16.8088 23.7553 19.4998C23.7553 22.1908 21.6217 24.3805 18.9997 24.3805Z"
@@ -2287,7 +2278,6 @@
       </div>
     </footer>
     <!-- FOOTER END-->
-
   </main>
 
   <!-- Cookies -->

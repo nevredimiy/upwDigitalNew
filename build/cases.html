@@ -30,19 +30,18 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <!-- favicon end -->
-
 </head>
 
 <body class="w-full text-base font-medium text-base-black dark:bg-base-black dark:text-base-white">
     <header
-        class="bg-base-white dark:bg-base-black sticky z-40 w-full transition-opacity duration-300 ease-in md:h-[82px] xl:h-[90px] xl:w-full">
+        class="sticky z-40 w-full bg-white transition-opacity duration-300 ease-in dark:bg-base-black md:h-[82px] xl:h-[90px] xl:w-full">
         <div class="container flex h-[76px] flex-wrap items-center justify-between md:h-[82px] xl:relative xl:h-[90px]">
             <!-- Logo & Moon -->
-            <div class="flex items-center flex-wrap gap-11 md:gap-14">
+            <div class="flex flex-wrap items-center gap-11 md:gap-14">
                 <!-- logo -->
                 <div class="flex-shrink-0">
                     <a href="/">
-                        <svg class="fill-black dark:fill-white w-[103px] h-[40px] md:w-[136px] md:h-[54px] xl:w-[123px] xl:h-12"
+                        <svg class="h-[40px] w-[103px] fill-black dark:fill-white xl:h-12 xl:w-[123px]"
                             viewBox="0 0 123 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_3692_12255)">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -78,16 +77,16 @@
                 </div>
 
                 <!-- moon -->
-                <div id="dark" class="w-8 h-8 relative transition-all duration-500 ease-in xl:block">
+                <div id="dark" class="relative h-8 w-8 transition-all duration-500 ease-in xl:block">
                     <button id="moon" class="absolute">
-                        <svg class="transition-all duration-500 stroke-black dark:stroke-white" width="24" height="25"
+                        <svg class="stroke-black transition-all duration-500 dark:stroke-white" width="24" height="25"
                             viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M8.64195 1.00439L8.64196 1.00439C9.17383 0.827256 9.43477 0.938357 9.49125 0.988379C9.50652 1.0019 9.51618 1.01448 9.51563 1.05327C9.51491 1.10516 9.49146 1.21876 9.37103 1.38979L9.37102 1.38979C7.93626 3.42747 7.37097 5.08324 7.37281 7.32785C7.37936 15.3015 16.4493 19.7034 22.798 14.8407L22.494 14.4438L22.798 14.8407C23.0445 14.6519 23.2304 14.5695 23.3487 14.5436C23.4061 14.531 23.4361 14.5333 23.4488 14.5361C23.4582 14.549 23.485 14.595 23.4958 14.7103C23.5104 14.8666 23.489 15.1027 23.3958 15.4218C20.5793 25.0622 7.85599 26.9858 2.38111 18.6141C-0.326425 14.474 -0.0798655 8.62186 2.91788 4.99832C4.56619 3.00592 6.34274 1.77009 8.64195 1.00439ZM23.4564 14.5389C23.4563 14.5391 23.4546 14.5386 23.4519 14.5369C23.4552 14.5378 23.4566 14.5387 23.4564 14.5389Z" />
                         </svg>
                     </button>
                     <button id="sun"
-                        class="transition-all duration-200 ease-in opacity-0 absolute stroke-black dark:stroke-white">
+                        class="absolute stroke-black opacity-0 transition-all duration-200 ease-in dark:stroke-white">
                         <svg class="transition-all duration-500" width="31" height="31" viewBox="0 0 31 31" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -99,7 +98,7 @@
             </div>
 
             <div id="main-menu"
-                class="dark:bg-base-black bg-base-white pt-8 absolute top-[76px] right-0 z-40 hidden min-h-screen w-full origin-top animate-open-menu md:right-0 md:max-w-[465px] xl:static xl:block xl:min-h-[90px] xl:max-w-full xl:flex-1 xl:flex-nowrap xl:p-0">
+                class="absolute top-[76px] right-0 z-40 hidden min-h-screen w-full origin-top animate-open-menu bg-white pt-8 dark:bg-base-black md:right-0 md:max-w-[465px] xl:static xl:block xl:min-h-[90px] xl:max-w-full xl:flex-1 xl:flex-nowrap xl:p-0">
                 <div class="container">
                     <div id="list-lang"
                         class="items-center gap-10 xl:absolute xl:-right-72 xl:top-20 xl:hidden xl:rounded-sm xl:bg-base-white xl:py-3 xl:px-5 xl:text-black xl:opacity-70">
@@ -120,7 +119,7 @@
                     <div class="">
                         <nav>
                             <ul id="basic-menu"
-                                class="relative flex flex-col justify-start gap-7 uppercase xl:min-h-[90px] xl:static xl:h-[90px] xl:flex-row xl:items-center xl:justify-center xl:gap-12 dark:xl:text-base-white">
+                                class="relative flex flex-col justify-start gap-7 uppercase xl:static xl:h-[90px] xl:min-h-[90px] xl:flex-row xl:items-center xl:justify-center xl:gap-12 dark:xl:text-base-white">
                                 <li>
                                     <a class="text-xl font-medium uppercase leading-1.2 hover:text-base-gray active:text-base-red xl:text-base"
                                         href="cases.html">Case Studies</a>
@@ -365,7 +364,7 @@
                 <!-- pencil -->
                 <div id="contact-details" class="md:flex md:items-center">
                     <button
-                        class="group text-base-white flex items-center justify-center rounded-full bg-base-red hover:bg-base-white active:text-base-red hover:border hover:border-base-red md:px-3">
+                        class="group flex items-center justify-center rounded-full bg-base-red text-base-white hover:border hover:border-base-red hover:bg-base-white active:text-base-red md:px-3">
                         <div id="lets-talk"
                             class="hidden text-base font-medium uppercase leading-1.3 group-hover:text-base-black group-active:text-base-red md:block md:pl-4">
                             Let's talk
@@ -383,7 +382,7 @@
                 </div>
                 <div class="hidden xl:block xl:pl-9">
                     <a href="#" id="switch-lang"
-                        class="xl:px-2 gap-[10px] xl:flex xl:items-center xl:justify-end xl:rounded-sm dark:xl:text-base-white hover:text-base-white xl:hover:bg-[#262626]">
+                        class="gap-[10px] hover:text-base-white xl:flex xl:items-center xl:justify-end xl:rounded-sm xl:px-2 xl:hover:bg-[#262626] dark:xl:text-base-white">
                         <img class="" src="./images/en.png" alt="EN" />
                         <div class="">EN</div>
                     </a>
@@ -395,7 +394,7 @@
                     <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl text-white xl:hidden">
                         <!-- &#9776; -->
                         <div
-                            class="absolute top-4 -mt-0.5 h-1 w-8 bg-black  transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:bg-black dark:before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:bg-black dark:after:bg-white after:transition-all after:duration-500 after:content-['']">
+                            class="absolute top-4 -mt-0.5 h-1 w-8 bg-black transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:bg-black after:transition-all after:duration-500 after:content-[''] dark:before:bg-white dark:after:bg-white">
                         </div>
                     </button>
                 </div>
@@ -558,437 +557,408 @@
     </header>
 
     <main>
-
-        <section class="dark:bg-base-black dark:text-base-white xl:pt-20 xl:pb-16">
+        <!-- Breadcrumbs -->
+        <section class="pt-3">
             <div class="container">
-                <div class="flex justify-between items-center">
-                    <div class="relative z-10 pt-5 text-center">
-                        <h2
-                            class="text-4xl font-bold uppercase leading-1.2 md:text-6xl md:leading-1.1 xl:pt-1 xl:text-[120px] xl:leading-1.0">
-                            Our cases</h2>
+
+                <nav class="flex items-center gap-1 text-[8px] font-normal leading-1.4 text-middle-gray">
+                    <a href="index.html">Main</a>
+                    <div>
+                        <svg width="3" height="5" viewBox="0 0 3 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.109835 0.104605C0.256282 -0.0348682 0.493718 -0.0348682 0.640165 0.104605L2.89017 2.24746C3.03661 2.38693 3.03661 2.61307 2.89017 2.75254L0.640165 4.8954C0.493718 5.03487 0.256282 5.03487 0.109835 4.8954C-0.0366116 4.75592 -0.0366116 4.52979 0.109835 4.39032L2.09467 2.5L0.109835 0.609681C-0.0366116 0.470208 -0.0366116 0.244078 0.109835 0.104605Z"
+                                fill="#919191" />
+                        </svg>
                     </div>
-                    <div class="flex items-center xl:pr-14 xl:pt-2 gap-4">
-                        <div class="">
-                            <img src="./images/cases/cases-slides.png" alt="Cases slides">
+                    <span class="font-semibold">Cases</span>
+                </nav>
+            </div>
+        </section>
+        <section class="pt-3 pb-7 dark:bg-base-black dark:text-base-white md:pb-12 xl:pt-20 xl:pb-16">
+            <div class="container">
+                <div class="md:flex md:items-center md:justify-between">
+                    <div class="flex-shrink-0 relative z-10 pt-5">
+                        <h2
+                            class="text-4xl font-bold uppercase leading-1.1 md:text-6xl xl:pt-1 xl:text-[120px] xl:leading-1.0">
+                            Our cases
+                        </h2>
+                    </div>
+                    <div
+                        class="flex items-center gap-4 px-6 pt-8 md:flex-none md:pl-4 md:pt-7 md:w-72 xl:pr-14 xl:pt-2">
+                        <div class="flex-shrink-0">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="./images/cases/cases-slides-360.png" />
+                                <source media="(max-width: 1279px)" srcset="./images/cases/cases-slides-820.png" />
+                                <source media="(min-width: 1279px)" srcset="./images/cases/cases-slides-1920.png" />
+                                <img src="./images/cases/cases-slides.png" alt="Cases slides" />
+                            </picture>
                         </div>
                         <div class="xl:w-20">
                             <p
-                                class="text-xs font-bold uppercase leading-[1.4] tracking-[1px] text-base-black dark:text-base-white xl:text-base">
-                                Watch Showreel</p>
+                                class="text-sm font-bold uppercase leading-[1.4] text-base-black dark:text-base-white xl:text-base">
+                                Watch Showreel
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="dark:bg-base-black dark:text-base-white ">
+        <section class="dark:bg-base-black dark:text-base-white">
             <div class="container">
-                <div class="flex flex-wrap gap-3 border-t border-middle-gray py-9 xl:gap-[10px]">
+                <!-- Line middle-gray -->
+                <div class="col-span-12 h-px bg-middle-gray"></div>
+                <div class="flex flex-wrap gap-[14px] py-8 md:py-7 xl:gap-[10px]">
                     <a href="#" class="">
                         <button
-                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            class="flex rounded-full bg-light-gray py-[10px] px-[15px] text-sm font-medium uppercase leading-1.2 text-base-black transition-all duration-300 ease-linear hover:bg-base-white hover:text-base-black active:bg-base-red active:text-base-white md:text-sm xl:py-3 xl:px-7">
                             <div>Brandign</div>
-                            <div class="pl-1">[3]</div>
+                            <div class="pl-2">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            class="flex rounded-full bg-light-gray py-[10px] px-[15px] text-sm font-medium uppercase leading-1.2 text-base-black transition-all duration-300 ease-linear hover:bg-base-white hover:text-base-black active:bg-base-red active:text-base-white md:text-sm xl:py-3 xl:px-7">
                             <div>Web design</div>
-                            <div class="pl-1">[3]</div>
+                            <div class="pl-2">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            class="flex rounded-full bg-light-gray py-[10px] px-[15px] text-sm font-medium uppercase leading-1.2 text-base-black transition-all duration-300 ease-linear hover:bg-base-white hover:text-base-black active:bg-base-red active:text-base-white md:text-sm xl:py-3 xl:px-7">
                             <div>Seo</div>
-                            <div class="pl-1">[3]</div>
+                            <div class="pl-2">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            class="flex rounded-full bg-light-gray py-[10px] px-[15px] text-sm font-medium uppercase leading-1.2 text-base-black transition-all duration-300 ease-linear hover:bg-base-white hover:text-base-black active:bg-base-red active:text-base-white md:text-sm xl:py-3 xl:px-7">
                             <div>PPS</div>
-                            <div class="pl-1">[3]</div>
+                            <div class="pl-2">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            class="flex rounded-full bg-light-gray py-[10px] px-[15px] text-sm font-medium uppercase leading-1.2 text-base-black transition-all duration-300 ease-linear hover:bg-base-white hover:text-base-black active:bg-base-red active:text-base-white md:text-sm xl:py-3 xl:px-7">
                             <div>TikTok</div>
-                            <div class="pl-1">[3]</div>
+                            <div class="pl-2">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            class="flex rounded-full bg-light-gray py-[10px] px-[15px] text-sm font-medium uppercase leading-1.2 text-base-black transition-all duration-300 ease-linear hover:bg-base-white hover:text-base-black active:bg-base-red active:text-base-white md:text-sm xl:py-3 xl:px-7">
                             <div>SMM</div>
-                            <div class="pl-1">[3]</div>
+                            <div class="pl-2">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            class="flex rounded-full bg-light-gray py-[10px] px-[15px] text-sm font-medium uppercase leading-1.2 text-base-black transition-all duration-300 ease-linear hover:bg-base-white hover:text-base-black active:bg-base-red active:text-base-white md:text-sm xl:py-3 xl:px-7">
                             <div>DIGITAL MARKETING</div>
-                            <div class="pl-1">[3]</div>
+                            <div class="pl-2">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            class="flex rounded-full bg-light-gray py-[10px] px-[15px] text-sm font-medium uppercase leading-1.2 text-base-black transition-all duration-300 ease-linear hover:bg-base-white hover:text-base-black active:bg-base-red active:text-base-white md:text-sm xl:py-3 xl:px-7">
                             <div>MOBILE PROMOTION</div>
-                            <div class="pl-1">[3]</div>
+                            <div class="pl-2">[3]</div>
                         </button>
                     </a>
                     <a href="#">
                         <button
-                            class="flex rounded-full bg-dark-gray py-2 px-[15px] text-xs font-medium uppercase leading-[1.2] text-base-white md:text-sm xl:py-3 xl:px-7 hover:bg-base-white hover:text-base-black transition-all duration-300 ease-linear active:bg-base-red active:text-base-white">
+                            class="flex rounded-full bg-light-gray py-[10px] px-[15px] text-sm font-medium uppercase leading-1.2 text-base-black transition-all duration-300 ease-linear hover:bg-base-white hover:text-base-black active:bg-base-red active:text-base-white md:text-sm xl:py-3 xl:px-7">
                             <div>VIDEO MOTION</div>
-                            <div class="pl-1">[3]</div>
+                            <div class="pl-2">[3]</div>
                         </button>
                     </a>
                 </div>
+                <!-- Line middle-gray -->
+                <div class="col-span-12 h-px bg-middle-gray"></div>
             </div>
         </section>
 
-        <section class="pb-28">
+        <section class="pt-5 pb-23">
             <div class="container">
-                <div
-                    class="grid grid-cols-12 gap-5 md:gap-6 md:pt-3 xl:gap-0 xl:border-t xl:border-middle-gray xl:pt-0">
+                <div class="grid grid-cols-12 md:pt-3 xl:gap-0 xl:border-t xl:border-middle-gray xl:pt-0">
                     <!-- Services Description -->
                     <div
-                        class="col-span-12 pt-2 text-base font-medium leading-1.4 md:pb-3 xl:col-span-3 xl:col-start-1 xl:row-start-1 xl:border-r xl:border-middle-gray xl:pr-10 xl:pt-[74px]">
-                        We build engaging user experience forearly-stage startups by connecting thedots between users’
-                        needs and theclient’s
-                        business model.
-                    </div>
-                    <!-- Services Articles -->
-
-                    <!-- //Services Article 1 -->
-                    <div
-                        class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-span-9 xl:col-start-4 xl:row-span-2 xl:ml-36 xl:border-none xl:pt-[74px]">
-                        <!-- Service title -->
-                        <div class="xl:col-start-1 md:col-span-2 xl:border-b xl:border-middle-gray xl:pb-10">
-                            <div class="pb-7 xl:pb-0">
-                                <a href="#"
-                                    class="flex items-start justify-between hover:text-base-red hover:underline md:gap-2 xl:gap-0">
-                                    <div
-                                        class="flex-none w-12 xl:w-32 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
-                                        /2022</div>
-                                    <div
-                                        class="flex-auto text-base md:text-xl font-bold leading-1.1 md:gap-2 xl:gap-10 xl:text-[42px] xl:px-2">
-                                        HoReCa campaign: Increasing sales with a restaurant landing page optimization
-                                    </div>
-                                    <div class="flex justify-end flex-none w-12 xl:w-32">
-                                        <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
-                                                fill="#171717" />
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- image -->
-                        <div class="z-1 relative md:col-start-1 xl:pt-10">
-                            <div
-                                class="z-1 absolute top-5 left-5 w-2/3 text-white md:top-6 md:left-8 md:w-52 xl:top-14 xl:left-8 xl:z-0 xl:w-[290px]">
-                                <div class="flex items-center gap-4">
-                                    <div class="text-4xl font-bold leading-1.1 xl:text-[64px]">
-                                        7X
-                                    </div>
-                                    <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
-                                        cost of attracting a customer
-                                    </div>
-                                </div>
-                                <div class="col-span-12 pt-4 md:pt-2 xl:pt-7">
-                                    <div class="flex items-center gap-2">
-                                        <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
-                                            CR
-                                        </div>
-                                        <div class="text-4xl font-bold leading-1.1 xl:text-[64px]">
-                                            30%
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="pt-2 text-xs font-medium leading-1.1 md:pt-0 md:text-base xl:pt-1 xl:text-xl">
-                                        audience
-                                    </div>
-                                </div>
-                            </div>
-                            <picture class="md:z-1 col-span-12">
-                                <source media="(max-width: 767px)" srcset="./images/services/services_3_360.png" />
-                                <source media="(max-width: 1279px)" srcset="./images/services/services_1_820.png" />
-                                <source media="(min-width: 1279px)" srcset="./images/services/services_5_1920.png" />
-                                <img class="w-full object-cover" src="./images/services/services_1_1920.png" alt="Gambling
-                                                   vs. Marketing" />
-                            </picture>
-                        </div>
-                        <!-- article -->
-                        <div
-                            class="pt-7 pb-3 md:flex md:flex-col xl:pb-0 md:justify-between md:pl-7 xl:pl-32 xl:pt-10 md:col-start-2">
-                            <div class="text-sm font-medium leading-1.4 md:flex-auto md:text-base">
-                                We build engaging user experience forearly-stage startups by connecting thedots between
-                                users’ needs and theclient’s
-                                business model. We build engaging user experience forearly-stage startups by connecting
-                                thedots between users’ needs and
-                                theclient’s business model.
-                            </div>
-                            <div
-                                class="pt-10 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
-                                marketing strategy, design
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //Services Article 2 -->
-                    <div
-                        class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-span-9 xl:col-start-4 xl:row-span-2 xl:ml-36 xl:border-none xl:pt-[74px]">
-                        <!-- Service title -->
-                        <div class="xl:col-start-1 md:col-span-2 xl:border-b xl:border-middle-gray xl:pb-10 xl:pt-8">
-                            <div class="pb-7 xl:pb-0">
-                                <a href="#"
-                                    class="flex items-start justify-between hover:text-base-red hover:underline md:gap-2 xl:gap-0">
-                                    <div
-                                        class="flex-none w-12 xl:w-32 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
-                                        /2022</div>
-                                    <div
-                                        class="flex-auto text-base md:text-xl font-bold leading-1.1 md:gap-2 xl:gap-10 xl:text-[42px] xl:px-2">
-                                        Gambling vs. Marketing: when advertising boosts betting revenue
-                                    </div>
-                                    <div class="flex justify-end flex-none w-12 xl:w-32">
-                                        <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
-                                                fill="#171717" />
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- image -->
-                        <div class="z-1 relative md:col-start-1 xl:pt-10">
-                            <div
-                                class="z-1 absolute top-5 left-5 w-2/3 text-white md:top-6 md:left-8 md:w-52 xl:top-14 xl:left-8 xl:z-0 xl:w-[290px]">
-                                <div class="flex items-center gap-4">
-                                    <div class="text-4xl font-bold leading-1.1 xl:text-[64px]">
-                                        7X
-                                    </div>
-                                    <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
-                                        cost of attracting a customer
-                                    </div>
-                                </div>
-                                <div class="col-span-12 pt-4 md:pt-2 xl:pt-7">
-                                    <div class="flex items-center gap-2">
-                                        <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
-                                            CR
-                                        </div>
-                                        <div class="text-4xl font-bold leading-1.1 xl:text-[64px]">
-                                            30%
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="pt-2 text-xs font-medium leading-1.1 md:pt-0 md:text-base xl:pt-1 xl:text-xl">
-                                        audience
-                                    </div>
-                                </div>
-                            </div>
-                            <picture class="md:z-1 col-span-12">
-                                <source media="(max-width: 767px)" srcset="./images/services/services_1_360.png" />
-                                <source media="(max-width: 1279px)" srcset="./images/services/services_1_820.png" />
-                                <source media="(min-width: 1279px)" srcset="./images/services/services_2_1920.png" />
-                                <img class="w-full object-cover" src="./images/services/services_1_1920.png" alt="Gambling
-                                                   vs. Marketing" />
-                            </picture>
-                        </div>
-                        <!-- article -->
-                        <div
-                            class="pt-7 pb-3 md:flex md:flex-col xl:pb-0 md:justify-between md:pl-7 xl:pl-32 xl:pt-10 md:col-start-2">
-                            <div class="text-sm font-medium leading-1.4 md:flex-auto md:text-base">
-                                We build engaging user experience forearly-stage startups by connecting thedots between
-                                users’ needs and theclient’s
-                                business model. We build engaging user experience forearly-stage startups by connecting
-                                thedots between users’ needs and
-                                theclient’s business model.
-                            </div>
-                            <div
-                                class="pt-10 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
-                                marketing strategy, design
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //Services Article 3 -->
-                    <div
-                        class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-span-9 xl:col-start-4 xl:row-span-2 xl:ml-36 xl:border-none xl:pt-[74px]">
-                        <!-- Service title -->
-                        <div class="xl:col-start-1 md:col-span-2 xl:border-b xl:border-middle-gray xl:pb-10 xl:pt-8">
-                            <div class="pb-7 xl:pb-0">
-                                <a href="#"
-                                    class="flex items-start justify-between hover:text-base-red hover:underline md:gap-2 xl:gap-0">
-                                    <div
-                                        class="flex-none w-12 xl:w-32 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
-                                        /2022</div>
-                                    <div
-                                        class="flex-auto text-base md:text-xl font-bold leading-1.1 md:gap-2 xl:gap-10 xl:text-[42px] xl:px-2">
-                                        Gambling vs. Marketing: when advertising boosts betting revenue
-                                    </div>
-                                    <div class="flex justify-end flex-none w-12 xl:w-32">
-                                        <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
-                                                fill="#171717" />
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- image -->
-                        <div class="z-1 relative md:col-start-1 xl:pt-10">
-                            <div
-                                class="z-1 absolute top-5 left-5 w-2/3 text-white md:top-6 md:left-8 md:w-52 xl:top-14 xl:left-8 xl:z-0 xl:w-[290px]">
-                                <div class="flex items-center gap-4">
-                                    <div class="text-4xl font-bold leading-1.1 xl:text-[64px]">
-                                        7X
-                                    </div>
-                                    <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
-                                        cost of attracting a customer
-                                    </div>
-                                </div>
-                                <div class="col-span-12 pt-4 md:pt-2 xl:pt-7">
-                                    <div class="flex items-center gap-2">
-                                        <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
-                                            CR
-                                        </div>
-                                        <div class="text-4xl font-bold leading-1.1 xl:text-[64px]">
-                                            30%
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="pt-2 text-xs font-medium leading-1.1 md:pt-0 md:text-base xl:pt-1 xl:text-xl">
-                                        audience
-                                    </div>
-                                </div>
-                            </div>
-                            <picture class="md:z-1 col-span-12">
-                                <source media="(max-width: 767px)" srcset="./images/services/services_3_360.png" />
-                                <source media="(max-width: 1279px)" srcset="./images/services/services_1_820.png" />
-                                <source media="(min-width: 1279px)" srcset="./images/services/services_3_1920.png" />
-                                <img class="w-full object-cover" src="./images/services/services_1_1920.png" alt="Gambling
-                                                                       vs. Marketing" />
-                            </picture>
-                        </div>
-                        <!-- article -->
-                        <div
-                            class="pt-7 pb-3 md:flex md:flex-col xl:pb-0 md:justify-between md:pl-7 xl:pl-32 xl:pt-10 md:col-start-2">
-                            <div class="text-sm font-medium leading-1.4 md:flex-auto md:text-base">
-                                We build engaging user experience forearly-stage startups by connecting thedots between
-                                users’ needs and theclient’s
-                                business model. We build engaging user experience forearly-stage startups by connecting
-                                thedots between users’ needs and
-                                theclient’s business model.
-                            </div>
-                            <div
-                                class="pt-10 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
-                                marketing strategy, design
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //Services Article 4 -->
-                    <div
-                        class="col-span-12 border-t border-middle-gray pt-7 md:grid md:grid-cols-2 md:pt-6 xl:col-span-9 xl:col-start-4 xl:row-span-2 xl:ml-36 xl:border-none xl:pt-[74px]">
-                        <!-- Service title -->
-                        <div class="xl:col-start-1 md:col-span-2 xl:border-b xl:border-middle-gray xl:pb-10 xl:pt-8">
-                            <div class="pb-7 xl:pb-0">
-                                <a href="#"
-                                    class="flex items-start justify-between hover:text-base-red hover:underline md:gap-2 xl:gap-0">
-                                    <div
-                                        class="flex-none w-12 xl:w-32 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
-                                        /2022</div>
-                                    <div
-                                        class="flex-auto text-base md:text-xl font-bold leading-1.1 md:gap-2 xl:gap-10 xl:text-[42px] xl:px-2">
-                                        Gambling vs. Marketing: when advertising boosts betting revenue
-                                    </div>
-                                    <div class="flex justify-end flex-none w-12 xl:w-32">
-                                        <svg class="h-[22px] w-[22px] flex-shrink-0" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
-                                                fill="#171717" />
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- image -->
-                        <div class="z-1 relative md:col-start-1 xl:pt-10">
-                            <div
-                                class="z-1 absolute top-5 left-5 w-2/3 text-white md:top-6 md:left-8 md:w-52 xl:top-14 xl:left-8 xl:z-0 xl:w-[290px]">
-                                <div class="flex items-center gap-4">
-                                    <div class="text-4xl font-bold leading-1.1 xl:text-[64px]">
-                                        7X
-                                    </div>
-                                    <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
-                                        cost of attracting a customer
-                                    </div>
-                                </div>
-                                <div class="col-span-12 pt-4 md:pt-2 xl:pt-7">
-                                    <div class="flex items-center gap-2">
-                                        <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
-                                            CR
-                                        </div>
-                                        <div class="text-4xl font-bold leading-1.1 xl:text-[64px]">
-                                            30%
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="pt-2 text-xs font-medium leading-1.1 md:pt-0 md:text-base xl:pt-1 xl:text-xl">
-                                        audience
-                                    </div>
-                                </div>
-                            </div>
-                            <picture class="md:z-1 col-span-12">
-                                <source media="(max-width: 767px)" srcset="./images/services/services_1_360.png" />
-                                <source media="(max-width: 1279px)" srcset="./images/services/services_1_820.png" />
-                                <source media="(min-width: 1279px)" srcset="./images/services/services_1_1920.png" />
-                                <img class="w-full object-cover" src="./images/services/services_1_1920.png" alt="Gambling
-                                                                                           vs. Marketing" />
-                            </picture>
-                        </div>
-                        <!-- article -->
-                        <div
-                            class="pt-7 pb-3 md:flex md:flex-col xl:pb-0 md:justify-between md:pl-7 xl:pl-32 xl:pt-10 md:col-start-2">
-                            <div class="text-sm font-medium leading-1.4 md:flex-auto md:text-base">
-                                We build engaging user experience forearly-stage startups by connecting thedots between
-                                users’ needs and theclient’s
-                                business model. We build engaging user experience forearly-stage startups by connecting
-                                thedots between users’ needs and
-                                theclient’s business model.
-                            </div>
-                            <div
-                                class="pt-10 text-xs font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
-                                marketing strategy, design
-                            </div>
-                        </div>
+                        class="col-span-7 pt-2 pb-[0.35rem] text-sm font-medium leading-1.4 md:col-span-5 md:pr-2 md:pt-0 md:pb-0 xl:col-span-3 xl:col-start-1 xl:row-start-1 xl:border-r xl:border-middle-gray xl:pr-10 xl:pt-[74px]">
+                        We build engaging user experience forearly-stage startups by
+                        connecting thedots between users’ needs and theclient’s business
+                        model.
                     </div>
                     <!-- Button -->
                     <div id="discuss-project"
-                        class="pt-4 md:pt-7 xl:pr-10 xl:pt-[4.5rem] xl:row-span-12 col-span-12 xl:col-span-3 xl:col-start-1 xl:row-span-11 xl:row-start-2 xl:border-r xl:border-middle-gray">
+                        class="md:col-start-11 md:col-span-2 xl:row-span-12 col-span-5 col-start-8 pl-2 pt-5 md:pt-0 md:pl-0 xl:col-span-3 xl:col-start-1 xl:row-span-11 xl:row-start-2 xl:border-r xl:border-middle-gray xl:pr-10 xl:pt-[4.5rem]">
                         <button
-                            class="group flex h-[133px] md:h-[142px] md:w-[142px] w-[133px] flex-col items-center justify-center gap-2 rounded-full bg-base-red hover:bg-base-white active:border active:border-base-red xl:h-[177px] xl:w-[177px]">
-                            <div class="pt-4 xl:pt-1">
-                                <svg class="h-[17px] w-4 fill-white group-hover:fill-black group-active:fill-base-red"
+                            class="group flex h-[125px] w-[125px] flex-col items-center justify-center gap-2 rounded-full bg-base-red hover:bg-base-white active:border active:border-base-red xl:h-[177px] xl:w-[177px]">
+                            <div class="xl:pt-1">
+                                <svg width="14" height="16"
+                                    class="fill-white group-hover:fill-black group-active:fill-base-red"
                                     viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M15.9783 15.3279V1.32764V0.327637H14.9783H0.978315L0.978316 2.32764H12.5646L0.271484 14.6208L1.6857 16.035L13.9783 3.74237V15.3279H15.9783Z" />
                                 </svg>
                             </div>
                             <div
-                                class="text-center text-base font-bold uppercase leading-1.3 text-white group-hover:text-base-black group-active:text-base-red">
-                                Discuss the project
+                                class="text-center text-sm font-bold uppercase leading-1.3 text-white group-hover:text-base-black group-active:text-base-red">
+                                See our services
                             </div>
                         </button>
+                    </div>
+                    <!-- Line middle-gray -->
+                    <div class="col-span-12 h-px bg-middle-gray my-7"></div>
+                    <!-- //Services Articles -->
+
+                    <!-- Services Article 1 -->
+                    <!-- service title -->
+                    <div class="pt-6 col-span-12 xl:col-start-1 xl:border-b xl:border-middle-gray xl:pb-10">
+                        <div class="xl:pb-0">
+                            <a href="#"
+                                class="grid grid-cols-2 items-start justify-between hover:text-base-red hover:underline md:flex md:pt-4 xl:gap-0">
+                                <div
+                                    class="col-start-1 w-12 text-sm font-medium uppercase leading-1.4 md:flex-none md:w-32 md:text-lg xl:w-32 xl:text-base">
+                                    /2022
+                                </div>
+                                <div
+                                    class="col-span-2 col-start-1 row-start-2 pt-5 text-2xl font-bold leading-1.2 md:flex-auto md:text-[28px] md:leading-1.1 md:pt-0 xl:gap-10 xl:px-2 xl:text-[42px]">
+                                    Gambling vs. Marketing: when advertising boosts betting
+                                    revenue
+                                </div>
+                                <div class="col-start-2 row-start-1 justify-self-end md:flex-none xl:w-32">
+                                    <svg class="flex-shrink-0" height="22" width="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
+                                            fill="#171717" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Line middle-gray -->
+                    <div class="col-span-12 h-px bg-middle-gray my-4 md:my-7"></div>
+                    <!-- image -->
+                    <div
+                        class="col-span-12 pt-4 z-1 relative md:pt-1 md:row-span-2 md:col-span-6 md:col-start-1 xl:pt-10">
+                        <div
+                            class="z-1 absolute top-10 left-6 w-2/3 text-white md:top-6 md:left-6 md:w-56 xl:top-14 xl:left-8 xl:z-0 xl:w-[290px]">
+                            <div class="flex items-center gap-4">
+                                <div class="text-[2.6rem] font-bold leading-1.1 md:text-[2.85rem] xl:text-[64px]">
+                                    7X
+                                </div>
+                                <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
+                                    cost of attracting a customer
+                                </div>
+                            </div>
+                            <div class="col-span-12 pt-5 md:pt-6 xl:pt-7">
+                                <div class="flex items-center gap-2">
+                                    <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
+                                        CR
+                                    </div>
+                                    <div class="text-[2.6rem] font-bold leading-1.1 md:text-[2.85rem] xl:text-[64px]">
+                                        30%
+                                    </div>
+                                </div>
+                                <div
+                                    class="pt-1 text-xs font-medium leading-1.1 md:pt-0 md:text-base xl:pt-1 xl:text-xl">
+                                    audience
+                                </div>
+                            </div>
+                        </div>
+                        <picture class="md:z-1 col-span-12">
+                            <source media="(max-width: 767px)" srcset="./images/cases/case-article.png" />
+                            <source media="(max-width: 1279px)" srcset="./images/cases/case-article-820.png" />
+                            <source media="(min-width: 1279px)" srcset="./images/services/services_5_1920.png" />
+                            <img class="w-full object-cover" src="./images/services/services_1_1920.png" alt="Gambling
+                                                   vs. Marketing" />
+                        </picture>
+                    </div>
+                    <!-- article -->
+                    <div
+                        class="col-span-12 pt-7 pb-3 md:col-start-7 md:col-span-6 md:flex md:flex-col md:justify-between md:pt-1 md:pl-14 xl:pb-0 xl:pl-32 xl:pt-10">
+                        <div class="text-base font-medium leading-1.4 md:flex-auto md:text-base">
+                            We build engaging user experience forearly-stage startups by connecting thedots between
+                            users’ needs and theclient’s
+                            business model. We build engaging user experience forearly-stage startups by connecting
+                            thedots between users’ needs and
+                            theclient’s business model.
+                        </div>
+                    </div>
+                    <!-- marketing strategy, design -->
+                    <div
+                        class="col-span-12 row-start-4 pt-6 md:self-end md:row-start-auto md:col-span-6 md:col-start-7 md:pl-14">
+                        <div class="text-sm font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
+                            marketing strategy, &#149; design
+                        </div>
+                    </div>
+
+                    <!-- Services Article 2 -->
+                    <!-- service title -->
+                    <div class="pt-14 col-span-12 xl:col-start-1 xl:border-b xl:border-middle-gray xl:pb-10">
+                        <div class="xl:pb-0">
+                            <a href="#"
+                                class="grid grid-cols-2 items-start justify-between hover:text-base-red hover:underline md:flex md:pt-4 xl:gap-0">
+                                <div
+                                    class="col-start-1 w-12 text-sm font-medium uppercase leading-1.4 md:flex-none md:w-32 md:text-lg xl:w-32 xl:text-base">
+                                    /2022
+                                </div>
+                                <div
+                                    class="col-span-2 col-start-1 row-start-2 pt-5 text-2xl font-bold leading-1.2 md:flex-auto md:text-[28px] md:leading-1.1 md:pt-0 xl:gap-10 xl:px-2 xl:text-[42px]">
+                                    Gambling vs. Marketing: when advertising boosts betting
+                                    revenue
+                                </div>
+                                <div class="col-start-2 row-start-1 justify-self-end md:flex-none xl:w-32">
+                                    <svg class="flex-shrink-0" height="22" width="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
+                                            fill="#171717" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Line middle-gray -->
+                    <div class="col-span-12 h-px bg-middle-gray my-4 md:my-7"></div>
+                    <!-- image -->
+                    <div
+                        class="col-span-12 pt-4 z-1 relative md:pt-1 md:row-span-2 md:col-span-6 md:col-start-1 xl:pt-10">
+                        <div
+                            class="z-1 absolute top-10 left-6 w-2/3 text-white md:top-6 md:left-6 md:w-56 xl:top-14 xl:left-8 xl:z-0 xl:w-[290px]">
+                            <div class="flex items-center gap-4">
+                                <div class="text-[2.6rem] font-bold leading-1.1 md:text-[2.85rem] xl:text-[64px]">
+                                    7X
+                                </div>
+                                <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
+                                    cost of attracting a customer
+                                </div>
+                            </div>
+                            <div class="col-span-12 pt-5 md:pt-6 xl:pt-7">
+                                <div class="flex items-center gap-2">
+                                    <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
+                                        CR
+                                    </div>
+                                    <div class="text-[2.6rem] font-bold leading-1.1 md:text-[2.85rem] xl:text-[64px]">
+                                        30%
+                                    </div>
+                                </div>
+                                <div
+                                    class="pt-1 text-xs font-medium leading-1.1 md:pt-0 md:text-base xl:pt-1 xl:text-xl">
+                                    audience
+                                </div>
+                            </div>
+                        </div>
+                        <picture class="md:z-1 col-span-12">
+                            <source media="(max-width: 767px)" srcset="./images/cases/case-article.png" />
+                            <source media="(max-width: 1279px)" srcset="./images/cases/case-article-820.png" />
+                            <source media="(min-width: 1279px)" srcset="./images/services/services_5_1920.png" />
+                            <img class="w-full object-cover" src="./images/services/services_1_1920.png" alt="Gambling
+                                                                   vs. Marketing" />
+                        </picture>
+                    </div>
+                    <!-- article -->
+                    <div
+                        class="col-span-12 pt-7 pb-3 md:col-start-7 md:col-span-6 md:flex md:flex-col md:justify-between md:pt-1 md:pl-14 xl:pb-0 xl:pl-32 xl:pt-10">
+                        <div class="text-base font-medium leading-1.4 md:flex-auto md:text-base">
+                            We build engaging user experience forearly-stage startups by connecting thedots between
+                            users’ needs and theclient’s
+                            business model. We build engaging user experience forearly-stage startups by connecting
+                            thedots between users’ needs and
+                            theclient’s business model.
+                        </div>
+                    </div>
+                    <!-- marketing strategy, design -->
+                    <div
+                        class="col-span-12 row-start-4 pt-6 md:self-end md:row-start-auto md:col-span-6 md:col-start-7 md:pl-14">
+                        <div class="text-sm font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
+                            marketing strategy, &#149; design
+                        </div>
+                    </div>
+
+                    <!-- Services Article 3 -->
+                    <!-- service title -->
+                    <div class="pt-14 col-span-12 xl:col-start-1 xl:border-b xl:border-middle-gray xl:pb-10">
+                        <div class="xl:pb-0">
+                            <a href="#"
+                                class="grid grid-cols-2 items-start justify-between hover:text-base-red hover:underline md:flex md:pt-4 xl:gap-0">
+                                <div
+                                    class="col-start-1 w-12 text-sm font-medium uppercase leading-1.4 md:flex-none md:w-32 md:text-lg xl:w-32 xl:text-base">
+                                    /2022
+                                </div>
+                                <div
+                                    class="col-span-2 col-start-1 row-start-2 pt-5 text-2xl font-bold leading-1.2 md:flex-auto md:text-[28px] md:leading-1.1 md:pt-0 xl:gap-10 xl:px-2 xl:text-[42px]">
+                                    Gambling vs. Marketing: when advertising boosts betting
+                                    revenue
+                                </div>
+                                <div class="col-start-2 row-start-1 justify-self-end md:flex-none xl:w-32">
+                                    <svg class="flex-shrink-0" height="22" width="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.854 3.6H2.19955V0H21.9995V19.8H18.3995V6.14559L3.47235 21.0728L0.926758 18.5272L15.854 3.6Z"
+                                            fill="#171717" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Line middle-gray -->
+                    <div class="col-span-12 h-px bg-middle-gray my-4 md:my-7"></div>
+                    <!-- image -->
+                    <div
+                        class="col-span-12 pt-4 z-1 relative md:pt-1 md:row-span-2 md:col-span-6 md:col-start-1 xl:pt-10">
+                        <div
+                            class="z-1 absolute top-10 left-6 w-2/3 text-white md:top-6 md:left-6 md:w-56 xl:top-14 xl:left-8 xl:z-0 xl:w-[290px]">
+                            <div class="flex items-center gap-4">
+                                <div class="text-[2.6rem] font-bold leading-1.1 md:text-[2.85rem] xl:text-[64px]">
+                                    7X
+                                </div>
+                                <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
+                                    cost of attracting a customer
+                                </div>
+                            </div>
+                            <div class="col-span-12 pt-5 md:pt-6 xl:pt-7">
+                                <div class="flex items-center gap-2">
+                                    <div class="text-xs font-medium leading-1.1 md:text-base xl:text-xl">
+                                        CR
+                                    </div>
+                                    <div class="text-[2.6rem] font-bold leading-1.1 md:text-[2.85rem] xl:text-[64px]">
+                                        30%
+                                    </div>
+                                </div>
+                                <div
+                                    class="pt-1 text-xs font-medium leading-1.1 md:pt-0 md:text-base xl:pt-1 xl:text-xl">
+                                    audience
+                                </div>
+                            </div>
+                        </div>
+                        <picture class="md:z-1 col-span-12">
+                            <source media="(max-width: 767px)" srcset="./images/cases/case-article.png" />
+                            <source media="(max-width: 1279px)" srcset="./images/cases/case-article-820.png" />
+                            <source media="(min-width: 1279px)" srcset="./images/services/services_5_1920.png" />
+                            <img class="w-full object-cover" src="./images/services/services_1_1920.png" alt="Gambling
+                                                                                       vs. Marketing" />
+                        </picture>
+                    </div>
+                    <!-- article -->
+                    <div
+                        class="col-span-12 pt-7 pb-3 md:col-start-7 md:col-span-6 md:flex md:flex-col md:justify-between md:pt-1 md:pl-14 xl:pb-0 xl:pl-32 xl:pt-10">
+                        <div class="text-base font-medium leading-1.4 md:flex-auto md:text-base">
+                            We build engaging user experience forearly-stage startups by connecting thedots between
+                            users’ needs and theclient’s
+                            business model. We build engaging user experience forearly-stage startups by connecting
+                            thedots between users’ needs and
+                            theclient’s business model.
+                        </div>
+                    </div>
+                    <!-- marketing strategy, design -->
+                    <div
+                        class="col-span-12 row-start-4 pt-6 md:self-end md:row-start-auto md:col-span-6 md:col-start-7 md:pl-14">
+                        <div class="text-sm font-medium uppercase leading-1.4 md:pt-0 md:text-sm xl:text-base">
+                            marketing strategy, &#149; design
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1006,7 +976,7 @@
                     <!-- Contact 2 -->
                     <div
                         class="py-6 text-4xl font-bold uppercase leading-[1.2] text-white md:py-4 md:tracking-[1px] xl:col-span-3 xl:col-start-1 xl:row-start-1 xl:border-b xl:border-base-gray xl:pt-5 xl:pb-11 xl:text-[64px] xl:tracking-normal">
-                        Låt oss diskutera projektet
+                        Let's promote your business
                     </div>
                     <!-- Contact 3 -->
                     <div class="py-5 md:py-7 xl:col-start-2 xl:row-start-2 xl:max-w-[870px] xl:px-[72px] xl:pt-[60px]">
@@ -1051,15 +1021,8 @@
                                 </div>
 
                                 <label for="input_file" class="block"></label>
-                                <input id="input_file" type="file" class="
-              text-sm font-medium leading-[1.3] tracking-[1px] text-base-gray
-              file:text-sm file:font-medium 
-                file:leading-[1.3] file:tracking-[1px] file:text-base-gray
-                file:mr-4 file:py-2 file:px-4 file:bg-base-black file:border-none
-                bg-base-black 
-                  " />
-
-
+                                <input id="input_file" type="file"
+                                    class="bg-base-black text-sm font-medium leading-[1.3] tracking-[1px] text-base-gray file:mr-4 file:border-none file:bg-base-black file:py-2 file:px-4 file:text-sm file:font-medium file:leading-[1.3] file:tracking-[1px] file:text-base-gray" />
                             </div>
                             <div class="justify-between md:flex md:items-center md:pb-7 md:pt-10 xl:pt-10">
                                 <div
@@ -1113,39 +1076,39 @@
         <!--CONTACT END -->
 
         <!-- FOOTER -->
-        <footer id="#footer" class="pt-12 md:pt-8 xl:pt-10">
+        <footer id="#footer" class="pt-13 md:pt-8 xl:pt-10">
             <div class="container mx-auto md:px-1 xl:px-0">
                 <div class="xl:grid-cols-[4fr 1fr] md:grid-rows-[1fr 1fr 1fr 1fr] md:grid md:grid-cols-1">
                     <div class="md:row-start-1">
                         <ul
-                            class="flex h-36 flex-col flex-wrap gap-7 md:h-auto md:flex-row md:items-center md:gap-[51px] md:pb-[22px] xl:gap-16">
+                            class="flex h-36 w-full flex-col flex-wrap gap-y-7 gap-x-2 md:h-auto md:flex-row md:items-center md:gap-[51px] md:pb-[22px] xl:gap-16">
                             <li>
                                 <a href="#"
-                                    class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">About
+                                    class="text-lg font-medium uppercase leading-1.3 md:text-xl xl:text-2xl">About
                                     us</a>
                             </li>
                             <li>
                                 <a href="cases.html"
-                                    class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Case
-                                    studies</a>
+                                    class="text-lg font-medium uppercase leading-1.3 md:text-xl xl:text-2xl">Cases
+                                </a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Services</a>
+                                    class="text-lg font-medium uppercase leading-1.3 md:text-xl xl:text-2xl">Services</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Blog</a>
+                                    class="text-lg font-medium uppercase leading-1.3 md:text-xl xl:text-2xl">Blog</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="text-lg font-medium uppercase leading-[1.3] md:text-xl xl:text-2xl">Contact</a>
+                                    class="text-lg font-medium uppercase leading-1.3 md:text-xl xl:text-2xl">Contact</a>
                             </li>
                         </ul>
                     </div>
                     <div
                         class="flex items-center justify-between space-x-14 px-3 pt-9 pb-8 md:row-start-3 md:px-[250px] md:pb-0 md:pt-5 xl:col-start-2 xl:row-start-1 xl:px-0 xl:pt-0 xl:pb-6">
-                        <svg class="h-[29px] w-[38px] md:h-[30px] md:w-[30px] xl:h-10 xl:w-10" viewBox="0 0 38 39"
+                        <svg class="md:h-[30px] md:w-[30px] xl:h-10 xl:w-10" width="38" height="39" viewBox="0 0 38 39"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M18.9997 11.9951C14.9609 11.9951 11.6875 15.3547 11.6875 19.4998C11.6875 23.645 14.9609 27.0045 18.9997 27.0045C23.0387 27.0045 26.3121 23.645 26.3121 19.4998C26.3121 15.3547 23.0387 11.9951 18.9997 11.9951ZM18.9997 24.3805C16.3777 24.3805 14.2443 22.1908 14.2443 19.4998C14.2443 16.8088 16.3777 14.6192 18.9997 14.6192C21.6217 14.6192 23.7553 16.8088 23.7553 19.4998C23.7553 22.1908 21.6217 24.3805 18.9997 24.3805Z"
@@ -1239,7 +1202,6 @@
             </div>
         </footer>
         <!-- FOOTER END-->
-
     </main>
 
     <!-- Cookies -->
@@ -1257,6 +1219,5 @@
         </div>
     </div>
     <script src="./js/main.js" defer></script>
-
 </body>
 </html>
