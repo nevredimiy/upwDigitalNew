@@ -24,8 +24,11 @@ module.exports = {
         'fluid-1': 'clamp(1.31rem, calc(0.65rem + 3.29vw), 3.00rem)',
         'fluid-2': 'clamp(1.31rem, calc(0.07rem + 6.22vw), 4.50rem)',
         '13': '3.25rem',
+        '18': '4.5rem',
         '22': '5.5rem',
         '23': '5.75rem',
+        '26': '6.5rem',
+        '30': '7.5rem'
     },
 
       backgroundImage: {
