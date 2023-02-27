@@ -86,7 +86,7 @@ const getContactForm = () => {
 
 btnContact.addEventListener('click', getContactForm)
 btnContactForm.addEventListener('click', getContactForm)
-discusProject.addEventListener('click', getContactForm)
+if (discusProject) { discusProject.addEventListener('click', getContactForm) }
 hamburgerBtn.addEventListener('click', toggleMenu)
 backToMenu.addEventListener('click', (e) => {
     e.target.parentElement.classList.toggle('left-[200%]')
