@@ -729,6 +729,10 @@ body {
   grid-column: span 6 / span 6;
 }
 
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
 .col-start-8 {
   grid-column-start: 8;
 }
@@ -1046,16 +1050,16 @@ body {
   width: 2.25rem;
 }
 
+.w-\[29px\] {
+  width: 29px;
+}
+
 .w-\[7\.6rem\] {
   width: 7.6rem;
 }
 
 .w-25 {
   width: 6.25rem;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-\[15px\] {
@@ -1699,10 +1703,6 @@ body {
   padding-bottom: 1.25rem;
 }
 
-.pr-18 {
-  padding-right: 4.5rem;
-}
-
 .pb-11 {
   padding-bottom: 2.75rem;
 }
@@ -1711,20 +1711,8 @@ body {
   padding-bottom: 3.25rem;
 }
 
-.pr-3 {
-  padding-right: 0.75rem;
-}
-
 .pb-23 {
   padding-bottom: 5.75rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
 }
 
 .text-center {
@@ -2948,21 +2936,6 @@ body {
     padding-bottom: 2.25rem;
   }
 
-  .md\:py-18 {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
-  }
-
-  .md\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .md\:pl-9 {
     padding-left: 2.25rem;
   }
@@ -3147,40 +3120,28 @@ body {
     padding-top: 4.5rem;
   }
 
-  .md\:pb-14 {
-    padding-bottom: 3.5rem;
+  .md\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .md\:pl-3 {
+    padding-left: 0.75rem;
   }
 
   .md\:pb-13 {
     padding-bottom: 3.25rem;
   }
 
-  .md\:pb-16 {
-    padding-bottom: 4rem;
-  }
-
   .md\:pb-2 {
     padding-bottom: 0.5rem;
   }
 
-  .md\:pb-6 {
-    padding-bottom: 1.5rem;
-  }
-
-  .md\:pb-5 {
-    padding-bottom: 1.25rem;
+  .md\:pb-14 {
+    padding-bottom: 3.5rem;
   }
 
   .md\:pt-13 {
     padding-top: 3.25rem;
-  }
-
-  .md\:pr-0 {
-    padding-right: 0px;
-  }
-
-  .md\:pl-6 {
-    padding-left: 1.5rem;
   }
 
   .md\:indent-\[86px\] {
@@ -3383,6 +3344,18 @@ body {
     bottom: -2.25rem;
   }
 
+  .xl\:-top-21 {
+    top: -5.25rem;
+  }
+
+  .xl\:left-5 {
+    left: 1.25rem;
+  }
+
+  .xl\:-left-4 {
+    left: -1rem;
+  }
+
   .xl\:z-50 {
     z-index: 50;
   }
@@ -3423,6 +3396,14 @@ body {
     grid-column: span 7 / span 7;
   }
 
+  .xl\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .xl\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .xl\:col-start-1 {
     grid-column-start: 1;
   }
@@ -3455,12 +3436,36 @@ body {
     grid-column-start: 6;
   }
 
+  .xl\:col-start-10 {
+    grid-column-start: 10;
+  }
+
+  .xl\:col-start-7 {
+    grid-column-start: 7;
+  }
+
   .xl\:row-span-11 {
     grid-row: span 11 / span 11;
   }
 
   .xl\:row-span-2 {
     grid-row: span 2 / span 2;
+  }
+
+  .xl\:row-span-3 {
+    grid-row: span 3 / span 3;
+  }
+
+  .xl\:row-span-6 {
+    grid-row: span 6 / span 6;
+  }
+
+  .xl\:row-\[span_16_\/_span_16\] {
+    grid-row: span 16 / span 16;
+  }
+
+  .xl\:row-\[span_10_\/_span_10\] {
+    grid-row: span 10 / span 10;
   }
 
   .xl\:row-start-1 {
@@ -3473,6 +3478,34 @@ body {
 
   .xl\:row-start-3 {
     grid-row-start: 3;
+  }
+
+  .xl\:row-start-4 {
+    grid-row-start: 4;
+  }
+
+  .xl\:row-start-5 {
+    grid-row-start: 5;
+  }
+
+  .xl\:row-start-6 {
+    grid-row-start: 6;
+  }
+
+  .xl\:row-end-1 {
+    grid-row-end: 1;
+  }
+
+  .xl\:row-end-6 {
+    grid-row-end: 6;
+  }
+
+  .xl\:row-end-5 {
+    grid-row-end: 5;
+  }
+
+  .xl\:row-end-7 {
+    grid-row-end: 7;
   }
 
   .xl\:m-0 {
@@ -3510,6 +3543,26 @@ body {
 
   .xl\:ml-\[152px\] {
     margin-left: 152px;
+  }
+
+  .xl\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .xl\:mb-9 {
+    margin-bottom: 2.25rem;
+  }
+
+  .xl\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .xl\:mb-11 {
+    margin-bottom: 2.75rem;
   }
 
   .xl\:block {
@@ -3582,6 +3635,10 @@ body {
 
   .xl\:h-\[14px\] {
     height: 14px;
+  }
+
+  .xl\:h-\[50px\] {
+    height: 50px;
   }
 
   .xl\:min-h-min {
@@ -3671,6 +3728,14 @@ body {
 
   .xl\:w-\[530px\] {
     width: 530px;
+  }
+
+  .xl\:w-\[50px\] {
+    width: 50px;
+  }
+
+  .xl\:w-\[295px\] {
+    width: 295px;
   }
 
   .xl\:w-32 {
@@ -3798,6 +3863,16 @@ body {
     gap: 1.75rem;
   }
 
+  .xl\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  }
+
+  .xl\:place-self-auto {
+    place-self: auto;
+  }
+
   .xl\:rounded-sm {
     border-radius: 0.125rem;
   }
@@ -3832,6 +3907,10 @@ body {
 
   .xl\:border-l {
     border-left-width: 1px;
+  }
+
+  .xl\:border-r-2 {
+    border-right-width: 2px;
   }
 
   .xl\:border-none {
@@ -4197,6 +4276,42 @@ body {
     padding-top: 43px;
   }
 
+  .xl\:pb-18 {
+    padding-bottom: 4.5rem;
+  }
+
+  .xl\:pr-2 {
+    padding-right: 0.5rem;
+  }
+
+  .xl\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  .xl\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .xl\:pb-23 {
+    padding-bottom: 5.75rem;
+  }
+
+  .xl\:pb-28 {
+    padding-bottom: 7rem;
+  }
+
+  .xl\:pb-30 {
+    padding-bottom: 7.5rem;
+  }
+
+  .xl\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .xl\:pb-15 {
+    padding-bottom: 3.75rem;
+  }
+
   .xl\:pr-14 {
     padding-right: 3.5rem;
   }
@@ -4211,6 +4326,30 @@ body {
 
   .xl\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .xl\:pt-18 {
+    padding-top: 4.5rem;
+  }
+
+  .xl\:pb-5 {
+    padding-bottom: 1.25rem;
+  }
+
+  .xl\:pb-9 {
+    padding-bottom: 2.25rem;
+  }
+
+  .xl\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .xl\:pb-13 {
+    padding-bottom: 3.25rem;
+  }
+
+  .xl\:pb-26 {
+    padding-bottom: 6.5rem;
   }
 
   .xl\:indent-32 {
@@ -4261,8 +4400,17 @@ body {
     font-size: 90px;
   }
 
+  .xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
   .xl\:font-semibold {
     font-weight: 600;
+  }
+
+  .xl\:font-medium {
+    font-weight: 500;
   }
 
   .xl\:uppercase {
